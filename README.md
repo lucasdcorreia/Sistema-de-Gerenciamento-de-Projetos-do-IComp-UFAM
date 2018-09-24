@@ -40,9 +40,7 @@ Depois disso, inicialize seu sistema através do comando abaixo. Você será que
 $ php init
 ```
 
-O diretório `database` possui o dump de um banco de dados que pode ser usado para su Uma vez inicializado seu sistema, use o dump de banco de dados disponível no diretório database. Esse Dump foi gerado a partir do sistema em produção, e foi colocado no Codebench porque possui dados sigilosos.
-
-Crie um banco de dados MySQL em seu sistema e carregue o dump no novo banco. Após isso, abra o arquivo `common/config/main-local.php` e informe os dados de acesso do banco.
+O diretório `database` possui o dump de um banco de dados que pode ser usado para iniciar o desenvolvimento. Ele possui apenas as tabelas `user` e `,migration`. A tabela `user` contém os dados dos usuários que podem fazer login no sistema, e a tabela `migration` contém os dados de migrações do Yii 2. O uso das migrações é opcional. Crie um banco de dados MySQL em seu sistema e carregue o dump no novo banco. Após isso, abra o arquivo `common/config/main-local.php` e informe os dados de acesso do banco.
 
 Também é importante acessar o diretório `backend/views/adminLTE/yiisoft/yii2-app/layouts` e criar o menu da aplicação (arquivo `left.php`). Esse diretório contém um arquivo chamado `left-sample.php` que você pode usar para gerar o menu da sua aplicação através dos seguintes comandos:
 
