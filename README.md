@@ -14,7 +14,7 @@ https://github.com/dbfernandes/projetos
 
 O primeiro passo para instalação é fazer um fork do repositório original do sistema em sua conta do Github. Para fazer isso, acesse endereço (https://github.com/dbfernandes/projetos) e click o botão fork desse repositório (vide imagem abaixo).
 
-![Fork no Github](http://coyote.icomp.ufam.edu.br/projetos/fork.png)
+![Fork no Github](http://coyote.icomp.ufam.edu.br/projetos/fork2.png)
 
 Após o fork, você pode clonar seu novo repositório através do comando git clone:
 
