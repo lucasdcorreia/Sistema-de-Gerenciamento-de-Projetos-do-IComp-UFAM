@@ -1,0 +1,289 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Pontano+Sans|Oleo+Script);
+	
+	/* JANELA MODAL */
+	.overlay-container {
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	.window-container {
+		display: block;
+		background: #fcfcfc;
+		margin: 5em auto;
+		width: 500px;
+		padding: 10px 20px 20px;
+		text-align: left;
+		z-index: 3;
+		border-radius: 3px;
+		box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+		-webkit-transition: 0.4s ease-out;
+		-moz-transition: 0.4s ease-out;
+		-ms-transition: 0.4s ease-out;
+		-o-transition: 0.4s ease-out;
+		transition: 0.4s ease-out;
+		opacity: 0;
+	}
+	
+	.zoomin {
+		-webkit-transform:  scale(1.2);
+		-moz-transform:  scale(1.2);
+		-ms-transform:  scale(1.2);
+		transform:  scale(1.2);
+	}
+	
+	.window-container-visible {
+		-webkit-transform:  scale(1);
+		-moz-transform:  scale(1);
+		-ms-transform:  scale(1);
+		transform:  scale(1);
+		opacity: 1;
+	}
+	
+	.window-container h3 {
+		margin: 1em 0 0.5em;
+		font-weight: bold;
+		font-size: 22px;
+	}
+	
+/* CALENDARIO DE RESERVA DE SALAS */		
+#safe-mes{
+	width:390px;
+	height:20px; 
+	padding:10px;
+	margin-bottom:5px;
+	text-transform:uppercase; 
+	font-size:18px; 
+	float:left;
+}
+
+.nav{
+	width:72px;
+	height:20px;
+	padding:10px 5px;
+	margin-bottom:5px;
+	text-align:center;
+	background:#e5e5e5;
+	float:left;
+	color:#000;
+}
+
+.nav:hover{
+	background-color:#DBDBDB;
+	box-shadow: 0px 0px 1px 0px #94A8B8;	
+}
+	
+.diasNome{
+	width:70px;
+	height:auto;
+	padding:5px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	border:1px solid #e5e5e5;
+}
+
+.dias{
+	width:70px; 
+	height:40px;
+	padding:5px;
+	border:1px solid #E5E5E5;
+	float:left; 
+	text-align:right; 
+	background-color:#fff;
+}
+
+.dias:hover{
+	color:#FFF;
+	cursor:pointer;
+	background-color:#b4cbde;
+}
+
+#dom:hover{
+	color:#000;
+}
+
+.diabranco{
+	background-color:#FFF;		
+}
+
+.diabranco:hover{
+	background-color:#FFF;
+	cursor:default;
+}
+
+.diahoje{
+	color:#000;
+	font-weight:bold;
+	/*background-color:#FF9;*/
+}
+
+.hint{
+	display:none;
+}	
+
+.dias:hover .hint {
+	position: absolute;
+	display: block;
+	margin: 30px 0 0 20px;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: left;
+	line-height: 18px;
+	padding: 7px 10px;
+	background: rgba(0, 0, 0, 0.6);
+ 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.diasContent{
+	background-image: -moz-linear-gradient(top,  rgba(151, 183, 210, 1) 0%, rgba(208, 222, 234, 1) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(151, 183, 210, 1)), color-stop(100%,rgba(208, 222, 234, 1)));
+	background-image: -webkit-linear-gradient(top,  rgba(151, 183, 210, 1) 0%,rgba(208, 222, 234, 1) 100%);
+	background-image: -o-linear-gradient(top,  rgba(151, 183, 210, 1) 0%,rgba(208, 222, 234, 1) 100%);
+	background-image: -ms-linear-gradient(top,  rgba(151, 183, 210, 1) 0%,rgba(208, 222, 234, 1) 100%);
+	background-image: linear-gradient(to bottom,  rgba(151, 183, 210, 1) 0%,rgba(208, 222, 234, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97b7d2', endColorstr='#d0deea',GradientType=0 );
+}
+
+.diasContentQtde{
+	width:22px;
+	height:35px;
+	font-size:32px;
+	text-align:left;
+	color:#efefef;
+	margin-top:10px;
+	margin-left:-2px;
+	float:left;
+}
+
+.txtreserva{
+	font-size:9px;
+	color:#efefef;		
+}
+	
+/* TABELA DE HORÁRIOS COM_RESERVA */
+.line{
+	width:100%;
+	height:41px;
+	
+	border-bottom:1px solid #CCC;
+}
+
+.line-left{
+	width:80px;
+	height:40px;
+	float:left;
+	
+	text-align:center;
+	line-height:40px;
+	border-right:1px solid #E5E5E5;
+}
+
+.line-right{
+	width:592px;
+	height:40px;
+	float:left;
+}
+
+.lftitulo{
+	width:100%;
+	height:40px;
+	
+	margin-bottom:5px;
+	border-bottom:2px solid #5994cd;
+	background:#eeeff0;
+	
+	text-align:center;
+	line-height:40px;			
+	font-size:14px;
+	font-weight:bold;
+	color:#5994cd;
+}
+
+.box-item{
+	position:relative;
+	
+	max-width:100%;
+	min-width:95%;
+	height:auto;
+	float:left;
+
+	border-radius:3px;	
+	margin-right:3px;
+	padding:5px;
+	color:#000;
+}
+
+.room-title{
+	height:40px;
+	float:left;
+	line-height:40px;
+	text-align:center;
+	font-weight:bold;
+	border-left:1px solid #CCC;
+}
+
+.column-room{
+	width:143px;
+	height:40px;
+	float:left;
+	font-size:10px;
+	text-align:center;
+	font-weight:bold;
+	border-left:1px solid #CCC;
+}
+
+/* TIPOS DAS SALAS : CORES */
+.classes{		
+	background:#B2D1EB;
+	border:1px solid #3C98C3;
+}
+
+.meeting{
+	background:#bbdcbc;
+	border:1px solid #468847;
+}
+
+.defense{
+	background:#F0E68C;
+	border:1px solid #DAA520;
+}
+
+.espaco{ height:29px; }
+
+.espaco1{ height:29px; }
+
+.espaco2{ height:70px; }
+
+.espaco3{ height:110px; }
+
+.espaco4{ height:150px; }
+
+.espaco5{ height:190px; }
+
+.espaco6{ height:230px; }
+
+.espaco7{ height:270px; }
+
+.espaco8{ height:310px; }
+
+.espaco9{ height:350px; }
+
+.espaco10{ height:390px; }
+
+.espaco11{ height:440px; }
+
+.espaco12{ height:490px; }
+
+.espaco13{ height:530px; }
+
+.espaco14{ height:570px; }
+
+.espaco15{ height:190px; }
+

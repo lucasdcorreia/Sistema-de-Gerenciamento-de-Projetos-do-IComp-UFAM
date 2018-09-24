@@ -1,0 +1,35 @@
+<?php
+namespace console\controllers;
+
+use Yii;
+use yii\console\Controller;
+
+class RbacController extends Controller
+{
+   public function actionInit()
+   {
+       $auth = new \yii\rbac\PhpManager();
+
+       // adciona a permissão "createPost"
+       $createPost = $auth->createPermission('criaredital');
+       $createPost->description = 'Criar Edital';
+       $auth->add($createPost);
+
+       // adciona a permissão  "updatePost"
+       $updatePost = $auth->createPermission('updatePost');
+       $updatePost->description = 'Update post';
+       $auth->add($updatePost);
+
+       // adciona a role "author" e da a esta role a permissão "createPost"
+       $author = $auth->createRole('coordenador');
+       $auth->add($author);
+       $auth->addChild($author, $createPost);
+
+       // adciona a role "admin" e da a esta role a permissão "updatePost"
+       // bem como as permissões da role "author"
+       $admin = $auth->createRole('admin');
+       $auth->add($admin);
+       $auth->addChild($admin, $updatePost);
+       //$auth->addChild($admin, $author);
+   }
+}

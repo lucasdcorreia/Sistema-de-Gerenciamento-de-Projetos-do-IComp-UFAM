@@ -1,0 +1,39 @@
+/* Página do Calendário */
+div.container { width: 1000px; margin: 10px auto; }
+h1.titulo { font:bold 16px Tahoma; color:#222; }
+
+div.container { 
+	width: 700px;
+	margin: 10px auto;
+}
+
+div.container h1 { font-size:20px; font-weight: bold;}
+div.container p { 
+	margin: 10px 0;
+	font: 13px Arial;
+}
+div.exemplo, div.bloco { 
+	background : #f1f1f1; 
+	margin: 20px 0;
+	padding: 10px;
+}
+div.exemplo div.accordion{ padding-bottom: 140px; }
+
+
+
+div.exemplo pre, div.bloco pre { 
+	background : #ffa;
+	padding:10px;
+	font: 14px Trebushet MS;
+	overflow: auto;
+}
+
+div.bloco h2, div.exemplo h2{ font-size:22px; margin-bottom: 5px; }
+
+div.bloco table{ width: 100%; margin-top: 10px; }
+div.bloco table thead tr th{ padding:5px; font-size: 16px; font-weight: bold; }
+div.bloco table tbody tr td{ padding:5px; color:#333; }
+
+
+table.opcoes tr td, table.opcoes tr th { border-right: 1px solid #000; border-top: 1px solid #000; }
+table.opcoes { border-left:  1px solid #000;  border-bottom: 1px solid #000; }

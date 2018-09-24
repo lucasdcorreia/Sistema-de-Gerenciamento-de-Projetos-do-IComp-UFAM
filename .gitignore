@@ -1,0 +1,7 @@
+/vendor/
+/backend/web/uploads
+/backend/web/previa
+/backend/web/css/docs.min.css
+/numeros/web/assets/
+/vendor/*
+.idea/*
