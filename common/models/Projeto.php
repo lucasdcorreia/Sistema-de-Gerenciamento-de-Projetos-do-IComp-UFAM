@@ -47,6 +47,19 @@ class Projeto extends \yii\db\ActiveRecord
         ];
     }
 
+    public function beforeSave($insert){
+      if(parent::beforeSave($insert)){
+        if($this->isNewRecord){
+          $this->inicio_previsto = date("Y-m-d H:i:s", strtotime($this->inicio_previsto));
+          $this->termino = date("Y-m-d H:i:s", strtotime($this->termino));
+          $this->publicacao_diario_oficial = date("Y-m-d H:i:s", strtotime($this->publicacao_diario_oficial));
+          return true;
+        }else{
+          return false;
+        }
+      }
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -54,16 +67,16 @@ class Projeto extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'num_processo' => 'Num Processo',
-            'inicio_previsto' => 'Inicio Previsto',
-            'termino' => 'Termino',
+            'num_processo' => 'Número Processo',
+            'inicio_previsto' => 'Início Previsto',
+            'termino' => 'Término',
             'nome_coordenador' => 'Nome Coordenador',
             'edital' => 'Edital',
-            'titulo_projeto' => 'Titulo Projeto',
-            'num_protocolo' => 'Num Protocolo',
-            'cotacao_moeda_estrangeira' => 'Cotacao Moeda Estrangeira',
-            'numero_fapeam_outorga' => 'Numero Fapeam Outorga',
-            'publicacao_diario_oficial' => 'Publicacao Diario Oficial',
+            'titulo_projeto' => 'Título Projeto',
+            'num_protocolo' => 'Número Protocolo',
+            'cotacao_moeda_estrangeira' => 'Cotação Moeda Estrangeira',
+            'numero_fapeam_outorga' => 'Número Fapeam Outorga',
+            'publicacao_diario_oficial' => 'Publicação Diário Oficial',
         ];
     }
 
