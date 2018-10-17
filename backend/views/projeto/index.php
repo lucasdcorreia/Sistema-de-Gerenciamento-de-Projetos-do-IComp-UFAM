@@ -21,13 +21,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'formatter' => [
             'class' => '\yii\i18n\Formatter',
-            'dateFormat' => 'MM/dd/yyyy',
-            'datetimeFormat' => 'MM/dd/yyyy',
+            'dateFormat' => 'dd/MM/yyyy',
+            'datetimeFormat' => 'dd/MM/yyyy',
         ],
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'yii\grid\SerialColumn', 'header' => 'Numero'],
 
-            'id',
             'num_processo',
             'inicio_previsto:date',
             'termino:date',
