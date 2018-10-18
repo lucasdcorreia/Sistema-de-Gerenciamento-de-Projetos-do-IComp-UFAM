@@ -73,16 +73,16 @@ class Projeto extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'num_processo' => 'Número Processo',
+            'num_processo' => 'Número do Processo',
             'inicio_previsto' => 'Início Previsto',
             'termino' => 'Término',
-            'nome_coordenador' => 'Nome Coordenador',
+            'nome_coordenador' => 'Nome do Coordenador',
             'edital' => 'Edital',
-            'titulo_projeto' => 'Título Projeto',
-            'num_protocolo' => 'Número Protocolo',
-            'cotacao_moeda_estrangeira' => 'Cotação Moeda Estrangeira',
-            'numero_fapeam_outorga' => 'Número Fapeam Outorga',
-            'publicacao_diario_oficial' => 'Publicação Diário Oficial',
+            'titulo_projeto' => 'Título do Projeto',
+            'num_protocolo' => 'Número do Protocolo',
+            'cotacao_moeda_estrangeira' => 'Cotação da Moeda Estrangeira',
+            'numero_fapeam_outorga' => 'Número da FAPEAM',
+            'publicacao_diario_oficial' => 'Publicação D.O',
         ];
     }
 

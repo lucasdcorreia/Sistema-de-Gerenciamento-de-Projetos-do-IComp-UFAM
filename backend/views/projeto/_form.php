@@ -16,17 +16,17 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'num_processo')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'inicio_previsto')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
-
-    <?= $form->field($model, 'termino')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
-
-    <?= $form->field($model, 'nome_coordenador')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'num_protocolo')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'edital')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'titulo_projeto')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'num_protocolo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'nome_coordenador')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'inicio_previsto')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
+
+    <?= $form->field($model, 'termino')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <?= $form->field($model, 'cotacao_moeda_estrangeira')->textInput() ?>
 
