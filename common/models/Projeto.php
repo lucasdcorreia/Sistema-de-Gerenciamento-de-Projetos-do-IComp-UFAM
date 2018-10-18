@@ -50,9 +50,15 @@ class Projeto extends \yii\db\ActiveRecord
     public function beforeSave($insert){
       if(parent::beforeSave($insert)){
         if($this->isNewRecord){
-          $this->inicio_previsto = date("Y-m-d H:i:s", strtotime($this->inicio_previsto));
-          $this->termino = date("Y-m-d H:i:s", strtotime($this->termino));
-          $this->publicacao_diario_oficial = date("Y-m-d H:i:s", strtotime($this->publicacao_diario_oficial));
+          if($this->inicio_previsto != NULL){
+            $this->inicio_previsto = date("Y-m-d H:i:s", strtotime($this->inicio_previsto));
+          }
+          if($this->termino != NULL){
+            $this->termino = date("Y-m-d H:i:s", strtotime($this->termino));
+          }
+          if($this->publicacao_diario_oficial != NULL){
+            $this->publicacao_diario_oficial = date("Y-m-d H:i:s", strtotime($this->publicacao_diario_oficial));
+          }
           return true;
         }else{
           return false;
