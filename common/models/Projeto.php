@@ -66,6 +66,14 @@ class Projeto extends \yii\db\ActiveRecord
       }
     }
 
+    public function afterFind(){
+        $this->inicio_previsto = Yii::$app->formatter->asDate($this->inicio_previsto, 'd/M/Y');
+        $this->termino = Yii::$app->formatter->asDate($this->termino, 'd/M/Y');
+        $this->publicacao_diario_oficial = Yii::$app->formatter->asDate($this->publicacao_diario_oficial, 'd/M/Y');
+        parent::afterFind();
+        return true;
+    }
+
     /**
      * {@inheritdoc}
      */
