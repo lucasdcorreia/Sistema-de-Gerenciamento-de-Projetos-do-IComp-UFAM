@@ -28,24 +28,24 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= DetailView::widget([
         'model' => $model,
-      'formatter' => [
+      /*'formatter' => [
         'class' => 'yii\i18n\Formatter',
         'dateFormat' => 'php:d-M-Y',
         'datetimeFormat' => 'php:d/m/Y',
         'timeFormat' => 'php:H:i:s',
         'timeZone' => 'UTC',
-      ],
+      ],*/
         'attributes' => [
             'num_processo',
             'num_protocolo',
             'edital',
             'titulo_projeto',
             'nome_coordenador',
-            'inicio_previsto:datetime',
-            'termino:datetime',
+            'inicio_previsto',//:datetime',
+            'termino',//:datetime',
             'cotacao_moeda_estrangeira',
             'numero_fapeam_outorga',
-            'publicacao_diario_oficial:datetime',
+            'publicacao_diario_oficial',//:datetime',
         ],
     ]) ?>
 

@@ -65,9 +65,10 @@ class Projeto extends \yii\db\ActiveRecord
           }
           return true;
         //}else{
-          return false;
+
         //}
       }
+      return false;
     }
 
     public function afterFind(){
