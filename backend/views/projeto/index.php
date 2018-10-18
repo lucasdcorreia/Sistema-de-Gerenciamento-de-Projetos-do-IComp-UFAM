@@ -19,19 +19,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'formatter' => [
+        /*'formatter' => [
         'class' => 'yii\i18n\Formatter',
         'dateFormat' => 'php:d-M-Y',
         'datetimeFormat' => 'php:d/m/Y',
         'timeFormat' => 'php:H:i:s',
         'timeZone' => 'UTC',
-        ],
+      ],*/
         'columns' => [
             ['class' => 'yii\grid\SerialColumn', 'header' => 'Numero'],
 
             'num_processo',
-            'inicio_previsto:datetime',
-            'termino:datetime',
+            'inicio_previsto',//:datetime',
+            'termino',//:datetime',
             'nome_coordenador',
             //'edital',
             //'titulo_projeto',

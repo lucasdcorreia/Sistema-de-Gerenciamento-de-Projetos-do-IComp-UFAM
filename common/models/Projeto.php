@@ -40,13 +40,13 @@ class Projeto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['inicio_previsto', 'termino', 'publicacao_diario_oficial'], 'string'],
+            [['inicio_previsto', 'termino', 'publicacao_diario_oficial'], 'safe'],
             [['cotacao_moeda_estrangeira'], 'number'],
             [['num_processo', 'num_protocolo'], 'string', 'max' => 100],
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
         ];
     }
-
+/*
     public function beforeSave($insert){
       if(parent::beforeSave($insert)){
         if($this->isNewRecord){
@@ -79,7 +79,7 @@ class Projeto extends \yii\db\ActiveRecord
         parent::afterFind();
         return true;
     }
-
+*/
     /**
      * {@inheritdoc}
      */
