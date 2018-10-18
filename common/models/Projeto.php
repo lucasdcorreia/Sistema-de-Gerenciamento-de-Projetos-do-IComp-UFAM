@@ -41,7 +41,7 @@ class Projeto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['inicio_previsto', 'termino', 'publicacao_diario_oficial'], 'safe'],
+            [['inicio_previsto', 'termino', 'publicacao_diario_oficial'], 'date', 'format' => 'dd/mm/yyyy'],
             [['cotacao_moeda_estrangeira'], 'number'],
             [['num_processo', 'num_protocolo'], 'string', 'max' => 100],
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
