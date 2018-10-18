@@ -68,13 +68,13 @@ class Projeto extends \yii\db\ActiveRecord
 
     public function afterFind(){
         if($this->inicio_previsto != NULL){
-          $this->inicio_previsto = Yii::$app->formatter->asDate($this->inicio_previsto, 'd-m-Y');
+          $this->inicio_previsto = Yii::$app->formatter->asDate($this->inicio_previsto, 'd/M/Y');
         }
         if($this->termino != NULL){
-          $this->termino = Yii::$app->formatter->asDate($this->termino, 'd-m-Y');
+          $this->termino = Yii::$app->formatter->asDate($this->termino, 'd/M/Y');
         }
         if($this->publicacao_diario_oficial != NULL){
-          $this->publicacao_diario_oficial = Yii::$app->formatter->asDate($this->publicacao_diario_oficial, 'd-m-Y');
+          $this->publicacao_diario_oficial = Yii::$app->formatter->asDate($this->publicacao_diario_oficial, 'd/M/Y');
         }
         parent::afterFind();
         return true;
