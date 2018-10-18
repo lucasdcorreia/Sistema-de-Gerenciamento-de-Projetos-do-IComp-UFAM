@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use DateTime;
 
 /**
  * This is the model class for table "projeto".
@@ -46,40 +47,46 @@ class Projeto extends \yii\db\ActiveRecord
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
         ];
     }
-/*
+
     public function beforeSave($insert){
       if(parent::beforeSave($insert)){
-        if($this->isNewRecord){
+        //if($this->isNewRecord){
           if($this->inicio_previsto != NULL){
-            $this->inicio_previsto = date("Y-m-d H:i:s", strtotime($this->inicio_previsto));
+            $myDateTime = DateTime::createFromFormat('d/m/Y', $this->inicio_previsto);
+            $this->inicio_previsto = $myDateTime->format('Y-m-d 00:00:00');
           }
           if($this->termino != NULL){
-            $this->termino = date("Y-m-d H:i:s", strtotime($this->termino));
+            $myDateTime = DateTime::createFromFormat('d/m/Y', $this->termino);
+            $this->termino = $myDateTime->format('Y-m-d 00:00:00');
           }
           if($this->publicacao_diario_oficial != NULL){
-            $this->publicacao_diario_oficial = date("Y-m-d H:i:s", strtotime($this->publicacao_diario_oficial));
+            $myDateTime = DateTime::createFromFormat('d/m/Y', $this->publicacao_diario_oficial);
+            $this->publicacao_diario_oficial = $myDateTime->format('Y-m-d 00:00:00');
           }
           return true;
-        }else{
+        //}else{
           return false;
-        }
+        //}
       }
     }
 
     public function afterFind(){
         if($this->inicio_previsto != NULL){
-          $this->inicio_previsto = Yii::$app->formatter->asDate($this->inicio_previsto, 'd/M/Y');
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->inicio_previsto);
+          $this->inicio_previsto = $myDateTime->format('d/m/Y');
         }
         if($this->termino != NULL){
-          $this->termino = Yii::$app->formatter->asDate($this->termino, 'd/M/Y');
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->termino);
+          $this->termino = $myDateTime->format('d/m/Y');
         }
         if($this->publicacao_diario_oficial != NULL){
-          $this->publicacao_diario_oficial = Yii::$app->formatter->asDate($this->publicacao_diario_oficial, 'd/M/Y');
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->publicacao_diario_oficial);
+          $this->publicacao_diario_oficial = $myDateTime->format('d/m/Y');
         }
         parent::afterFind();
         return true;
     }
-*/
+
     /**
      * {@inheritdoc}
      */
