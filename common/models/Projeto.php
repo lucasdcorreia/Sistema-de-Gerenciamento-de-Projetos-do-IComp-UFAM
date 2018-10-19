@@ -4,7 +4,7 @@ namespace common\models;
 
 use Yii;
 use DateTime;
-
+use DateInterval;
 /**
  * This is the model class for table "projeto".
  *
@@ -27,6 +27,7 @@ use DateTime;
  */
 class Projeto extends \yii\db\ActiveRecord
 {
+    private $duracao;
     /**
      * {@inheritdoc}
      */
@@ -45,6 +46,7 @@ class Projeto extends \yii\db\ActiveRecord
             [['cotacao_moeda_estrangeira'], 'number'],
             [['num_processo', 'num_protocolo'], 'string', 'max' => 100],
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
+            [['duracao'], 'safe'],
         ];
     }
 
@@ -88,8 +90,41 @@ class Projeto extends \yii\db\ActiveRecord
         return true;
     }
 
+    //Virtual attribute
+    public function getDuracao(){
+      $anos = 0;
+      $meses = 0;
+      $dias = 0;
+      $this->duracao = '';
+      if($this->inicio_previsto != NULL && $this->termino != NULL){
+        $begin = DateTime::createFromFormat('d/m/Y', $this->inicio_previsto);
+        $end = DateTime::createFromFormat('d/m/Y', $this->termino);
+
+        $diff = $end->diff($begin);
+        $anos = intval($diff->format('%y'));
+        $meses = intval($diff->format('%m'));
+        $dias = intval($diff->format('%d'));
+        if($anos>0)
+          $this->duracao = $anos > 1 ? $diff->format('%y anos') : $diff->format('%y ano');
+        if($meses>0){
+          if($anos>0)
+            $this->duracao = $this->duracao . ', ';
+          $this->duracao = $meses > 1 ? $this->duracao . $diff->format('%m meses') : $this->duracao . $diff->format('%m mes');
+        }
+        if($dias>0){
+          if($anos>0 || $meses>0)
+            $this->duracao = $this->duracao . ' e ';
+          $this->duracao = $dias > 1 ?  $this->duracao . $diff->format('%d dias') : $this->duracao . $diff->format('%d dia');
+        }
+        if($dias==0 && $meses==0 && $anos==0)
+          $this->duracao = '0 dias';
+      }else $this->duracao = '0 dias';
+
+      return $this->duracao;
+    }
+
     /**
-     * {@inheritdoc}
+    * {@inheritdoc}
      */
     public function attributeLabels()
     {
@@ -105,6 +140,7 @@ class Projeto extends \yii\db\ActiveRecord
             'cotacao_moeda_estrangeira' => 'Cotação da Moeda Estrangeira',
             'numero_fapeam_outorga' => 'Número da FAPEAM',
             'publicacao_diario_oficial' => 'Publicação D.O',
+            'duracao' => 'Duracao',
         ];
     }
 

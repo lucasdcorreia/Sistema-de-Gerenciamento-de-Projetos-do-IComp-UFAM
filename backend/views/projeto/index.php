@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'inicio_previsto',//:datetime',
             'termino',//:datetime',
             'nome_coordenador',
+            'duracao',
             //'edital',
             //'titulo_projeto',
             //'num_protocolo',
