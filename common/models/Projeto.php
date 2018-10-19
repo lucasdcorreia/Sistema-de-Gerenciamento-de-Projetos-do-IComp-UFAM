@@ -140,7 +140,7 @@ class Projeto extends \yii\db\ActiveRecord
             'cotacao_moeda_estrangeira' => 'Cotação da Moeda Estrangeira',
             'numero_fapeam_outorga' => 'Número da FAPEAM',
             'publicacao_diario_oficial' => 'Publicação D.O',
-            'duracao' => 'Duracao',
+            'duracao' => 'Duração',
         ];
     }
 
