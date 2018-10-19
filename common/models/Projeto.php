@@ -109,7 +109,7 @@ class Projeto extends \yii\db\ActiveRecord
         if($meses>0){
           if($anos>0)
             $this->duracao = $this->duracao . ', ';
-          $this->duracao = $meses > 1 ? $this->duracao . $diff->format('%m meses') : $this->duracao . $diff->format('%m mes');
+          $this->duracao = $meses > 1 ? $this->duracao . $diff->format('%m meses') : $this->duracao . $diff->format('%m mês');
         }
         if($dias>0){
           if($anos>0 || $meses>0)
