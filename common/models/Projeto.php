@@ -43,7 +43,7 @@ class Projeto extends \yii\db\ActiveRecord
     {
         return [
             [['inicio_previsto', 'termino', 'publicacao_diario_oficial'], 'date', 'format' => 'dd/mm/yyyy'],
-            [['cotacao_moeda_estrangeira'], 'number'],
+            [['cotacao_moeda_estrangeira'], 'double'],
             [['num_processo', 'num_protocolo'], 'string', 'max' => 100],
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
             [['duracao'], 'safe'],
