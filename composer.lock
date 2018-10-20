@@ -1175,12 +1175,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "86010b4468a2915c9414524df528aa1b361af1b3"
+                "reference": "36b68bdc20651a430ab0bb4024e6065a4092914f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/86010b4468a2915c9414524df528aa1b361af1b3",
-                "reference": "86010b4468a2915c9414524df528aa1b361af1b3",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/36b68bdc20651a430ab0bb4024e6065a4092914f",
+                "reference": "36b68bdc20651a430ab0bb4024e6065a4092914f",
                 "shasum": ""
             },
             "type": "library",
@@ -1220,7 +1220,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2018-10-06T16:31:55+00:00"
+            "time": "2018-10-20T15:40:54+00:00"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
@@ -2781,7 +2781,7 @@
                 "Behavior",
                 "yii2"
             ],
-            "time": "2016-01-18T00:00:00+00:00"
+            "time": "2018-10-14T21:31:56+00:00"
         },
         {
             "name": "moonlandsoft/yii2-phpexcel",
@@ -3688,12 +3688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "106c58715d2c3f68d4800f877a1a84c434af8cb1"
+                "reference": "5754f127a704deb3db216c9d2a4a4acef07f4025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/106c58715d2c3f68d4800f877a1a84c434af8cb1",
-                "reference": "106c58715d2c3f68d4800f877a1a84c434af8cb1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5754f127a704deb3db216c9d2a4a4acef07f4025",
+                "reference": "5754f127a704deb3db216c9d2a4a4acef07f4025",
                 "shasum": ""
             },
             "require": {
@@ -3780,7 +3780,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2018-10-11T11:43:32+00:00"
+            "time": "2018-10-19T21:10:48+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",

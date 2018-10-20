@@ -29,7 +29,7 @@ use yii\widgets\MaskMoney;
 
     <?= $form->field($model, 'termino', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
-    <?= $form->field($model, 'cotacao_moeda_estrangeira')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$'] ]) ?>
+    <?= $form->field($model, 'cotacao_moeda_estrangeira')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <?= $form->field($model, 'numero_fapeam_outorga', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
 
