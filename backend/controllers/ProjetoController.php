@@ -67,6 +67,7 @@ class ProjetoController extends Controller
         $model = new Projeto();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -87,6 +88,7 @@ class ProjetoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->mensagens('success', 'Projeto atualizado', 'Projeto atualizado com sucesso.');
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -105,6 +107,7 @@ class ProjetoController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
+        $this->mensagens('success', 'Projeto excluído', 'Projeto excluído com sucesso.');
 
         return $this->redirect(['index']);
     }
@@ -123,5 +126,20 @@ class ProjetoController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    /* Envio de mensagens para views
+       Tipo: success, danger, warning*/
+    protected function mensagens($tipo, $titulo, $mensagem){
+        Yii::$app->session->setFlash($tipo, [
+            'type' => $tipo,
+            'icon' => 'home',
+            'duration' => 5000,
+            'message' => $mensagem,
+            'title' => $titulo,
+            'positonY' => 'top',
+            'positonX' => 'center',
+            'showProgressbar' => true,
+        ]);
     }
 }
