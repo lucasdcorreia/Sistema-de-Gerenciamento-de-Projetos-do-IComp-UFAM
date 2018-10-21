@@ -88,7 +88,7 @@ class ProjetoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $this->mensagens('success', 'Projeto atualizado', 'Projeto atualizado com sucesso.');
+            $this->mensagens('success', 'Projeto alterado', 'Projeto alterado com sucesso.');
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
