@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use DateTime;
 
 /**
  * This is the model class for table "termo_aditivo".
@@ -33,6 +34,7 @@ class TermoAditivo extends \yii\db\ActiveRecord
         return [
             [['motivo'], 'string'],
             [['vigencia'], 'safe'],
+            [['vigencia'], 'date', 'format' => 'dd/mm/yyyy'],
             [['id_projeto'], 'integer'],
             [['numero_do_termo'], 'string', 'max' => 50],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
@@ -51,6 +53,32 @@ class TermoAditivo extends \yii\db\ActiveRecord
             'vigencia' => 'Vigência',
             'id_projeto' => 'Projeto',
         ];
+    }
+
+    public function beforeSave($insert){
+        if(parent::beforeSave($insert)){
+          if($this->isNewRecord){
+          //if($this->isNewRecord){
+            if($this->vigencia != NULL){
+              $myDateTime = DateTime::createFromFormat('d/m/Y', $this->vigencia);
+              $this->vigencia = $myDateTime->format('Y-m-d 00:00:00');
+            }
+            return true;
+          }else{
+          //}else{
+            return false;
+          }
+          //}
+        }
+    }
+
+    public function afterFind(){
+        if($this->vigencia != NULL){
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->vigencia);
+          $this->vigencia = $myDateTime->format('d/m/Y');
+        }
+        parent::afterFind();
+        return true;
     }
 
     /**

@@ -26,11 +26,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'numero_do_termo',
             'motivo:ntext',
-            'vigencia',
+            'vigencia:datetime',
             [
                 'attribute' => 'id_projeto',
                 'value' => function ($data) {
-                    return Projeto::findOne($data->id_projeto)->nome;
+                    return Projeto::findOne($data->id_projeto)->titulo_projeto;
                 },
             ],
 

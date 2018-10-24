@@ -20,7 +20,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'motivo')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'vigencia')->textInput() ?>
+    <!-- <?= $form->field($model, 'vigencia')->textInput() ?> -->
+
+    <?= $form->field($model, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
 

@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\TermoAditivo */
 
-$this->title = $model->id;
+$this->title = "Termo aditivo: " . $model->numero_do_termo;
 $this->params['breadcrumbs'][] = ['label' => 'Termo Aditivos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
