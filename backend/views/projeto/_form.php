@@ -45,9 +45,9 @@ use yii\widgets\MaskMoney;
 
     <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
-    <div class="form-group">
-        <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
+    <div class="form-group" style="text-align: right">
         <?= Html::a('Cancelar', ['projeto/index'], ['class'=>'btn btn-primary']) ?>
+        <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
