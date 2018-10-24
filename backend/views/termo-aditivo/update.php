@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\TermoAditivo */
 
-$this->title = 'Update Termo Aditivo: ' . $model->id;
+$this->title = 'Atualizar Termo Aditivo: ' . $model->numero_do_termo;
 $this->params['breadcrumbs'][] = ['label' => 'Termo Aditivos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';

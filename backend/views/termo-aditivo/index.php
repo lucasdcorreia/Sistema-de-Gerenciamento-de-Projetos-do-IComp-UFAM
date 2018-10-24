@@ -2,11 +2,12 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use common\models\Projeto;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Termo Aditivos';
+$this->title = 'Termos Aditivos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="termo-aditivo-index">
@@ -14,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Termo Aditivo', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar Termo Aditivo', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -26,7 +27,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'numero_do_termo',
             'motivo:ntext',
             'vigencia',
-            'id_projeto',
+            [
+                'attribute' => 'id_projeto',
+                'value' => function ($data) {
+                    return Projeto::findOne($data->id_projeto)->nome;
+                },
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
