@@ -46,10 +46,10 @@ class TermoAditivo extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'numero_do_termo' => 'Numero Do Termo',
+            'numero_do_termo' => 'Número de Termo',
             'motivo' => 'Motivo',
-            'vigencia' => 'Vigencia',
-            'id_projeto' => 'Id Projeto',
+            'vigencia' => 'Vigência',
+            'id_projeto' => 'Projeto',
         ];
     }
 

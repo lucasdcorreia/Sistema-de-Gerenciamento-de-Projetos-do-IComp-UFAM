@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\TermoAditivo */
 
-$this->title = 'Create Termo Aditivo';
+$this->title = 'Criar Termo Aditivo';
 $this->params['breadcrumbs'][] = ['label' => 'Termo Aditivos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -16,6 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'model' => $model,
+        'array_projetos' => $array_projetos,
     ]) ?>
 
 </div>

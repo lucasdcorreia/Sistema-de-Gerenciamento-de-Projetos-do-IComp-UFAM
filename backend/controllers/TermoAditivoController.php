@@ -4,6 +4,8 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\TermoAditivo;
+use common\models\Projeto;
+use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -65,6 +67,8 @@ class TermoAditivoController extends Controller
     public function actionCreate()
     {
         $model = new TermoAditivo();
+        $projetos = Projeto::find()->all();
+        $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -72,6 +76,7 @@ class TermoAditivoController extends Controller
 
         return $this->render('create', [
             'model' => $model,
+            'array_projetos' => $array_projetos,
         ]);
     }
 

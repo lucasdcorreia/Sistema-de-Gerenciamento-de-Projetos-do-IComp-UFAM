@@ -22,10 +22,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'vigencia')->textInput() ?>
 
-    <?= $form->field($model, 'id_projeto')->textInput() ?>
+    <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Adicionar', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
