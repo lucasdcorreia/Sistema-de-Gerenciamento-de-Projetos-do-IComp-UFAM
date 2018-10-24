@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'numero_do_termo',
             'motivo:ntext',
-            'vigencia:datetime',
+            'vigencia',
             [
                 'attribute' => 'id_projeto',
                 'value' => function ($data) {
