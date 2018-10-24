@@ -15,6 +15,10 @@ use yii\widgets\MaskMoney;
       'id' => 'projeto'
     ]); ?>
 
+    <h4> Identificação </h4>
+
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
+
     <?= $form->field($model, 'num_processo', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'num_protocolo', ['options' => ['class' => 'col-md-6 col-right']])->textInput(['maxlength' => true]) ?>
@@ -31,6 +35,12 @@ use yii\widgets\MaskMoney;
 
     <?= $form->field($model, 'cotacao_moeda_estrangeira')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
+    <br/>
+    
+    <h4> Termo de Outorga </h4>
+
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;"> 
+    
     <?= $form->field($model, 'numero_fapeam_outorga', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
