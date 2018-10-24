@@ -15,7 +15,7 @@ use yii\widgets\MaskMoney;
       'id' => 'projeto'
     ]); ?>
 
-    <h4> Identificação </h4>
+    <h4 style="font-family: helvetica neue"><strong> Identificação </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
@@ -37,7 +37,7 @@ use yii\widgets\MaskMoney;
 
     <br/>
     
-    <h4> Termo de Outorga </h4>
+    <h4 style="font-family: helvetica neue"><strong> Termo de Outorga </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;"> 
     
