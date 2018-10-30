@@ -46,6 +46,12 @@
                     'url' => ['termo-aditivo/index'],
                     'visible' => (Yii::$app->user->identity->checarAcesso('administrador') || Yii::$app->user->identity->checarAcesso('secretaria')),
                 ],
+                [
+                    'label' => 'Relatório Prestação',
+                    'icon' => 'fa fa-file-excel',
+                    'url' => ['relatorio-prestacao/index'],
+                    'visible' => (Yii::$app->user->identity->checarAcesso('administrador') || Yii::$app->user->identity->checarAcesso('secretaria')),
+                ],
             ]
         ]) ?>
     </section>
