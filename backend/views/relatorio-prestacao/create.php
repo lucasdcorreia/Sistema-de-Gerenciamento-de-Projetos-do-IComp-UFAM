@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\RelatorioPrestacao */
 
-$this->title = 'Create Relatorio Prestacao';
-$this->params['breadcrumbs'][] = ['label' => 'Relatorio Prestacaos', 'url' => ['index']];
+$this->title = 'Criar Relatório Prestação';
+$this->params['breadcrumbs'][] = ['label' => 'Relatório Prestacões', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="relatorio-prestacao-create">

@@ -52,7 +52,7 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
             'data_prevista' => 'Data Prevista',
             'data_enviada' => 'Data Enviada',
             'tipo' => 'Tipo',
-            'situacao' => 'Situacao',
+            'situacao' => 'Situação',
             'tipo_anexo' => 'Tipo Anexo',
             'id_projeto' => 'Id Projeto',
         ];
