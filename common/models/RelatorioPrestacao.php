@@ -74,6 +74,19 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
         return false;
       }
 
+      public function afterFind(){
+        if($this->data_prevista != NULL){
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->data_prevista);
+          $this->data_prevista = $myDateTime->format('d/m/Y');
+        }
+        if($this->data_enviada != NULL){
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->data_enviada);
+          $this->data_enviada = $myDateTime->format('d/m/Y');
+        }
+        parent::afterFind();
+        return true;
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */
