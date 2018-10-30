@@ -1,0 +1,30 @@
+{
+    "name": "dbfernandes/yii2-icomp-toggle",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Alekseev",
+            "email": "mail@alexeevdv.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "bower-asset/bootstrap-toggle": "^2.2"
+    },
+    "require-dev": {
+        "yiisoft/yii2-coding-standards": "^2.0",
+        "codeception/codeception": "^2.3"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "alexeevdv\\bootstrap\\": "src"
+        }
+    }
+}
