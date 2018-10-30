@@ -65,10 +65,8 @@ class TermoAditivo extends \yii\db\ActiveRecord
             }
             return true;
           }else{
-          //}else{
             return false;
           }
-          //}
         }
     }
 

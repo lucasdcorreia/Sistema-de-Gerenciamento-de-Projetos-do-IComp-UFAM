@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use DateTime;
 
 /**
  * This is the model class for table "relatorio_prestacao".
@@ -56,6 +57,22 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
             'id_projeto' => 'Id Projeto',
         ];
     }
+
+    public function beforeSave($insert){
+        if(parent::beforeSave($insert)){
+          //if($this->isNewRecord){
+            if($this->data_prevista != NULL){
+              $myDateTime = DateTime::createFromFormat('d/m/Y', $this->data_prevista);
+              $this->data_prevista = $myDateTime->format('Y-m-d 00:00:00');
+            }
+            if($this->data_enviada != NULL){
+              $myDateTime = DateTime::createFromFormat('d/m/Y', $this->data_enviada);
+              $this->data_enviada = $myDateTime->format('Y-m-d 00:00:00');
+            }
+            return true;
+        }
+        return false;
+      }
 
     /**
      * @return \yii\db\ActiveQuery
