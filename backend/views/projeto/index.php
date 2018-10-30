@@ -27,15 +27,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'timeZone' => 'UTC',
       ],*/
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn', 'header' => 'Numero'],
+            ['class' => 'yii\grid\SerialColumn', 'header' => 'Número'],
 
+            'titulo_projeto',
             'num_processo',
             'inicio_previsto',//:datetime',
             'termino',//:datetime',
             'nome_coordenador',
             'duracao',
             //'edital',
-            //'titulo_projeto',
             //'num_protocolo',
             //'cotacao_moeda_estrangeira',
             //'numero_fapeam_outorga',

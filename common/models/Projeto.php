@@ -133,7 +133,7 @@ class Projeto extends \yii\db\ActiveRecord
             'num_processo' => 'Número do Processo',
             'inicio_previsto' => 'Início Previsto',
             'termino' => 'Término',
-            'nome_coordenador' => 'Nome do Coordenador',
+            'nome_coordenador' => 'Coordenador',
             'edital' => 'Edital',
             'titulo_projeto' => 'Título do Projeto',
             'num_protocolo' => 'Número do Protocolo',
