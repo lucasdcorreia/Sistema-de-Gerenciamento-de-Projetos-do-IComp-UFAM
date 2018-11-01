@@ -54,7 +54,7 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
             'tipo' => 'Tipo',
             'situacao' => 'Situação',
             'tipo_anexo' => 'Tipo Anexo',
-            'id_projeto' => 'Id Projeto',
+            'id_projeto' => 'Projeto',
         ];
     }
 
