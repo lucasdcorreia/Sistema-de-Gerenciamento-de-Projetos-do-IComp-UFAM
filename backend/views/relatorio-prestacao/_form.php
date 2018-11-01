@@ -26,7 +26,7 @@ use yii\widgets\MaskedInput;
     <?= $form->field($model, 'id_projeto')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Adicionar', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
