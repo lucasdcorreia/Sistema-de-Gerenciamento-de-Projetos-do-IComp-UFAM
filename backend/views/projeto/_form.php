@@ -3,10 +3,15 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\widgets\MaskMoney;
+//use yii\common\models\TermoAditivo;
+
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Projeto */
 /* @var $form yii\widgets\ActiveForm */
+
+$modelTermoAditivo = new common\models\TermoAditivo;
+
 ?>
 
 <div class="projeto-form">
@@ -44,6 +49,18 @@ use yii\widgets\MaskMoney;
     <?= $form->field($model, 'numero_fapeam_outorga', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
+
+    <br/>
+
+    <h4 style="font-family: helvetica neue"><strong> Termos Aditivos </strong></h4>
+
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;"> 
+
+    <?= $form->field($modelTermoAditivo, 'numero_do_termo')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($modelTermoAditivo, 'motivo')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($modelTermoAditivo, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <div class="form-group" style="text-align: right">
         <?= Html::a('Cancelar', ['projeto/index'], ['class'=>'btn btn-primary']) ?>
