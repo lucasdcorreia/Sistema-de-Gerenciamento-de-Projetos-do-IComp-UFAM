@@ -68,6 +68,15 @@ class ProjetoController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
+            
+
+            // insercao de termo aditivo
+            $connection = Yii::$app->getDb();
+            $sql = "INSERT INTO termo_aditivo
+    
+                VALUES (NULL, 000000000, 'GAMBIARRA 2', NULL, ".$model->id.");";
+            $connection->createCommand($sql)->execute();
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
