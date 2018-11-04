@@ -29,6 +29,11 @@ class Projeto extends \yii\db\ActiveRecord
 {
     private $duracao;
     /**
+     * @var EditalFile
+     */
+    public $editalFile;
+
+    /**
      * {@inheritdoc}
      */
     public static function tableName()
@@ -47,7 +52,18 @@ class Projeto extends \yii\db\ActiveRecord
             [['num_processo', 'num_protocolo'], 'string', 'max' => 100],
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
             [['duracao'], 'safe'],
+            [['editalFile'], 'file', 'skipOnEmpty' => true],
         ];
+    }
+
+    public function upload()
+    {
+        if ($this->validate()) {
+            $this->editalFile->saveAs(\Yii::getAlias('@backend/../uploads/') . $this->id . $this->edital . '.' . $this->editalFile->extension);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public function beforeSave($insert){

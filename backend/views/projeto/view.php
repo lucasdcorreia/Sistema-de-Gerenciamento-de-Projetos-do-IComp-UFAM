@@ -37,7 +37,12 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
         'attributes' => [
             'num_processo',
             'num_protocolo',
-            'edital',
+            [
+              'attribute' => 'edital',
+              'label' => 'Edital',
+              'format' => 'raw',
+              'value' => Html::a( $model->edital!='' ? $model->edital : 'Nome não definido' , ['download', 'id' => $model->id] ),
+            ],
             'titulo_projeto',
             'nome_coordenador',
             'inicio_previsto',//:datetime',

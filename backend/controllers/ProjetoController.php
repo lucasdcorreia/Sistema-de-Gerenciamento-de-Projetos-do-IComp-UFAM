@@ -6,8 +6,10 @@ use Yii;
 use common\models\Projeto;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
+use yii\web\UploadedFile;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+
 
 /**
  * ProjetoController implements the CRUD actions for Projeto model.
@@ -67,13 +69,22 @@ class ProjetoController extends Controller
         $model = new Projeto();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
+            if($model->editalFile){
+              if ($model->upload()) {
+                // file is uploaded successfully
+              }else{
+                //error message
+              }
+            }
+
             $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
-            
+
 
             // insercao de termo aditivo
             $connection = Yii::$app->getDb();
             $sql = "INSERT INTO termo_aditivo
-    
+
                 VALUES (NULL, 000000000, 'GAMBIARRA 2', NULL, ".$model->id.");";
             $connection->createCommand($sql)->execute();
 
@@ -97,6 +108,14 @@ class ProjetoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
+            if($model->editalFile){
+              if ($model->upload()) {
+                // file is uploaded successfully
+              }else{
+                $this->mensagens('error', 'Upload', 'erro no upload do arquivo');
+              }
+            }
             $this->mensagens('success', 'Projeto alterado', 'Projeto alterado com sucesso.');
             return $this->redirect(['view', 'id' => $model->id]);
         }
@@ -105,6 +124,31 @@ class ProjetoController extends Controller
             'model' => $model,
         ]);
     }
+
+    public function actionDownload($id){
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . $model->edital . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          Yii::$app->response->xSendFile($file);
+          $this->mensagens('success', 'Download', $path . $file);
+        }else {
+          $this->mensagens('error', 'Edital', 'Arquivo não encontrado.');
+        }
+      }
+
+      return $this->redirect(['view', 'id' => $model->id]);
+    }
+
+
+
 
     /**
      * Deletes an existing Projeto model.

@@ -29,6 +29,7 @@ $modelTermoAditivo = new common\models\TermoAditivo;
     <?= $form->field($model, 'num_protocolo', ['options' => ['class' => 'col-md-6 col-right']])->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'edital')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'editalFile')->fileInput() ?>
 
     <?= $form->field($model, 'titulo_projeto')->textInput(['maxlength' => true]) ?>
 
@@ -41,11 +42,11 @@ $modelTermoAditivo = new common\models\TermoAditivo;
     <?= $form->field($model, 'cotacao_moeda_estrangeira')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <br/>
-    
+
     <h4 style="font-family: helvetica neue"><strong> Termo de Outorga </strong></h4>
 
-    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;"> 
-    
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
+
     <?= $form->field($model, 'numero_fapeam_outorga', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
@@ -54,7 +55,7 @@ $modelTermoAditivo = new common\models\TermoAditivo;
 
     <h4 style="font-family: helvetica neue"><strong> Termos Aditivos </strong></h4>
 
-    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;"> 
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
     <?= $form->field($modelTermoAditivo, 'numero_do_termo')->textInput(['maxlength' => true]) ?>
 
