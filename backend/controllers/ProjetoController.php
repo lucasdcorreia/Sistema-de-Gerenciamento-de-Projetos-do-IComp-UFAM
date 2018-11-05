@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\Projeto;
 use common\models\TermoAditivo;
+use common\models\RelatorioPrestacao;
 use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
@@ -70,6 +71,8 @@ class ProjetoController extends Controller
     {
         $model = new Projeto();
         $modelTermoAditivo = new TermoAditivo();
+        $modelRelatorioPrestacao = new RelatorioPrestacao();
+
         $projetos = Projeto::find()->all();
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
         if ($model->load(Yii::$app->request->post()) && $modelTermoAditivo->load(Yii::$app->request->post()) && $model->save() && $modelTermoAditivo->save()) {
@@ -98,6 +101,7 @@ class ProjetoController extends Controller
         return $this->render('create', [
             'model' => $model,
             'modelTermoAditivo' => $modelTermoAditivo,
+            'modelRelatorioPrestacao' => $modelRelatorioPrestacao,
             'array_projetos' => $array_projetos,
         ]);
     }
