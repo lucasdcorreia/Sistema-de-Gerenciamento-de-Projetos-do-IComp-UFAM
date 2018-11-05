@@ -69,9 +69,37 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
             'tipo',
             'situacao',
             'id_projeto',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'buttons' => [
+                    'view' => function ($url, $model) {
+                        return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                    'title' => Yii::t('app', 'lead-view'),
+                        ]);
+                    },
+                ],
+                'urlCreator' => function ($action, $model, $key, $index) {
+                    if ($action === 'view') {
+                        $url ='index.php?r=relatorio-prestacao/view&id='.$model->id;
+                        return $url;
+                    }
+        
+                    if ($action === 'update') {
+                        $url ='index.php?r=relatorio-prestacao/update&id='.$model->id;
+                        return $url;
+                    }
+                    if ($action === 'delete') {
+                        $url ='index.php?r=relatorio-prestacao/delete&id='.$model->id;
+                        return $url;
+                    }
+        
+                  }
+            ]   
         ],
     ]); ?>
+
+    <p>
+        <?= Html::a('Adicionar relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-primary']) ?>
+    </p>
 
 </div>
