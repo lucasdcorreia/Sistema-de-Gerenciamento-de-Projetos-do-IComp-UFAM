@@ -4,7 +4,6 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Projeto;
-use common\models\TermoAditivo;
 use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
@@ -69,10 +68,7 @@ class ProjetoController extends Controller
     public function actionCreate()
     {
         $model = new Projeto();
-        $modelTermoAditivo = new TermoAditivo();
-        $projetos = Projeto::find()->all();
-        $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
-        if ($model->load(Yii::$app->request->post()) && $modelTermoAditivo->load(Yii::$app->request->post()) && $model->save() && $modelTermoAditivo->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
             if($model->editalFile){
               if ($model->upload()) {
@@ -83,22 +79,11 @@ class ProjetoController extends Controller
             }
 
             $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
-
-/*
-            // insercao de termo aditivo
-            $connection = Yii::$app->getDb();
-            $sql = "INSERT INTO termo_aditivo
-
-                VALUES (NULL, 000000000, 'GAMBIARRA 2', NULL, ".$model->id.");";
-            $connection->createCommand($sql)->execute();
-*/
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
             'model' => $model,
-            'modelTermoAditivo' => $modelTermoAditivo,
-            'array_projetos' => $array_projetos,
         ]);
     }
 
