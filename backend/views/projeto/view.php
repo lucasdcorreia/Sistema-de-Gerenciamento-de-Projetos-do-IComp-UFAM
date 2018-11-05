@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Projeto */
@@ -46,12 +47,31 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
             'titulo_projeto',
             'nome_coordenador',
             'inicio_previsto',//:datetime',
-            'termino',//:datetime',
+            'termino',
             'cotacao_moeda_estrangeira',
             'numero_fapeam_outorga',
             'publicacao_diario_oficial',//:datetime',
             'duracao',
         ],
     ]) ?>
+
+    <h4 style="font-family: helvetica neue"><strong> Relatórios técnicos </strong></h4>
+
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn', 'header' => 'Número'],
+
+            'data_prevista',
+            'data_enviada',
+            'tipo',
+            'situacao',
+            'id_projeto',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
 
 </div>
