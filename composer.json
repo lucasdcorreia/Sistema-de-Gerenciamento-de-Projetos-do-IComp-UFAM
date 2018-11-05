@@ -35,7 +35,7 @@
 		"yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-debug": "^2.0",
         "insolita/yii2-iconpicker": "3.0",
-        "dbfernandes/yii2-icomp-toggle": "@dev",
+        "dbfernandes/yii2-icomp-toggle": "dev-master",
         "mpdf/mpdf": "7.0",
         "phpoffice/phpspreadsheet":"*"
     },

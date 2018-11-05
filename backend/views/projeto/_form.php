@@ -8,6 +8,7 @@ use yii\widgets\MaskMoney;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Projeto */
+/* @var $model common\models\TermoAditivo */
 /* @var $form yii\widgets\ActiveForm */
 
 $modelTermoAditivo = new common\models\TermoAditivo;

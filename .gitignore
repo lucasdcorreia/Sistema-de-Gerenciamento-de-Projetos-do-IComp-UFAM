@@ -5,3 +5,4 @@
 /numeros/web/assets/
 /vendor/*
 .idea/*
+/composer.lock
