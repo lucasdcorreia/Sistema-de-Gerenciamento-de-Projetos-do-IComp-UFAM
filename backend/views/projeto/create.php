@@ -20,10 +20,4 @@ $this->params['breadcrumbs'][] = $this->title;
         ]
     ) ?>
 
-    <?= $this->render(
-        '_form_relatorio_tecnico.php', [
-        'modelRelatorioPrestacao' => $modelRelatorioPrestacao,
-        ]
-    ) ?>
-
 </div>
