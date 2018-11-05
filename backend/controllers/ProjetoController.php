@@ -138,10 +138,13 @@ class ProjetoController extends Controller
 
         if (file_exists($file)) {
           Yii::$app->response->sendFile($file)->send();
-          $this->mensagens('success', 'Download', $path . $file);
+          $this->mensagens('success', 'Download', "Download bem sucedido!");
+
         }else {
           $this->mensagens('error', 'Edital', 'Arquivo não encontrado.');
         }
+      }else {
+        $this->mensagens('error', 'Edital', 'Arquivo não encontrado.');
       }
 
       $this->redirect(['view', 'id' => $model->id]);
