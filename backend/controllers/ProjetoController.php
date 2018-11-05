@@ -4,6 +4,9 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Projeto;
+use common\models\TermoAditivo;
+use common\models\RelatorioPrestacao;
+use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\UploadedFile;
@@ -67,7 +70,7 @@ class ProjetoController extends Controller
     public function actionCreate()
     {
         $model = new Projeto();
-
+       
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
             if($model->editalFile){
@@ -80,19 +83,12 @@ class ProjetoController extends Controller
 
             $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
 
-
-            // insercao de termo aditivo
-            $connection = Yii::$app->getDb();
-            $sql = "INSERT INTO termo_aditivo
-
-                VALUES (NULL, 000000000, 'GAMBIARRA 2', NULL, ".$model->id.");";
-            $connection->createCommand($sql)->execute();
-
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
             'model' => $model,
+            
         ]);
     }
 

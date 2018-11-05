@@ -27,13 +27,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'numero_do_termo',
             'motivo:ntext',
             'vigencia',
-            [
+/*          [
                 'attribute' => 'id_projeto',
                 'value' => function ($data) {
                     return Projeto::findOne($data->id_projeto)->titulo_projeto;
                 },
             ],
-
+*/
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

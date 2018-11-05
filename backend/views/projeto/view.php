@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                 'method' => 'post',
             ],
         ]) ?>
-        <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-primary']) ?>
+        <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
     </p>
 
     <?= DetailView::widget([

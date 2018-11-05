@@ -8,9 +8,10 @@ use yii\widgets\MaskMoney;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Projeto */
+/* @var $model common\models\TermoAditivo */
 /* @var $form yii\widgets\ActiveForm */
 
-$modelTermoAditivo = new common\models\TermoAditivo;
+//$modelTermoAditivo = new common\models\TermoAditivo;
 
 ?>
 
@@ -51,20 +52,8 @@ $modelTermoAditivo = new common\models\TermoAditivo;
 
     <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
-    <br/>
-
-    <h4 style="font-family: helvetica neue"><strong> Termos Aditivos </strong></h4>
-
-    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
-
-    <?= $form->field($modelTermoAditivo, 'numero_do_termo')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($modelTermoAditivo, 'motivo')->textarea(['rows' => 6]) ?>
-
-    <?= $form->field($modelTermoAditivo, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
-
     <div class="form-group" style="text-align: right">
-        <?= Html::a('Cancelar', ['projeto/index'], ['class'=>'btn btn-primary']) ?>
+        <?= Html::a('Cancelar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 
