@@ -114,7 +114,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Adicionar termo aditivo', ['termo-aditivo/create'], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Novo termo aditivo', ['termo-aditivo/create'], ['class' => 'btn btn-primary']) ?>
     </p>
 
     <h4 style="font-family: helvetica neue"><strong> Relatórios técnicos </strong></h4>
@@ -171,7 +171,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Adicionar relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Novo relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-primary']) ?>
     </p>
 
 </div>
