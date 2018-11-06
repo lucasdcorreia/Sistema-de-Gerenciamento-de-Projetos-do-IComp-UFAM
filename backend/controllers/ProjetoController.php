@@ -61,9 +61,14 @@ class ProjetoController extends Controller
             'query' => RelatorioPrestacao::find()->where([ 'id_projeto' => $id ]),
         ]);
 
+        $dataProviderTermoAditivo = new ActiveDataProvider([
+            'query' => TermoAditivo::find()->where([ 'id_projeto' => $id ]),
+        ]);
+
         return $this->render('view', [
             'model' => $this->findModel($id),
             'dataProvider' => $dataProvider,
+            'dataProviderTermoAditivo' => $dataProviderTermoAditivo,
         ]);
     }
 
