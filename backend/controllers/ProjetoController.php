@@ -92,6 +92,28 @@ class ProjetoController extends Controller
         ]);
     }
 
+    public function actionDeleteanexo($id)
+    {
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          unlink($file);
+          $this->mensagens('success', 'Anexo', 'Edital excluido com sucesso.');
+        }else{
+          $this->mensagens('error', 'Anexo', 'Nenhum edital para excluir.');
+        }
+      }else $this->mensagens('error', 'Anexo', 'Nenhum edital para excluir.');
+      return $this->redirect(['view', 'id' => $model->id]);
+    }
+
     /**
      * Updates an existing Projeto model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -144,7 +166,7 @@ class ProjetoController extends Controller
       $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
 
       $files = \yii\helpers\FileHelper::findFiles($path, [
-        'only' => [$model->id . $model->edital . '.*'],
+        'only' => [$model->id . '.*'],
       ]);
       if (isset($files[0])) {
         $file = $files[0];
