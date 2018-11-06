@@ -70,7 +70,7 @@ class ProjetoController extends Controller
     public function actionCreate()
     {
         $model = new Projeto();
-       
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
             if($model->editalFile){
@@ -88,7 +88,7 @@ class ProjetoController extends Controller
 
         return $this->render('create', [
             'model' => $model,
-            
+
         ]);
     }
 
@@ -105,7 +105,24 @@ class ProjetoController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
+
+
+
             if($model->editalFile){
+
+              $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+
+              $files = \yii\helpers\FileHelper::findFiles($path, [
+                'only' => [$model->id . '.*'],
+              ]);
+              if (isset($files[0])) {
+                $file = $files[0];
+
+                if (file_exists($file)) {
+                  unlink($file);
+                }
+              }
+
               if ($model->upload()) {
                 // file is uploaded successfully
               }else{
@@ -124,7 +141,7 @@ class ProjetoController extends Controller
     public function actionDownload($id){
       $model = $this->findModel($id);
 
-      $path = \Yii::getAlias('@backend/../uploads/');
+      $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
 
       $files = \yii\helpers\FileHelper::findFiles($path, [
         'only' => [$model->id . $model->edital . '.*'],

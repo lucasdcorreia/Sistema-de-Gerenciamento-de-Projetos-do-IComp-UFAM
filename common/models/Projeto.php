@@ -59,7 +59,7 @@ class Projeto extends \yii\db\ActiveRecord
     public function upload()
     {
         if ($this->validate()) {
-            $this->editalFile->saveAs(\Yii::getAlias('@backend/../uploads/') . $this->id . $this->edital . '.' . $this->editalFile->extension);
+            $this->editalFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/edital/') . $this->id . '.' . $this->editalFile->extension);
             return true;
         } else {
             return false;
