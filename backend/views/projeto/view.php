@@ -55,6 +55,34 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
         ],
     ]) ?>
 
+    <h4 style="font-family: helvetica neue"><strong> Termos Aditivos </strong></h4>
+
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'id',
+            'numero_do_termo',
+            'motivo:ntext',
+            'vigencia',
+/*          [
+                'attribute' => 'id_projeto',
+                'value' => function ($data) {
+                    return Projeto::findOne($data->id_projeto)->titulo_projeto;
+                },
+            ],
+*/
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
+
+    <p>
+        <?= Html::a('Adicionar termo aditivo', ['termo-aditivo/create'], ['class' => 'btn btn-primary']) ?>
+    </p>
+
     <h4 style="font-family: helvetica neue"><strong> Relatórios técnicos </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
