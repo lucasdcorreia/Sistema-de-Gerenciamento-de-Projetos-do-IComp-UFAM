@@ -56,7 +56,7 @@ class ProjetoController extends Controller
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id)
-    {   
+    {
         $dataProvider = new ActiveDataProvider([
             'query' => RelatorioPrestacao::find()->where([ 'id_projeto' => $id ]),
         ]);
@@ -84,7 +84,16 @@ class ProjetoController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
             if($model->editalFile){
-              if ($model->upload()) {
+              if ($model->upload('edital')) {
+                // file is uploaded successfully
+              }else{
+                //error message
+              }
+            }
+
+            $model->tituloProjetoFile = UploadedFile::getInstance($model, 'tituloProjetoFile');
+            if($model->tituloProjetoFile){
+              if ($model->upload('titulo_projeto')) {
                 // file is uploaded successfully
               }else{
                 //error message
@@ -102,7 +111,7 @@ class ProjetoController extends Controller
         ]);
     }
 
-    public function actionDeleteanexo($id)
+    public function actionDeleteedital($id)
     {
       $model = $this->findModel($id);
 
@@ -124,6 +133,28 @@ class ProjetoController extends Controller
       return $this->redirect(['view', 'id' => $model->id]);
     }
 
+    public function actionDeletetitulo($id)
+    {
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          unlink($file);
+          $this->mensagens('success', 'Anexo', 'Edital excluido com sucesso.');
+        }else{
+          $this->mensagens('error', 'Anexo', 'Nenhum arquivo de projeto para excluir.');
+        }
+      }else $this->mensagens('error', 'Anexo', 'Nenhum arquivo de projeto para excluir.');
+      return $this->redirect(['view', 'id' => $model->id]);
+    }
+
     /**
      * Updates an existing Projeto model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -137,8 +168,6 @@ class ProjetoController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
-
-
 
             if($model->editalFile){
 
@@ -155,12 +184,38 @@ class ProjetoController extends Controller
                 }
               }
 
-              if ($model->upload()) {
+              if ($model->upload('edital')) {
                 // file is uploaded successfully
               }else{
                 $this->mensagens('error', 'Upload', 'erro no upload do arquivo');
               }
             }
+
+            $model->tituloProjetoFile = UploadedFile::getInstance($model, 'tituloProjetoFile');
+
+            if($model->tituloProjetoFile){
+
+              $path = \Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/');
+
+              $files = \yii\helpers\FileHelper::findFiles($path, [
+                'only' => [$model->id . '.*'],
+              ]);
+              if (isset($files[0])) {
+                $file = $files[0];
+
+                if (file_exists($file)) {
+                  unlink($file);
+                }
+              }
+
+              if ($model->upload('titulo_projeto')) {
+                // file is uploaded successfully
+              }else{
+                $this->mensagens('error', 'Upload', 'erro no upload do arquivo');
+              }
+            }
+
+
             $this->mensagens('success', 'Projeto alterado', 'Projeto alterado com sucesso.');
             return $this->redirect(['view', 'id' => $model->id]);
         }
@@ -170,10 +225,35 @@ class ProjetoController extends Controller
         ]);
     }
 
-    public function actionDownload($id){
+    public function actionDownloadedital($id){
       $model = $this->findModel($id);
 
       $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          Yii::$app->response->sendFile($file)->send();
+          $this->mensagens('success', 'Download', "Download bem sucedido!");
+
+        }else {
+          $this->mensagens('error', 'Edital', 'Arquivo não encontrado.');
+        }
+      }else {
+        $this->mensagens('error', 'Edital', 'Arquivo não encontrado.');
+      }
+
+      $this->redirect(['view', 'id' => $model->id]);
+    }
+
+    public function actionDownloadtitulo($id){
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/');
 
       $files = \yii\helpers\FileHelper::findFiles($path, [
         'only' => [$model->id . '.*'],

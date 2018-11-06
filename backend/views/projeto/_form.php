@@ -17,6 +17,10 @@ $this->registerCss("
   #projeto-editalfile {
     opacity: 0;
   }
+
+  #projeto-tituloprojetofile {
+    opacity: 0;
+  }
 ");
 
 $this->registerJs("
@@ -26,6 +30,15 @@ $this->registerJs("
   })
 
   $('#projeto-editalfile').change(function(){
+     $('#val').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
+  })
+
+  $('#select-file1').click(function(){
+    console.log('teste');
+     $('#projeto-tituloprojetofile').trigger('click');
+  })
+
+  $('#projeto-tituloprojetofile').change(function(){
      $('#val').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
   })
 ");
@@ -72,7 +85,31 @@ $this->registerJs("
 
     <br>
 
-    <?= $form->field($model, 'titulo_projeto')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'titulo_projeto', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'tituloProjetoFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
+    <div>
+      <input type="button" id='select-file1' value="Selecione o Arquivo"></input>
+      <span id='val'><?php
+        $path = \Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            echo basename($file);
+          }else{
+            echo 'Escolha um arquivo';
+          }
+        }
+      ?></span>
+    </div>
+
+    <br>
+
+
 
     <?= $form->field($model, 'nome_coordenador')->textInput(['maxlength' => true]) ?>
 

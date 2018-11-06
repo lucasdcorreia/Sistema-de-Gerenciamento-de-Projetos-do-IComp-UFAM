@@ -42,6 +42,22 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
           }
         }
       }
+      function existeTituloProjeto($model){
+        $path = \Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
     ?>
 
     <?= DetailView::widget([
@@ -60,9 +76,14 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'attribute' => 'edital',
               'label' => 'Edital',
               'format' => 'raw',
-              'value' => Html::a(($model->edital!='' ? $model->edital : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['download', 'id' => $model->id] ) . Html::a(existeEdital($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deleteanexo', 'id' => $model->id] ),
+              'value' => Html::a(($model->edital!='' ? $model->edital : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['downloadedital', 'id' => $model->id] ) . Html::a(existeEdital($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deleteedital', 'id' => $model->id] ),
             ],
-            'titulo_projeto',
+            [
+              'attribute' => 'titulo_projeto',
+              'label' => 'Titulo do projeto',
+              'format' => 'raw',
+              'value' => Html::a(($model->titulo_projeto!='' ? $model->titulo_projeto : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['downloadtitulo', 'id' => $model->id] ) . Html::a(existeTituloProjeto($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deletetitulo', 'id' => $model->id] ),
+            ],
             'nome_coordenador',
             'inicio_previsto',//:datetime',
             'termino',
