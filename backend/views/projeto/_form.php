@@ -48,8 +48,8 @@ $this->registerJs("
 
     <?= $form->field($model, 'num_protocolo', ['options' => ['class' => 'col-md-6 col-right']])->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'edital')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'editalFile')->fileInput() ?>
+    <?= $form->field($model, 'edital', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'editalFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>
       <input type="button" id='select-file' value="Selecione o Arquivo"></input>
       <span id='val'><?php
