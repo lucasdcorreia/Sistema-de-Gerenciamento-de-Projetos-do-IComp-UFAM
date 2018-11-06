@@ -74,7 +74,17 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
-                                    'title' => Yii::t('app', 'lead-view'),
+                                    'title' => Yii::t('app', 'view'),
+                        ]);
+                    },
+                    'update' => function ($url, $model) {
+                        return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                    'title' => Yii::t('app', 'update'),
+                        ]);
+                    },
+                    'delete' => function ($url, $model) {
+                        return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                    'title' => Yii::t('app', 'delete'),
                         ]);
                     },
                 ],
@@ -93,7 +103,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                         return $url;
                     }
         
-                  }
+                }
             ]   
         ],
     ]); ?>

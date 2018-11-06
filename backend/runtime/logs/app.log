@@ -7232,3 +7232,2205 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-11-05 17:04:45 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:78
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:97
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:04:45 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60501'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541451885.52
+    'REQUEST_TIME' => 1541451885
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:05:42 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:78
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:102
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:05:42 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541451942.17
+    'REQUEST_TIME' => 1541451942
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:07:07 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][Error] Error: Class 'Url' not found in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(227): call_user_func(Object(Closure), 'index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#2 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(231): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}')
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(common\models\RelatorioPrestacao), 6, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\RelatorioPrestacao), 6, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\RelatorioPrestacao), 6, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php(103): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ProjetoController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ProjetoController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php(66): yii\base\Controller->render('view', Array)
+#21 [internal function]: backend\controllers\ProjetoController->actionView('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/view', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-11-05 17:07:07 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60540'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452027.61
+    'REQUEST_TIME' => 1541452027
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:07:27 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][Error] Error: Class 'Url' not found in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(227): call_user_func(Object(Closure), 'index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#2 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(231): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}')
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(common\models\RelatorioPrestacao), 6, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\RelatorioPrestacao), 6, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\RelatorioPrestacao), 6, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php(103): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ProjetoController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ProjetoController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php(66): yii\base\Controller->render('view', Array)
+#21 [internal function]: backend\controllers\ProjetoController->actionView('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/view', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-11-05 17:07:27 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60544'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452047.05
+    'REQUEST_TIME' => 1541452047
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:08:02 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][Error] Error: Class 'Url' not found in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(227): call_user_func(Object(Closure), 'index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#2 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(231): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}')
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(common\models\RelatorioPrestacao), 6, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\RelatorioPrestacao), 6, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\RelatorioPrestacao), 6, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php(103): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ProjetoController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ProjetoController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php(66): yii\base\Controller->render('view', Array)
+#21 [internal function]: backend\controllers\ProjetoController->actionView('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/view', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-11-05 17:08:02 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452082.77
+    'REQUEST_TIME' => 1541452082
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:09:19 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][Error] Error: Class 'Url' not found in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}('index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(227): call_user_func(Object(Closure), 'index.php?r=rel...', Object(common\models\RelatorioPrestacao), 6)
+#2 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/ActionColumn.php(231): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}')
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\ActionColumn->renderDataCellContent(Object(common\models\RelatorioPrestacao), 6, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\RelatorioPrestacao), 6, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\RelatorioPrestacao), 6, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php(104): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ProjetoController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ProjetoController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php(66): yii\base\Controller->render('view', Array)
+#21 [internal function]: backend\controllers\ProjetoController->actionView('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/view', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-11-05 17:09:19 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60559'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452158.99
+    'REQUEST_TIME' => 1541452158
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:09:56 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:78
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:102
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:09:56 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60570'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452196.56
+    'REQUEST_TIME' => 1541452196
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:10:00 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:78
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:102
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:10:00 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60570'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452200.59
+    'REQUEST_TIME' => 1541452200
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:10:13 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:101
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:10:13 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60577'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452213.82
+    'REQUEST_TIME' => 1541452213
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:11:00 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:11:00 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452260.09
+    'REQUEST_TIME' => 1541452260
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:11:02 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:11:02 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452262.54
+    'REQUEST_TIME' => 1541452262
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:11:40 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:11:40 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452300.52
+    'REQUEST_TIME' => 1541452300
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:11:42 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:11:42 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452302.17
+    'REQUEST_TIME' => 1541452302
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:11:57 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:11:57 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60618'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452317.2
+    'REQUEST_TIME' => 1541452317
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:12:21 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:12:21 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452341.47
+    'REQUEST_TIME' => 1541452341
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:12:27 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:12:27 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452347.8
+    'REQUEST_TIME' => 1541452347
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:12:33 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:12:33 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452353.32
+    'REQUEST_TIME' => 1541452353
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:12:34 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2018-11-05 17:12:34 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/delete'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=relatorio-prestacao/delete&id=6'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=relatorio-prestacao/delete&id=6'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452354.86
+    'REQUEST_TIME' => 1541452354
+    'argv' => [
+        0 => 'r=relatorio-prestacao/delete&id=6'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:13:19 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:13:18 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60643'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452398.96
+    'REQUEST_TIME' => 1541452398
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:13:21 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2018-11-05 17:13:21 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/delete'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60643'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=relatorio-prestacao/delete&id=7'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=relatorio-prestacao/delete&id=7'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452401.2
+    'REQUEST_TIME' => 1541452401
+    'argv' => [
+        0 => 'r=relatorio-prestacao/delete&id=7'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:13:23 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:13:23 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60643'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452403.61
+    'REQUEST_TIME' => 1541452403
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:13:24 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:13:24 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60643'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452404.62
+    'REQUEST_TIME' => 1541452404
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:13:50 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2018-11-05 17:13:50 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/delete'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60649'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=relatorio-prestacao/delete&id=7'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=relatorio-prestacao/delete&id=7'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452430.51
+    'REQUEST_TIME' => 1541452430
+    'argv' => [
+        0 => 'r=relatorio-prestacao/delete&id=7'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:14:06 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:14:06 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60650'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452446.83
+    'REQUEST_TIME' => 1541452446
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:14:15 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:14:15 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452455.35
+    'REQUEST_TIME' => 1541452455
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:14:19 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:14:19 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452459.75
+    'REQUEST_TIME' => 1541452459
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:14:24 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:14:23 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452463.9
+    'REQUEST_TIME' => 1541452463
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:14:30 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:14:30 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452470.87
+    'REQUEST_TIME' => 1541452470
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:15:34 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:15:34 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60677'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452534.42
+    'REQUEST_TIME' => 1541452534
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:15:41 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:15:41 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60677'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452541.68
+    'REQUEST_TIME' => 1541452541
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:15:45 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:15:44 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60677'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452544.95
+    'REQUEST_TIME' => 1541452544
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:15:49 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2018-11-05 17:15:49 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/delete'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60677'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=relatorio-prestacao/delete&id=6'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=relatorio-prestacao/delete&id=6'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452549.87
+    'REQUEST_TIME' => 1541452549
+    'argv' => [
+        0 => 'r=relatorio-prestacao/delete&id=6'
+    ]
+    'argc' => 1
+]
+2018-11-05 17:17:38 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:77
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:106
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:66
+2018-11-05 17:17:38 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=6381cd22dc120864548c3c8e38a979a970e6de63c86bbc724703295d2b93cdb5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22l2Tj40jf9Zo5xcn2gHaInwpER-NIu7BH%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '60709'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541452658.44
+    'REQUEST_TIME' => 1541452658
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
