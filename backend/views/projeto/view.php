@@ -25,6 +25,24 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
         ]) ?>
         <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
     </p>
+    <?php
+      function existeEdital($model){
+        $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
+    ?>
 
     <?= DetailView::widget([
         'model' => $model,
@@ -42,7 +60,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'attribute' => 'edital',
               'label' => 'Edital',
               'format' => 'raw',
-              'value' => ($model->edital!='' ? $model->edital : 'Nome não definido') . ' ' . Html::a('<i class="fas fa-paperclip" ></i>', ['download', 'id' => $model->id] )  . ' | ' . Html::a('<i class="fa fa-close" ></i> Excluir anexo', ['deleteanexo', 'id' => $model->id] ),
+              'value' => Html::a(($model->edital!='' ? $model->edital : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['download', 'id' => $model->id] ) . Html::a(existeEdital($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deleteanexo', 'id' => $model->id] ),
             ],
             'titulo_projeto',
             'nome_coordenador',
@@ -75,12 +93,47 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                 },
             ],
 */
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+            'buttons' => [
+                'view' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                'title' => Yii::t('app', 'view'),
+                    ]);
+                },
+                'update' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                'title' => Yii::t('app', 'update'),
+                    ]);
+                },
+                'delete' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                'title' => Yii::t('app', 'delete'),
+                                'data-method' => 'post'
+                    ]);
+                },
+            ],
+            'urlCreator' => function ($action, $model, $key, $index) {
+                if ($action === 'view') {
+                    $url ='index.php?r=termo-aditivo/view&id='.$model->id;
+                    return $url;
+                }
+
+                if ($action === 'update') {
+                    $url ='index.php?r=termo-aditivo/update&id='.$model->id;
+                    return $url;
+                }
+                if ($action === 'delete') {
+                    $url ='index.php?r=termo-aditivo/delete&id='.$model->id;
+                    return $url;
+                }
+
+            }
+            ]
         ],
     ]); ?>
 
     <p>
-        <?= Html::a('Adicionar termo aditivo', ['termo-aditivo/create'], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Novo termo aditivo', ['termo-aditivo/create'], ['class' => 'btn btn-primary']) ?>
     </p>
 
     <h4 style="font-family: helvetica neue"><strong> Relatórios técnicos </strong></h4>
@@ -112,6 +165,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                     'delete' => function ($url, $model) {
                         return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
                                     'title' => Yii::t('app', 'delete'),
+                                    'data-method' => 'post'
                         ]);
                     },
                 ],
@@ -120,7 +174,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                         $url ='index.php?r=relatorio-prestacao/view&id='.$model->id;
                         return $url;
                     }
-        
+
                     if ($action === 'update') {
                         $url ='index.php?r=relatorio-prestacao/update&id='.$model->id;
                         return $url;
@@ -129,14 +183,14 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                         $url ='index.php?r=relatorio-prestacao/delete&id='.$model->id;
                         return $url;
                     }
-        
+
                 }
-            ]   
+            ]
         ],
     ]); ?>
 
     <p>
-        <?= Html::a('Adicionar relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Novo relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-primary']) ?>
     </p>
 
 </div>

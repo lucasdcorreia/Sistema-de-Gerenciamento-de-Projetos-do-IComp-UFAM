@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Projeto */
 
-$this->title = 'Criar Projeto';
+$this->title = 'Novo projeto';
 $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

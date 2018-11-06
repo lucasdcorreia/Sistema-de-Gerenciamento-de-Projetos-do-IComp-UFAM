@@ -13,7 +13,26 @@ use yii\widgets\MaskMoney;
 
 //$modelTermoAditivo = new common\models\TermoAditivo;
 
+$this->registerCss("
+  #projeto-editalfile {
+    opacity: 0;
+  }
+");
+
+$this->registerJs("
+  $('#select-file').click(function(){
+    console.log('teste');
+     $('#projeto-editalfile').trigger('click');
+  })
+
+  $('#projeto-editalfile').change(function(){
+     $('#val').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
+  })
+");
+
 ?>
+
+
 
 <div class="projeto-form">
 
@@ -29,8 +48,29 @@ use yii\widgets\MaskMoney;
 
     <?= $form->field($model, 'num_protocolo', ['options' => ['class' => 'col-md-6 col-right']])->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'edital')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'editalFile')->fileInput() ?>
+    <?= $form->field($model, 'edital', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'editalFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
+    <div>
+      <input type="button" id='select-file' value="Selecione o Arquivo"></input>
+      <span id='val'><?php
+        $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            echo basename($file);
+          }else{
+            echo 'Escolha um arquivo';
+          }
+        }
+      ?></span>
+    </div>
+
+    <br>
 
     <?= $form->field($model, 'titulo_projeto')->textInput(['maxlength' => true]) ?>
 
