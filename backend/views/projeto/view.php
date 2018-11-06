@@ -25,6 +25,24 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
         ]) ?>
         <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
     </p>
+    <?php
+      function existeEdital($model){
+        $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
+    ?>
 
     <?= DetailView::widget([
         'model' => $model,
@@ -42,7 +60,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'attribute' => 'edital',
               'label' => 'Edital',
               'format' => 'raw',
-              'value' => ($model->edital!='' ? $model->edital : 'Nome não definido') . ' ' . Html::a('<i class="fas fa-paperclip" ></i>', ['download', 'id' => $model->id] )  . ' | ' . Html::a('<i class="fa fa-close" ></i> Excluir anexo', ['deleteanexo', 'id' => $model->id] ),
+              'value' => Html::a(($model->edital!='' ? $model->edital : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['download', 'id' => $model->id] ) . Html::a(existeEdital($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deleteanexo', 'id' => $model->id] ),
             ],
             'titulo_projeto',
             'nome_coordenador',
@@ -98,7 +116,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                     $url ='index.php?r=termo-aditivo/view&id='.$model->id;
                     return $url;
                 }
-    
+
                 if ($action === 'update') {
                     $url ='index.php?r=termo-aditivo/update&id='.$model->id;
                     return $url;
@@ -107,7 +125,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                     $url ='index.php?r=termo-aditivo/delete&id='.$model->id;
                     return $url;
                 }
-    
+
             }
             ]
         ],
@@ -155,7 +173,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                         $url ='index.php?r=relatorio-prestacao/view&id='.$model->id;
                         return $url;
                     }
-        
+
                     if ($action === 'update') {
                         $url ='index.php?r=relatorio-prestacao/update&id='.$model->id;
                         return $url;
@@ -164,9 +182,9 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                         $url ='index.php?r=relatorio-prestacao/delete&id='.$model->id;
                         return $url;
                     }
-        
+
                 }
-            ]   
+            ]
         ],
     ]); ?>
 
