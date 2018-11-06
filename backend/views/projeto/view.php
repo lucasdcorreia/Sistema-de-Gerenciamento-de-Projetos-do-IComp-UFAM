@@ -75,7 +75,41 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                 },
             ],
 */
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+            'buttons' => [
+                'view' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                'title' => Yii::t('app', 'view'),
+                    ]);
+                },
+                'update' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                'title' => Yii::t('app', 'update'),
+                    ]);
+                },
+                'delete' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                'title' => Yii::t('app', 'delete'),
+                    ]);
+                },
+            ],
+            'urlCreator' => function ($action, $model, $key, $index) {
+                if ($action === 'view') {
+                    $url ='index.php?r=termo-aditivo/view&id='.$model->id;
+                    return $url;
+                }
+    
+                if ($action === 'update') {
+                    $url ='index.php?r=termo-aditivo/update&id='.$model->id;
+                    return $url;
+                }
+                if ($action === 'delete') {
+                    $url ='index.php?r=termo-aditivo/delete&id='.$model->id;
+                    return $url;
+                }
+    
+            }
+            ]
         ],
     ]); ?>
 
