@@ -27,7 +27,7 @@ use yii\widgets\MaskedInput;
 
     <?= $form->field($model, 'tipo_anexo')->textInput() ?>
 
-    <?= $form->field($model, 'id_projeto')->textInput() ?>
+    <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
 
     <div class="form-group" style="text-align: right">
         <?= Html::a('Voltar', [''], ['class'=>'btn btn-default']) ?>
