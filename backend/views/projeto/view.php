@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                 'method' => 'post',
             ],
         ]) ?>
-        <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-primary']) ?>
+        <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
     </p>
 
     <?= DetailView::widget([
@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'attribute' => 'edital',
               'label' => 'Edital',
               'format' => 'raw',
-              'value' => Html::a( $model->edital!='' ? $model->edital : 'Nome não definido' , ['download', 'id' => $model->id] ),
+              'value' => ($model->edital!='' ? $model->edital : 'Nome não definido') . ' ' . Html::a('<i class="fas fa-paperclip" ></i>', ['download', 'id' => $model->id] )  . ' | ' . Html::a('<i class="fa fa-close" ></i> Excluir anexo', ['deleteanexo', 'id' => $model->id] ),
             ],
             'titulo_projeto',
             'nome_coordenador',
