@@ -57,7 +57,7 @@ class ProjetoController extends Controller
      */
     public function actionView($id)
     {   
-        $dataProvider = new ActiveDataProvider([
+        $dataProviderRelatorioPrestacao = new ActiveDataProvider([
             'query' => RelatorioPrestacao::find()->where([ 'id_projeto' => $id ]),
         ]);
 
@@ -67,7 +67,7 @@ class ProjetoController extends Controller
 
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'dataProvider' => $dataProvider,
+            'dataProviderRelatorioPrestacao' => $dataProviderRelatorioPrestacao,
             'dataProviderTermoAditivo' => $dataProviderTermoAditivo,
         ]);
     }
