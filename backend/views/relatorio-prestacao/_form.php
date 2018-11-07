@@ -30,7 +30,7 @@ use yii\widgets\MaskedInput;
     <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
 
     <div class="form-group" style="text-align: right">
-        <?= Html::a('Voltar', [''], ['class'=>'btn btn-default']) ?>
+        <?= Html::a('Cancelar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 

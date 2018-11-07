@@ -72,7 +72,7 @@ $this->registerJs("
 
 
     <div class="form-group" style="text-align: right">
-        <?= Html::a('Voltar', ['/projeto/view', 'id' => $model->id_projeto], ['class'=>'btn btn-default']) ?>
+        <?= Html::a('Cancelar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 
