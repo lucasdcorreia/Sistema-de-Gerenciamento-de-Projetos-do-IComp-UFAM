@@ -33,7 +33,6 @@ class TermoAditivo extends \yii\db\ActiveRecord
     {
         return [
             [['motivo'], 'string'],
-            [['vigencia'], 'safe'],
             [['vigencia'], 'date', 'format' => 'dd/mm/yyyy'],
             [['id_projeto'], 'integer'],
             [['numero_do_termo'], 'string', 'max' => 50],

@@ -64,14 +64,15 @@ class TermoAditivoController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($id)
     {
+
         $model = new TermoAditivo();
         $projetos = Projeto::find()->all();
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['/projeto/view', 'id' => $id]);
         }
 
         return $this->render('create', [
@@ -93,10 +94,11 @@ class TermoAditivoController extends Controller
         $projetos = Projeto::find()->all();
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
 
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
+            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+        }
         return $this->render('update', [
             'model' => $model,
             'array_projetos' => $array_projetos,
@@ -112,9 +114,10 @@ class TermoAditivoController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+        $termoAditivo = $this->findModel($id);
+        $idProjeto = $termoAditivo->id_projeto;
+        $termoAditivo->delete();
+        return $this->redirect(['/projeto/view', 'id' => $idProjeto]);
     }
 
     /**
@@ -132,4 +135,18 @@ class TermoAditivoController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+    protected function mensagens($tipo, $titulo, $mensagem){
+        Yii::$app->session->setFlash($tipo, [
+            'type' => $tipo,
+            'icon' => 'home',
+            'duration' => 5000,
+            'message' => $mensagem,
+            'title' => $titulo,
+            'positonY' => 'top',
+            'positonX' => 'center',
+            'showProgressbar' => true,
+        ]);
+    }
+
 }

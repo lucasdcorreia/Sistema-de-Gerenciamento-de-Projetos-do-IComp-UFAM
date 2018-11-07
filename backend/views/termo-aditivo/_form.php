@@ -27,7 +27,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
 
     <div class="form-group" style="text-align: right">
-        <?= Html::a('Voltar', [''], ['class'=>'btn btn-default']) ?>
+        <?= Html::a('Voltar', ['/projeto/view', 'id' => $model->id_projeto], ['class'=>'btn btn-default']) ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 
