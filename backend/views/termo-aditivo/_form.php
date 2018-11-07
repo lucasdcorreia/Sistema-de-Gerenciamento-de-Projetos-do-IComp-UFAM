@@ -6,6 +6,27 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model common\models\TermoAditivo */
 /* @var $form yii\widgets\ActiveForm */
+
+$this->registerCss("
+  #termoaditivo-termofile {
+    opacity: 0;
+  }
+");
+
+$this->registerJs("
+  $('#select-file').click(function(){
+    console.log('teste');
+     $('#termoaditivo-termofile').trigger('click');
+  })
+
+  $('#termoaditivo-termofile').change(function(){
+     $('#val').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
+  })
+");
+
+
+
+
 ?>
 
 <div class="termo-aditivo-form">
@@ -25,6 +46,30 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
+    <?= $form->field($model, 'termoFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
+    <div>
+      <input type="button" id='select-file' value="Selecione o Arquivo"></input>
+      <span id='val'><?php
+        $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            echo basename($file);
+          }else{
+            echo 'Escolha um arquivo';
+          }
+        }
+      ?></span>
+    </div>
+
+    <br>
+
+
 
     <div class="form-group" style="text-align: right">
         <?= Html::a('Voltar', ['/projeto/view', 'id' => $model->id_projeto], ['class'=>'btn btn-default']) ?>

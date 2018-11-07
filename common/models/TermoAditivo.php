@@ -18,6 +18,12 @@ use DateTime;
  */
 class TermoAditivo extends \yii\db\ActiveRecord
 {
+
+    /**
+     * @var termoFile
+     */
+    public $termoFile;
+
     /**
      * {@inheritdoc}
      */
@@ -37,7 +43,18 @@ class TermoAditivo extends \yii\db\ActiveRecord
             [['id_projeto'], 'integer'],
             [['numero_do_termo'], 'string', 'max' => 50],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
+            [['termoFile'], 'file', 'skipOnEmpty' => true],
         ];
+    }
+
+    public function upload()
+    {
+          if ($this->validate()) {
+              $this->termoFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/') . $this->id . '_' . $this->id_projeto . '.' . $this->termoFile->extension);
+              return true;
+          } else {
+              return false;
+          }
     }
 
     /**

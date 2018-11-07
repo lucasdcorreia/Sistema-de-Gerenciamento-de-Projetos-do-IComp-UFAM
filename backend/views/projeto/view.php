@@ -58,6 +58,23 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
           }
         }
       }
+
+      function existeTermo($model){
+        $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
     ?>
 
     <?= DetailView::widget([
@@ -107,6 +124,14 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
             'numero_do_termo',
             'motivo:ntext',
             'vigencia',
+            [
+              'attribute' => 'Anexo',
+              'label' => 'Anexo',
+              'format' => 'raw',
+              'value' => function($model){
+                return Html::a(($model->numero_do_termo!='' ? $model->numero_do_termo : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['/termo-aditivo/download', 'id' => $model->id] ) . Html::a(existeTermo($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/termo-aditivo/deleteanexo', 'id' => $model->id] );
+              },
+            ],
 /*          [
                 'attribute' => 'id_projeto',
                 'value' => function ($data) {

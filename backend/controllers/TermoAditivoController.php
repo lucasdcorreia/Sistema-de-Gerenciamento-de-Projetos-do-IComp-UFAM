@@ -7,6 +7,7 @@ use common\models\TermoAditivo;
 use common\models\Projeto;
 use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
+use yii\web\UploadedFile;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -72,6 +73,17 @@ class TermoAditivoController extends Controller
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->termoFile = UploadedFile::getInstance($model, 'termoFile');
+            if($model->termoFile){
+              if ($model->upload()) {
+                // file is uploaded successfully
+              }else{
+                //error message
+              }
+            }
+
+
+
             return $this->redirect(['/projeto/view', 'id' => $id]);
         }
 
@@ -80,6 +92,53 @@ class TermoAditivoController extends Controller
             'array_projetos' => $array_projetos,
         ]);
     }
+
+    public function actionDownload($id){
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          Yii::$app->response->sendFile($file)->send();
+        }else {
+          $this->mensagens('error', 'Termo aditivo', 'Arquivo não encontrado.');
+        }
+      }else {
+        $this->mensagens('error', 'Termo aditivo', 'Arquivo não encontrado.');
+      }
+
+      $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+    }
+
+    public function actionDeleteanexo($id)
+    {
+      $this->mensagens('success', 'Anexo', $id);
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          unlink($file);
+          $this->mensagens('success', 'Anexo', 'Termo aditivo excluido com sucesso.');
+        }else{
+          $this->mensagens('error', 'Anexo', 'Nenhum termo aditivo para excluir.');
+        }
+      }else $this->mensagens('error', 'Anexo', 'Nenhum termo aditivo para excluir.');
+      return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+    }
+
 
     /**
      * Updates an existing TermoAditivo model.
@@ -96,6 +155,16 @@ class TermoAditivoController extends Controller
 
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->termoFile = UploadedFile::getInstance($model, 'termoFile');
+            if($model->termoFile){
+              if ($model->upload()) {
+                // file is uploaded successfully
+              }else{
+                //error message
+              }
+            }
+
+
             $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
             return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
