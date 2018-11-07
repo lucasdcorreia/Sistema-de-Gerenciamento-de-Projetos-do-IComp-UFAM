@@ -5,7 +5,7 @@
              'class' => 'yii\db\Connection',
              'dsn' => 'mysql:host=localhost;dbname=ppgi',
              'username' => 'root',
-             'password' => 'EllE2327',
+             'password' => '',
              'charset' => 'utf8',
          ],
          'mailer' => [
