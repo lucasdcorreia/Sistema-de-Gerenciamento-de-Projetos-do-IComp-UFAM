@@ -162,7 +162,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
     <?= GridView::widget([
-        'dataProvider' => $dataProvider,
+        'dataProvider' => $dataProviderRelatorioPrestacao,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn', 'header' => 'Número'],
 
@@ -170,7 +170,6 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
             'data_enviada',
             'tipo',
             'situacao',
-            'id_projeto',
             [
                 'class' => 'yii\grid\ActionColumn',
                 'buttons' => [
