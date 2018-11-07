@@ -39,7 +39,7 @@ $this->registerJs("
   })
 
   $('#projeto-tituloprojetofile').change(function(){
-     $('#val').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
+     $('#val1').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
   })
 ");
 
@@ -89,7 +89,7 @@ $this->registerJs("
     <?= $form->field($model, 'tituloProjetoFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>
       <input type="button" id='select-file1' value="Selecione o Arquivo"></input>
-      <span id='val'><?php
+      <span id='val1'><?php
         $path = \Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/');
 
         $files = \yii\helpers\FileHelper::findFiles($path, [
