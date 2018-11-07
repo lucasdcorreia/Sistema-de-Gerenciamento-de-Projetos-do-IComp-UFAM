@@ -56,13 +56,8 @@ class ProjetoController extends Controller
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id)
-<<<<<<< HEAD
-    {   
-        $dataProviderRelatorioPrestacao = new ActiveDataProvider([
-=======
     {
-        $dataProvider = new ActiveDataProvider([
->>>>>>> 5c079ce990805c6cbfc00ecbb324c876cb3ecdee
+        $dataProviderRelatorioPrestacao = new ActiveDataProvider([
             'query' => RelatorioPrestacao::find()->where([ 'id_projeto' => $id ]),
         ]);
 
