@@ -143,18 +143,18 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
             'buttons' => [
                 'view' => function ($url, $model) {
                     return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
-                                'title' => Yii::t('app', 'view'),
+                                'title' => Yii::t('app', 'Exibir'),
                     ]);
                 },
                 'update' => function ($url, $model) {
                     return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
-                                'title' => Yii::t('app', 'update'),
+                                'title' => Yii::t('app', 'Alterar'),
                                 'data-method' => 'post'
                     ]);
                 },
                 'delete' => function ($url, $model) {
                     return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
-                                'title' => Yii::t('app', 'delete'),
+                                'title' => Yii::t('app', 'Excluir'),
                                 'data-method' => 'post'
                     ]);
                 },
@@ -180,7 +180,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Novo termo aditivo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Novo termo aditivo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     </p>
 
     <h4 style="font-family: helvetica neue"><strong> Relatórios técnicos </strong></h4>
@@ -201,18 +201,18 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                 'buttons' => [
                     'view' => function ($url, $model) {
                         return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
-                                    'title' => Yii::t('app', 'view'),
+                                    'title' => Yii::t('app', 'Exibir'),
                         ]);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
-                                    'title' => Yii::t('app', 'update'),
+                                    'title' => Yii::t('app', 'Alterar'),
                                     'data-method' => 'post'
                         ]);
                     },
                     'delete' => function ($url, $model) {
                         return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
-                                    'title' => Yii::t('app', 'delete'),
+                                    'title' => Yii::t('app', 'Excluir'),
                                     'data-method' => 'post'
                         ]);
                     },
@@ -238,7 +238,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Novo relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Novo relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-success']) ?>
     </p>
 
 </div>
