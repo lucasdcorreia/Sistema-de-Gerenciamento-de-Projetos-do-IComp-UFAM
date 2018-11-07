@@ -34,6 +34,12 @@ class Projeto extends \yii\db\ActiveRecord
     public $editalFile;
 
     /**
+     * @var tituloProjetoFile
+     */
+    public $tituloProjetoFile;
+
+
+    /**
      * {@inheritdoc}
      */
     public static function tableName()
@@ -53,17 +59,27 @@ class Projeto extends \yii\db\ActiveRecord
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
             [['duracao'], 'safe'],
             [['editalFile'], 'file', 'skipOnEmpty' => true],
+            [['tituloProjetoFile'], 'file', 'skipOnEmpty' => true],
         ];
     }
 
-    public function upload()
+    public function upload($tipo)
     {
-        if ($this->validate()) {
-            $this->editalFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/edital/') . $this->id . '.' . $this->editalFile->extension);
-            return true;
-        } else {
-            return false;
-        }
+      if($tipo=='edital'){
+          if ($this->validate()) {
+              $this->editalFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/edital/') . $this->id . '.' . $this->editalFile->extension);
+              return true;
+          } else {
+              return false;
+          }
+      }else if ($tipo=='titulo_projeto'){
+          if ($this->validate()) {
+              $this->tituloProjetoFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/') . $this->id . '.' . $this->tituloProjetoFile->extension);
+              return true;
+          } else {
+              return false;
+          }
+      }
     }
 
     public function beforeSave($insert){
