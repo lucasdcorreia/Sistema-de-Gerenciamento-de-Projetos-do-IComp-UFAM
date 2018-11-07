@@ -3,12 +3,9 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\widgets\MaskMoney;
-//use yii\common\models\TermoAditivo;
-
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Projeto */
-/* @var $model common\models\TermoAditivo */
 /* @var $form yii\widgets\ActiveForm */
 
 //$modelTermoAditivo = new common\models\TermoAditivo;
@@ -108,8 +105,6 @@ $this->registerJs("
     </div>
 
     <br>
-
-
 
     <?= $form->field($model, 'nome_coordenador')->textInput(['maxlength' => true]) ?>
 
