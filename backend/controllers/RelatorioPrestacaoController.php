@@ -90,6 +90,9 @@ class RelatorioPrestacaoController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $projetos = Projeto::find()->all();
+        $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
+
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -97,6 +100,7 @@ class RelatorioPrestacaoController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'array_projetos' => $array_projetos,
         ]);
     }
 

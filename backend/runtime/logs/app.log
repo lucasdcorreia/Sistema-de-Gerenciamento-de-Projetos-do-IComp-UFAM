@@ -15012,3 +15012,156 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-11-08 15:21:51 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: /Applications/MAMP/htdocs/PAPS/projetos/vendor/bower/jquery/dist in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetManager.php:456
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetBundle.php(185): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#7 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/adminLTE/yiisoft/yii2-app/layouts/main.php(20): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/SiteController.php(81): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2018-11-08 15:21:50 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '5ec4976bd8b321e741bf9a588bfda8717c22267c64033024501d75743b18727ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"GEJM58_soGS4uZIfSHFgd6l5Hw9XMH_u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=5ec4976bd8b321e741bf9a588bfda8717c22267c64033024501d75743b18727ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22GEJM58_soGS4uZIfSHFgd6l5Hw9XMH_u%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52413'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541704910.93
+    'REQUEST_TIME' => 1541704910
+    'argv' => []
+    'argc' => 0
+]
+2018-11-08 15:26:48 [::1][78][09370fba1ec372111d930d8ad6f378f2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: array_projetos in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/relatorio-prestacao/_form.php:30
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/relatorio-prestacao/_form.php(30): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/M...', 30, Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, NULL)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/relatorio-prestacao/update.php(18): yii\base\View->render('_form', Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\RelatorioPrestacaoController))
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(backend\controllers\RelatorioPrestacaoController))
+#9 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/RelatorioPrestacaoController.php(99): yii\base\Controller->render('update', Array)
+#10 [internal function]: backend\controllers\RelatorioPrestacaoController->actionUpdate('4')
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#15 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2018-11-08 15:26:48 [::1][78][09370fba1ec372111d930d8ad6f378f2][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/update'
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'a7b2dc04e8bf9c1777dfb76ed49e6699'
+    'PHPBACKENDSESSID' => '09370fba1ec372111d930d8ad6f378f2'
+    '_backendUser' => '25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d\";}'
+    '_csrf-frontend' => '5ec4976bd8b321e741bf9a588bfda8717c22267c64033024501d75743b18727ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"GEJM58_soGS4uZIfSHFgd6l5Hw9XMH_u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/testando_projetos/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=relatorio-prestacao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=a7b2dc04e8bf9c1777dfb76ed49e6699; PHPBACKENDSESSID=09370fba1ec372111d930d8ad6f378f2; _backendUser=25bf2d297ebd4a93e41131831275015ac8215bb99f751e22f72f37e14389b19ba%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=9551f3fa95a78ce3ece2ad407aadf6c06143ca6521764c35908cecf7dcfaa95ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ORcz-tB0gMQr7SOJk8LXY9EreDzxxJ2d%22%3B%7D; _csrf-frontend=5ec4976bd8b321e741bf9a588bfda8717c22267c64033024501d75743b18727ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22GEJM58_soGS4uZIfSHFgd6l5Hw9XMH_u%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52429'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=relatorio-prestacao%2Fupdate&id=4'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=relatorio-prestacao%2Fupdate&id=4'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541705208.39
+    'REQUEST_TIME' => 1541705208
+    'argv' => [
+        0 => 'r=relatorio-prestacao%2Fupdate&id=4'
+    ]
+    'argc' => 1
+]
