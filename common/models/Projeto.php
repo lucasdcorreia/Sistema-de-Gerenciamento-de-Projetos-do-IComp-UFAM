@@ -60,6 +60,7 @@ class Projeto extends \yii\db\ActiveRecord
             [['duracao'], 'safe'],
             [['editalFile'], 'file', 'skipOnEmpty' => true],
             [['tituloProjetoFile'], 'file', 'skipOnEmpty' => true],
+            [['termino'], 'compare', 'compareAttribute'=>'inicio_previsto', 'operator'=>'>', 'message'=>'A data de início previsto deve ser anterior à data de término.'],
         ];
     }
 
