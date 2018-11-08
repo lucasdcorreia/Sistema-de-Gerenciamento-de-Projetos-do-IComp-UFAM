@@ -281,12 +281,19 @@ class ProjetoController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($id)
-    {
+    public function actionDelete($id){
+      $projeto = $this->findModel($id);
+      $temTermoAditivo = TermoAditivo::find()->where(['id_projeto' => $projeto->id])->one();
+      if(isset($temTermoAditivo)){
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem termos aditivos atrelados ao mesmo');
+        return $this->redirect(['index']);
+      }
+      else{
         $this->findModel($id)->delete();
         $this->mensagens('success', 'Projeto excluído', 'Projeto excluído com sucesso.');
-
         return $this->redirect(['index']);
+      }
+
     }
 
     /**
