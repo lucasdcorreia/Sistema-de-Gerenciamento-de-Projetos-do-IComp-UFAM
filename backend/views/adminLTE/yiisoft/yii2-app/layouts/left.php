@@ -40,7 +40,7 @@
                     'url' => ['projeto/index'],
                     'visible' => (Yii::$app->user->identity->checarAcesso('administrador') || Yii::$app->user->identity->checarAcesso('secretaria')),
                 ],
-                [
+                /*[
                     'label' => 'Termos Aditivos',
                     'icon' => 'fa fa-file-excel',
                     'url' => ['termo-aditivo/index'],
@@ -51,7 +51,7 @@
                     'icon' => 'fa fa-file-excel',
                     'url' => ['relatorio-prestacao/index'],
                     'visible' => (Yii::$app->user->identity->checarAcesso('administrador') || Yii::$app->user->identity->checarAcesso('secretaria')),
-                ],
+                ],*/
             ]
         ]) ?>
     </section>

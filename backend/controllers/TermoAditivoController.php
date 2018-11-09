@@ -84,7 +84,7 @@ class TermoAditivoController extends Controller
 
 
 
-            return $this->redirect(['/projeto/view', 'id' => $id]);
+            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 
         return $this->render('create', [
@@ -154,7 +154,7 @@ class TermoAditivoController extends Controller
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
 
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+      if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->termoFile = UploadedFile::getInstance($model, 'termoFile');
             if($model->termoFile){
               if ($model->upload()) {
@@ -163,10 +163,8 @@ class TermoAditivoController extends Controller
                 //error message
               }
             }
-
-
             $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
-            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+            return $this->redirect(['/projeto/view', 'id' => $model->id_proj]);
         }
         return $this->render('update', [
             'model' => $model,
@@ -186,7 +184,7 @@ class TermoAditivoController extends Controller
         $termoAditivo = $this->findModel($id);
         $idProjeto = $termoAditivo->id_projeto;
         $termoAditivo->delete();
-        return $this->redirect(['/projeto/view', 'id' => $idProjeto]);
+        return $this->redirect(['deleteanexo', 'id' => $idProjeto]);
     }
 
     /**

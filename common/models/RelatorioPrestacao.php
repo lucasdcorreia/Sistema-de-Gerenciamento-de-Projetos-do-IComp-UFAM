@@ -21,6 +21,11 @@ use DateTime;
 class RelatorioPrestacao extends \yii\db\ActiveRecord
 {
     /**
+     * @var relatorioFile
+     */
+    public $relatorioFile;
+
+    /**
      * {@inheritdoc}
      */
     public static function tableName()
@@ -39,6 +44,7 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
             [['tipo'], 'string', 'max' => 30],
             [['situacao'], 'string', 'max' => 40],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
+            [['relatorioFile'], 'file', 'skipOnEmpty' => true],
         ];
     }
 
@@ -58,6 +64,17 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
         ];
     }
 
+
+    public function upload()
+    {
+          if ($this->validate()) {
+              $this->relatorioFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/') . $this->id . '_' . $this->id_projeto . '.' . $this->relatorioFile->extension);
+              return true;
+          } else {
+              return false;
+          }
+    }
+
     public function beforeSave($insert){
         if(parent::beforeSave($insert)){
           //if($this->isNewRecord){
@@ -72,7 +89,7 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
             return true;
         }
         return false;
-      }
+    }
 
       public function afterFind(){
         if($this->data_prevista != NULL){

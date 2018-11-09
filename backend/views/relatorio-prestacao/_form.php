@@ -7,6 +7,24 @@ use yii\widgets\MaskedInput;
 /* @var $this yii\web\View */
 /* @var $model common\models\RelatorioPrestacao */
 /* @var $form yii\widgets\ActiveForm */
+
+$this->registerCss("
+  #relatorioprestacao-relatoriofile {
+    opacity: 0;
+  }
+");
+
+$this->registerJs("
+  $('#select-file').click(function(){
+    console.log('teste');
+     $('#relatorioprestacao-relatoriofile').trigger('click');
+  })
+
+  $('#relatorioprestacao-relatoriofile').change(function(){
+     $('#val').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
+  })
+");
+
 ?>
 
 <div class="relatorio-prestacao-form">
@@ -28,6 +46,30 @@ use yii\widgets\MaskedInput;
     <?= $form->field($model, 'tipo_anexo')->textInput() ?>
 
     <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
+
+    <?= $form->field($model, 'relatorioFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
+    <div>
+      <input type="button" id='select-file' value="Selecione o Arquivo"></input>
+      <span id='val'><?php
+        $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            echo basename($file);
+          }else{
+            echo 'Escolha um arquivo';
+          }
+        }
+      ?></span>
+    </div>
+
+    <br>
+
 
     <div class="form-group" style="text-align: right">
         <?= Html::a('Cancelar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>

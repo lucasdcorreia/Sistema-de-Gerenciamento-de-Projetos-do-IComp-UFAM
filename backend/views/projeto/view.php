@@ -75,6 +75,22 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
           }
         }
       }
+      function existeRelatorio($model){
+        $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
     ?>
 
     <?= DetailView::widget([
@@ -111,7 +127,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
         ],
     ]) ?>
 
-    <h4 style="font-family: helvetica neue"><strong> Termos Aditivos </strong></h4>
+    <h4><strong> Termos Aditivos </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
@@ -183,7 +199,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
         <?= Html::a('Novo termo aditivo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <h4 style="font-family: helvetica neue"><strong> Relatórios técnicos </strong></h4>
+    <h4><strong> Relatórios técnicos </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
@@ -196,6 +212,14 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
             'data_enviada',
             'tipo',
             'situacao',
+            [
+              'attribute' => 'Anexo',
+              'label' => 'Anexo',
+              'format' => 'raw',
+              'value' => function($model){
+                return Html::a(($model->tipo!='' ? $model->tipo : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['/relatorio-prestacao/download', 'id' => $model->id] ) . Html::a(existeRelatorio($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/relatorio-prestacao/deleteanexo', 'id' => $model->id] );
+              },
+            ],
             [
                 'class' => 'yii\grid\ActionColumn',
                 'buttons' => [

@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-        <?= Html::a('Voltar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
+        <?= Html::a('Voltar', ['/projeto/view', 'id' => $model->id_projeto], ['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
     </p>
 
     <?= DetailView::widget([

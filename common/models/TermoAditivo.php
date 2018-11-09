@@ -73,17 +73,16 @@ class TermoAditivo extends \yii\db\ActiveRecord
 
     public function beforeSave($insert){
         if(parent::beforeSave($insert)){
-          if($this->isNewRecord){
           //if($this->isNewRecord){
             if($this->vigencia != NULL){
               $myDateTime = DateTime::createFromFormat('d/m/Y', $this->vigencia);
               $this->vigencia = $myDateTime->format('Y-m-d 00:00:00');
             }
             return true;
-          }else{
+        }else{
             return false;
-          }
         }
+        //}
     }
 
     public function afterFind(){

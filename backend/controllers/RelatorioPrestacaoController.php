@@ -6,6 +6,7 @@ use Yii;
 use common\models\RelatorioPrestacao;
 use common\models\Projeto;
 use yii\helpers\ArrayHelper;
+use yii\web\UploadedFile;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -71,7 +72,15 @@ class RelatorioPrestacaoController extends Controller
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+          $model->relatorioFile = UploadedFile::getInstance($model, 'relatorioFile');
+          if($model->relatorioFile){
+            if ($model->upload()) {
+              // file is uploaded successfully
+            }else{
+              //error message
+            }
+          }
+          return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 
         return $this->render('create', [
@@ -95,7 +104,15 @@ class RelatorioPrestacaoController extends Controller
 
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            $model->relatorioFile = UploadedFile::getInstance($model, 'relatorioFile');
+            if($model->relatorioFile){
+              if ($model->upload()) {
+                // file is uploaded successfully
+              }else{
+                //error message
+              }
+            }
+            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 
         return $this->render('update', [
@@ -113,9 +130,56 @@ class RelatorioPrestacaoController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model = $this->findModel($id);
+        $id_projeto = $model->id_projeto;
+        $model->delete();
+        return $this->redirect(['/projeto/view', 'id' => $id_projeto]);
+    }
 
-        return $this->redirect(['index']);
+    public function actionDeleteanexo($id)
+    {
+      $this->mensagens('success', 'Anexo', $id);
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          unlink($file);
+          $this->mensagens('success', 'Anexo', 'Termo aditivo excluido com sucesso.');
+        }else{
+          $this->mensagens('error', 'Anexo', 'Nenhum termo aditivo para excluir.');
+        }
+      }else $this->mensagens('error', 'Anexo', 'Nenhum termo aditivo para excluir.');
+      return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+    }
+
+    public function actionDownload($id){
+      $model = $this->findModel($id);
+
+      $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if (file_exists($file)) {
+          Yii::$app->response->sendFile($file)->send();
+        }else {
+          $this->mensagens('error', 'Relatório técnico', 'Arquivo não encontrado.');
+        }
+      }else {
+        $this->mensagens('error', 'Relatório técnico', 'Arquivo não encontrado.');
+      }
+
+      $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
     }
 
     /**
@@ -132,5 +196,18 @@ class RelatorioPrestacaoController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    protected function mensagens($tipo, $titulo, $mensagem){
+        Yii::$app->session->setFlash($tipo, [
+            'type' => $tipo,
+            'icon' => 'home',
+            'duration' => 5000,
+            'message' => $mensagem,
+            'title' => $titulo,
+            'positonY' => 'top',
+            'positonX' => 'center',
+            'showProgressbar' => true,
+        ]);
     }
 }
