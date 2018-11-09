@@ -164,7 +164,7 @@ class TermoAditivoController extends Controller
               }
             }
             $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
-            return $this->redirect(['/projeto/view', 'id' => $model->id_proj]);
+            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto ]);
         }
         return $this->render('update', [
             'model' => $model,
