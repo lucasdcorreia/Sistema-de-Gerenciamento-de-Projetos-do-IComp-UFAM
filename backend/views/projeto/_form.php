@@ -72,7 +72,8 @@ $this->registerJs("
           $file = $files[0];
 
           if(file_exists($file)) {
-            echo basename($file);
+            if(basename($file)!='.gitignore')echo basename($file);
+            else echo 'Escolha um arquivo';
           }else{
             echo 'Escolha um arquivo';
           }
@@ -96,7 +97,8 @@ $this->registerJs("
           $file = $files[0];
 
           if(file_exists($file)) {
-            echo basename($file);
+            if(basename($file)!='.gitignore')echo basename($file);
+            else echo 'Escolha um arquivo';
           }else{
             echo 'Escolha um arquivo';
           }
