@@ -58,12 +58,12 @@ class Item extends \yii\db\ActiveRecord
             'id' => 'ID',
             'natureza' => 'Natureza',
             'valor' => 'Valor',
-            'numero_item' => 'Numero Item',
+            'numero_item' => 'Número Item',
             'justificativa' => 'Justificativa',
             'quantidade' => 'Quantidade',
-            'custo_unitario' => 'Custo Unitario',
-            'tipo_item' => 'Tipo Item',
-            'descricao' => 'Descricao',
+            'custo_unitario' => 'Custo Unitário',
+            'tipo_item' => 'Tipo de Item',
+            'descricao' => 'Descrição',
             'id_projeto' => 'Id Projeto',
         ];
     }
