@@ -54,35 +54,6 @@ $this->registerJs("
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
-    <?= $form->field($model, 'num_processo', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'num_protocolo', ['options' => ['class' => 'col-md-6 col-right']])->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'edital', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'editalFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
-    <div>
-      <input type="button" id='select-file' value="Selecione o Arquivo"></input>
-      <span id='val'><?php
-        $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
-
-        $files = \yii\helpers\FileHelper::findFiles($path, [
-          'only' => [$model->id . '.*'],
-        ]);
-        if (isset($files[0])) {
-          $file = $files[0];
-
-          if(file_exists($file)) {
-            if(basename($file)!='.gitignore')echo basename($file);
-            else echo 'Escolha um arquivo';
-          }else{
-            echo 'Escolha um arquivo';
-          }
-        }
-      ?></span>
-    </div>
-
-    <br>
-
     <?= $form->field($model, 'titulo_projeto', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
     <?= $form->field($model, 'tituloProjetoFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>
@@ -110,6 +81,35 @@ $this->registerJs("
 
     <?= $form->field($model, 'nome_coordenador')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'num_processo', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'num_protocolo', ['options' => ['class' => 'col-md-6 col-right']])->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'edital', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'editalFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
+    <div>
+      <input type="button" id='select-file' value="Selecione o Arquivo"></input>
+      <span id='val'><?php
+        $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            if(basename($file)!='.gitignore')echo basename($file);
+            else echo 'Escolha um arquivo';
+          }else{
+            echo 'Escolha um arquivo';
+          }
+        }
+      ?></span>
+    </div>
+    
+    <br>
+
     <?= $form->field($model, 'inicio_previsto', ['options' => ['class' => 'col-md-6 col-left']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <?= $form->field($model, 'termino', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
@@ -122,10 +122,10 @@ $this->registerJs("
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
-    <?= $form->field($model, 'numero_fapeam_outorga', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'numero_fapeam_outorga')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
-
+<!--    <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
+-->
     <div class="form-group" style="text-align: right">
         <?= Html::a('Cancelar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
