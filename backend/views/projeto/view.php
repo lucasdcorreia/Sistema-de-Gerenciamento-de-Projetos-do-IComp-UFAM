@@ -103,6 +103,13 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
         'timeZone' => 'UTC',
       ],*/
         'attributes' => [
+            [
+              'attribute' => 'titulo_projeto',
+              'label' => 'Titulo do projeto',
+              'format' => 'raw',
+              'value' => Html::a(($model->titulo_projeto!='' ? $model->titulo_projeto : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['downloadtitulo', 'id' => $model->id] ) . Html::a(existeTituloProjeto($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deletetitulo', 'id' => $model->id] ),
+            ],
+            'nome_coordenador',
             'num_processo',
             'num_protocolo',
             [
@@ -111,18 +118,11 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'format' => 'raw',
               'value' => Html::a(($model->edital!='' ? $model->edital : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['downloadedital', 'id' => $model->id] ) . Html::a(existeEdital($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deleteedital', 'id' => $model->id] ),
             ],
-            [
-              'attribute' => 'titulo_projeto',
-              'label' => 'Titulo do projeto',
-              'format' => 'raw',
-              'value' => Html::a(($model->titulo_projeto!='' ? $model->titulo_projeto : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['downloadtitulo', 'id' => $model->id] ) . Html::a(existeTituloProjeto($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deletetitulo', 'id' => $model->id] ),
-            ],
-            'nome_coordenador',
             'inicio_previsto',//:datetime',
             'termino',
             'cotacao_moeda_estrangeira',
             'numero_fapeam_outorga',
-            'publicacao_diario_oficial',//:datetime',
+            //'publicacao_diario_oficial',//:datetime',
             'duracao',
         ],
     ]) ?>

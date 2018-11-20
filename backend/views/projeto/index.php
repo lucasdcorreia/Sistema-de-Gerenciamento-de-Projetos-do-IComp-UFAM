@@ -30,10 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn', 'header' => 'Número'],
 
             'titulo_projeto',
+            'nome_coordenador',
             'num_processo',
             'inicio_previsto',//:datetime',
             'termino',//:datetime',
-            'nome_coordenador',
             'duracao',
             //'edital',
             //'num_protocolo',
