@@ -30,7 +30,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => $id_projeto])->label(false); ?>
 
-    <div class="form-group">
+    <div class="form-group" style="text-align: right">
+        <?= Html::a('Cancelar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 
