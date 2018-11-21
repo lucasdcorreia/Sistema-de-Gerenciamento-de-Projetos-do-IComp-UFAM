@@ -171,7 +171,10 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                 'delete' => function ($url, $model) {
                     return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
                                 'title' => Yii::t('app', 'Excluir'),
-                                'data-method' => 'post'
+                                'data' => [
+                                                'confirm' => 'Deseja realmente excluir este item?',
+                                                'method' => 'post',
+                                ],
                     ]);
                 },
             ],
@@ -237,7 +240,11 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
                     'delete' => function ($url, $model) {
                         return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
                                     'title' => Yii::t('app', 'Excluir'),
-                                    'data-method' => 'post'
+                                    'data' => [
+                                                'confirm' => 'Deseja realmente excluir este item?',
+                                                'method' => 'post',
+                                    ],
+
                         ]);
                     },
                 ],
