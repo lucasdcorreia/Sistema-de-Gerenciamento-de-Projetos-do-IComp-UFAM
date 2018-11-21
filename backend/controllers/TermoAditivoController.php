@@ -82,8 +82,7 @@ class TermoAditivoController extends Controller
               }
             }
 
-
-
+            $this->mensagens('success', 'Termo aditivo criado', 'Termo aditivo criado com sucesso.');
             return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 
@@ -184,6 +183,7 @@ class TermoAditivoController extends Controller
         $termoAditivo = $this->findModel($id);
         $idProjeto = $termoAditivo->id_projeto;
         $termoAditivo->delete();
+        $this->mensagens('success', 'Termo aditivo excluído', 'Termo aditivo excluído com sucesso.');
         return $this->redirect(['/projeto/view', 'id' => $idProjeto]);
     }
 

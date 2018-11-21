@@ -80,6 +80,7 @@ class RelatorioPrestacaoController extends Controller
               //error message
             }
           }
+          $this->mensagens('success', 'Relatório técnico criado', 'Relatório técnico criado com sucesso.');
           return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 
@@ -112,6 +113,7 @@ class RelatorioPrestacaoController extends Controller
                 //error message
               }
             }
+            $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
             return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 
@@ -133,6 +135,7 @@ class RelatorioPrestacaoController extends Controller
         $model = $this->findModel($id);
         $id_projeto = $model->id_projeto;
         $model->delete();
+        $this->mensagens('success', 'Relatório técnico excluído', 'Relatório técnico excluído com sucesso.');
         return $this->redirect(['/projeto/view', 'id' => $id_projeto]);
     }
 
