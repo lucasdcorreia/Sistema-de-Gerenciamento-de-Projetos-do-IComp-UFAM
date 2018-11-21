@@ -46,10 +46,16 @@ $this->registerJs("
 
 <div class="projeto-form">
 
+
     <?php $form = ActiveForm::begin([
       'id' => 'projeto'
     ]); ?>
-
+    <div class="btn-group">
+        <?= Html::a('Informações de projeto', ['projeto/view', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg']) ?>
+        <?= Html::submitButton('Itens de projeto', ['class' => 'btn btn-default btn-lg']) ?>
+    </div>
+    <hr>
+    
     <h4 style="font-family: helvetica neue"><strong> Identificação </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
@@ -107,7 +113,7 @@ $this->registerJs("
         }
       ?></span>
     </div>
-    
+
     <br>
 
     <?= $form->field($model, 'inicio_previsto', ['options' => ['class' => 'col-md-6 col-left']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>

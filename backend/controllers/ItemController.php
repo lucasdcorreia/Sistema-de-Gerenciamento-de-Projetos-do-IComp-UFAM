@@ -33,14 +33,64 @@ class ItemController extends Controller
      * Lists all Item models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex($id_projeto)
     {
         $dataProvider = new ActiveDataProvider([
             'query' => Item::find(),
         ]);
 
+        $dataProviderMatConsumo = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 1, 'id_projeto' => $id_projeto]),
+        ]);
+
+        $dataProviderMatPermanente = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 2, 'id_projeto' => $id_projeto]),
+        ]);
+
+        $dataProviderServTerceiroPF = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 3, 'id_projeto' => $id_projeto]),
+        ]);
+
+        $dataProviderServTerceiroPJ = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 4, 'id_projeto' => $id_projeto]),
+        ]);
+
+        $dataProviderPassagemNacional = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 5, 'id_projeto' => $id_projeto]),
+        ]);
+
+        $dataProviderPassagemInternacional = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 6, 'id_projeto' => $id_projeto]),
+        ]);
+
+        $dataProviderDiariaNacional = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 7, 'id_projeto' => $id_projeto]),
+        ]);
+
+        $dataProviderDiariaInternacional = new ActiveDataProvider([
+            'query' => Item::find()->where(['tipo_item' => 8, 'id_projeto' => $id_projeto]),
+        ]);
+
         return $this->render('index', [
             'dataProvider' => $dataProvider,
+
+            'dataProviderMatConsumo' => $dataProviderMatConsumo,
+
+            'dataProviderMatPermanente' => $dataProviderMatPermanente,
+
+            'dataProviderServTerceiroPF' => $dataProviderServTerceiroPF,
+
+            'dataProviderServTerceiroPJ' => $dataProviderServTerceiroPJ,
+
+            'dataProviderPassagemNacional' => $dataProviderPassagemNacional,
+
+            'dataProviderPassagemInternacional' => $dataProviderPassagemInternacional,
+
+            'dataProviderDiariaNacional' => $dataProviderDiariaNacional,
+
+            'dataProviderDiariaInternacional' => $dataProviderDiariaInternacional,
+
+            'id_projeto' => $id_projeto,
         ]);
     }
 
@@ -62,15 +112,19 @@ class ItemController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($tipo_item, $id_projeto)
     {
         $model = new Item();
+        $model->tipo_item = $tipo_item;
+        $model->id_projeto = $id_projeto;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'id_projeto' => $model->id_projeto]);
         }
 
         return $this->render('create', [
+            'tipo_item' => $tipo_item,
+            'id_projeto' => $id_projeto,
             'model' => $model,
         ]);
     }
@@ -87,7 +141,7 @@ class ItemController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'id_projeto' => $model->id_projeto]);
         }
 
         return $this->render('update', [
@@ -104,9 +158,11 @@ class ItemController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model = $this->findModel($id);
+        $id_projeto = $model->id_projeto;
+        $model->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['index', 'id_projeto' => $id_projeto]);
     }
 
     /**

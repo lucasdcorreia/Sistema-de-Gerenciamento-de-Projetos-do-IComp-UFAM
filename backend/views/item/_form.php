@@ -24,11 +24,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'custo_unitario')->textInput() ?>
 
-    <?= $form->field($model, 'tipo_item')->textInput() ?>
+    <?= $form->field($model, 'tipo_item')->hiddenInput(['tipo_item' => $tipo_item])->label(false); ?>
 
     <?= $form->field($model, 'descricao')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'id_projeto')->textInput() ?>
+    <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => $id_projeto])->label(false); ?>
 
     <div class="form-group">
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>

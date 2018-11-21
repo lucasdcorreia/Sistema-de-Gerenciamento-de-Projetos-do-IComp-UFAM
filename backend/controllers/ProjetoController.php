@@ -102,7 +102,7 @@ class ProjetoController extends Controller
 
             $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
 
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['item/index', 'id_projeto' => $model->id]);
         }
 
         return $this->render('create', [

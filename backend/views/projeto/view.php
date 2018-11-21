@@ -13,6 +13,12 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
 ?>
 <div class="projeto-view">
 
+    <div class="btn-group">
+        <?= Html::a('Informações de projeto', ['projeto/view', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg']) ?>
+        <?= Html::a('Itens de projeto', ['item/index', 'id_projeto' => $model->id], ['class' => 'btn btn-default btn-lg']) ?>
+    </div>
+    <hr>
+
     <!--<h1><?= Html::encode($this->title) ?></h1>-->
     <p>
         <?= Html::a('Alterar', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
