@@ -113,7 +113,7 @@ class RelatorioPrestacaoController extends Controller
                 //error message
               }
             }
-            $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
+            $this->mensagens('success', 'Relatório Técnico', 'Alterações realizadas com sucesso.');
             return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 

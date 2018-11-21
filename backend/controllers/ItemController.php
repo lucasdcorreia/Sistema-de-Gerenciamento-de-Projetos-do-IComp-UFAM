@@ -119,6 +119,7 @@ class ItemController extends Controller
         $model->id_projeto = $id_projeto;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->mensagens('success', 'Item criado', 'Item criado com sucesso.');
             return $this->redirect(['index', 'id_projeto' => $model->id_projeto]);
         }
 
@@ -141,6 +142,7 @@ class ItemController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $this->mensagens('success', 'Item', 'Alterações realizadas com sucesso.');
             return $this->redirect(['index', 'id_projeto' => $model->id_projeto]);
         }
 
@@ -162,6 +164,7 @@ class ItemController extends Controller
         $id_projeto = $model->id_projeto;
         $model->delete();
 
+        $this->mensagens('success', 'Item excluído', 'Item excluído com sucesso.');
         return $this->redirect(['index', 'id_projeto' => $id_projeto]);
     }
 
@@ -179,5 +182,18 @@ class ItemController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    protected function mensagens($tipo, $titulo, $mensagem){
+        Yii::$app->session->setFlash($tipo, [
+            'type' => $tipo,
+            'icon' => 'home',
+            'duration' => 5000,
+            'message' => $mensagem,
+            'title' => $titulo,
+            'positonY' => 'top',
+            'positonX' => 'center',
+            'showProgressbar' => true,
+        ]);
     }
 }
