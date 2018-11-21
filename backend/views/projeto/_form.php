@@ -50,12 +50,16 @@ $this->registerJs("
     <?php $form = ActiveForm::begin([
       'id' => 'projeto'
     ]); ?>
-    <div class="btn-group">
+
+    <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
+    <div class="center-block" style="width:400px;max-width:100%;">
+      <div class="btn-group">
         <?= Html::a('Informações de projeto', ['projeto/view', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg']) ?>
         <?= Html::submitButton('Itens de projeto', ['class' => 'btn btn-default btn-lg']) ?>
+      </div>
     </div>
     <hr>
-    
+
     <h4 style="font-family: helvetica neue"><strong> Identificação </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
