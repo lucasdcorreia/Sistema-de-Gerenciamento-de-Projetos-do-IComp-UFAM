@@ -184,7 +184,7 @@ class TermoAditivoController extends Controller
         $termoAditivo = $this->findModel($id);
         $idProjeto = $termoAditivo->id_projeto;
         $termoAditivo->delete();
-        return $this->redirect(['deleteanexo', 'id' => $idProjeto]);
+        return $this->redirect(['/projeto/view', 'id' => $idProjeto]);
     }
 
     /**
