@@ -71,6 +71,7 @@ class TermoAditivoController extends Controller
         $model = new TermoAditivo();
         $projetos = Projeto::find()->all();
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
+        $model->id_projeto = $id;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->termoFile = UploadedFile::getInstance($model, 'termoFile');

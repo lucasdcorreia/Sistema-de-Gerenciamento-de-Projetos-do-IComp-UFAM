@@ -278,7 +278,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Novo relatório técnico', ['relatorio-prestacao/create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Novo relatório técnico', ['relatorio-prestacao/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     </p>
 
 </div>

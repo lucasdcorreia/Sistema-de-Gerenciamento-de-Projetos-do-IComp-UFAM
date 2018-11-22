@@ -45,7 +45,8 @@ $this->registerJs("
 
     <?= $form->field($model, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
-    <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
+    <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false) ?>
+
     <?= $form->field($model, 'termoFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>
       <input type="button" id='select-file' value="Selecione o Arquivo"></input>

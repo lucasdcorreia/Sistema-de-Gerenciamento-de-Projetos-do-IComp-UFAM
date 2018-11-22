@@ -65,11 +65,12 @@ class RelatorioPrestacaoController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($id)
     {
         $model = new RelatorioPrestacao();
         $projetos = Projeto::find()->all();
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
+        $model->id_projeto = $id;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
           $model->relatorioFile = UploadedFile::getInstance($model, 'relatorioFile');

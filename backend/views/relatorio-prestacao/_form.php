@@ -45,7 +45,7 @@ $this->registerJs("
 
     <?= $form->field($model, 'tipo_anexo')->textInput() ?>
 
-    <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
+    <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false) ?>
 
     <?= $form->field($model, 'relatorioFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>
