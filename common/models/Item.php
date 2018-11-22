@@ -40,7 +40,7 @@ class Item extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['valor', 'custo_unitario'], 'number'],
+            [[/*'valor', */'custo_unitario'], 'double'],
             [['justificativa', 'descricao'], 'string'],
             [['quantidade', 'tipo_item', 'id_projeto'], 'integer'],
             [['natureza'], 'string', 'max' => 40],
@@ -57,7 +57,7 @@ class Item extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'natureza' => 'Natureza',
-            'valor' => 'Valor',
+            //'valor' => 'Valor',
             'numero_item' => 'Número Item',
             'justificativa' => 'Justificativa',
             'quantidade' => 'Quantidade',

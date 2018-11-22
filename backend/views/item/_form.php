@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\widgets\MaskMoney;
+use yii\bootstrap\Collapse;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Item */
@@ -14,15 +16,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'natureza')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'valor')->textInput() ?>
-
     <?= $form->field($model, 'numero_item')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'justificativa')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'quantidade')->textInput() ?>
 
-    <?= $form->field($model, 'custo_unitario')->textInput() ?>
+    <?= $form->field($model, 'custo_unitario')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <?= $form->field($model, 'tipo_item')->hiddenInput(['tipo_item' => $tipo_item])->label(false); ?>
 

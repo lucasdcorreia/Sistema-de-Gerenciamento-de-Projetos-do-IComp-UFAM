@@ -104,7 +104,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p>
                         <?= Html::a('Novo Material Permanente', ['create', 'tipo_item' => 2, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                     </p>
-                    
+
                 </div>
                 <hr>
             </div>
@@ -114,7 +114,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF" aria-expanded="false" aria-controls="multiCollapseExample2">Serviço de Terceiro Pessoa Física</button>
             </p>
-            
+
             <div class="collapse multi-collapse" id="collapseServTerceiroPF">
                 <div class="card card-body">
                 <h2>Serviço de Terceiro Pessoa Física</h2>
@@ -148,7 +148,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Html::a('Novo Serv. de Terceiro Pessoa Física', ['create', 'tipo_item' => 3, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                 </p>
 
-                    
+
                 </div>
                 <hr>
             </div>
@@ -158,7 +158,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPJ" aria-expanded="false" aria-controls="multiCollapseExample2">Serviço de Terceiro Pessoa Jurídica</button>
             </p>
-            
+
             <div class="collapse multi-collapse" id="collapseServTerceiroPJ">
                 <div class="card card-body">
                 <h2>Serviço de Terceiro Pessoa Jurídica</h2>
@@ -191,7 +191,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <p>
                     <?= Html::a('Novo Serv. de Terceiro Pessoa Jurídica', ['create', 'tipo_item' => 4, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                 </p>
-                    
+
                 </div>
                 <hr>
             </div>
@@ -201,7 +201,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemNacional" aria-expanded="false" aria-controls="multiCollapseExample2">Passagem Nacional</button>
             </p>
-            
+
             <div class="collapse multi-collapse" id="collapsePassagemNacional">
                 <div class="card card-body">
                     <h2>Passagem Nacional</h2>
@@ -243,9 +243,9 @@ $this->params['breadcrumbs'][] = $this->title;
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemInternacional" aria-expanded="false" aria-controls="multiCollapseExample2">Passagem Internacional</button>
             </p>
-            
+
             <div class="collapse multi-collapse" id="collapsePassagemInternacional">
-                
+
                 <div class="card card-body">
                     <h2>Passagem Internacional</h2>
                     <?= GridView::widget([
@@ -277,7 +277,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p>
                         <?= Html::a('Nova Passagem Internacional', ['create', 'tipo_item' => 6, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                     </p>
-                    
+
                 </div>
                 <hr>
             </div>
@@ -287,7 +287,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaNacional" aria-expanded="false" aria-controls="multiCollapseExample2">Diária Nacional</button>
             </p>
-            
+
             <div class="collapse multi-collapse" id="collapseDiariaNacional">
                 <div class="card card-body">
                     <h2>Diária Nacional</h2>
@@ -320,7 +320,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p>
                         <?= Html::a('Nova Diária Nacional', ['create', 'tipo_item' => 7, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                     </p>
-                    
+
                 </div>
                 <hr>
             </div>
@@ -362,7 +362,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <p>
                         <?= Html::a('Nova Diária Internacional', ['create', 'tipo_item' => 8, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                     </p>
-                    
+
                 </div>
                 <hr>
             </div>
