@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
                             'natureza',
-                            'valor',
+                            //'valor',
                             'numero_item',
                             'justificativa:ntext',
                             'quantidade',
@@ -47,10 +47,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             'descricao:ntext',
                             //'id_projeto',
                             
-                            // [
-                            //     'attribute' => 'Valor Total',
-                            //     'value' => $this->quantidade * $this->custo_unitario,
-                            // ],
+                            [
+                                'attribute' => 'Valor Total',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                             ],
@@ -78,7 +80,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
                             'natureza',
-                            'valor',
+                            //'valor',
                             'numero_item',
                             'justificativa:ntext',
                             'quantidade',
@@ -86,6 +88,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
+                            [
+                                'attribute' => 'Valor Total',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
@@ -115,7 +123,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'columns' => [
                         ['class' => 'yii\grid\SerialColumn'],
                         'natureza',
-                        'valor',
+                        //'valor',
                         'numero_item',
                         'justificativa:ntext',
                         'quantidade',
@@ -123,6 +131,12 @@ $this->params['breadcrumbs'][] = $this->title;
                         //'tipo_item',
                         'descricao:ntext',
                         //'id_projeto',
+                        [
+                            'attribute' => 'Valor Total',
+                            'value' => function($data){
+                                return $data->quantidade * $data->custo_unitario;
+                            }
+                        ],
 
                         ['class' => 'yii\grid\ActionColumn'],
                     ],
@@ -153,7 +167,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'columns' => [
                         ['class' => 'yii\grid\SerialColumn'],
                         'natureza',
-                        'valor',
+                        //'valor',
                         'numero_item',
                         'justificativa:ntext',
                         'quantidade',
@@ -161,6 +175,12 @@ $this->params['breadcrumbs'][] = $this->title;
                         //'tipo_item',
                         'descricao:ntext',
                         //'id_projeto',
+                        [
+                            'attribute' => 'Valor Total',
+                            'value' => function($data){
+                                return $data->quantidade * $data->custo_unitario;
+                            }
+                        ],
 
                         ['class' => 'yii\grid\ActionColumn'],
                     ],
@@ -190,7 +210,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
                             'natureza',
-                            'valor',
+                            //'valor',
                             'numero_item',
                             'justificativa:ntext',
                             'quantidade',
@@ -198,6 +218,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
+                            [
+                                'attribute' => 'Valor Total',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
@@ -227,7 +253,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
                             'natureza',
-                            'valor',
+                            //'valor',
                             'numero_item',
                             'justificativa:ntext',
                             'quantidade',
@@ -235,6 +261,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
+                            [
+                                'attribute' => 'Valor Total',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
@@ -264,7 +296,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
                             'natureza',
-                            'valor',
+                            //'valor',
                             'numero_item',
                             'justificativa:ntext',
                             'quantidade',
@@ -272,6 +304,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
+                            [
+                                'attribute' => 'Valor Total',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
@@ -300,7 +338,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
                             'natureza',
-                            'valor',
+                            //'valor',
                             'numero_item',
                             'justificativa:ntext',
                             'quantidade',
@@ -308,6 +346,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
+                            [
+                                'attribute' => 'Valor Total',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
 
                             ['class' => 'yii\grid\ActionColumn',],
                         ],
