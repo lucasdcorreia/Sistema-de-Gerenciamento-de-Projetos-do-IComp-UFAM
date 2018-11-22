@@ -35,6 +35,8 @@ class ItemController extends Controller
      */
     public function actionIndex($id_projeto)
     {
+        $model = new Item();
+
         $dataProvider = new ActiveDataProvider([
             'query' => Item::find(),
         ]);
@@ -43,35 +45,69 @@ class ItemController extends Controller
             'query' => Item::find()->where(['tipo_item' => 1, 'id_projeto' => $id_projeto]),
         ]);
 
+        $subtotalMatConsumo = Item::find()->
+        where(['tipo_item' => 1, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
         $dataProviderMatPermanente = new ActiveDataProvider([
             'query' => Item::find()->where(['tipo_item' => 2, 'id_projeto' => $id_projeto]),
         ]);
+
+        $subtotalMatPermanente = Item::find()->
+        where(['tipo_item' => 2, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
 
         $dataProviderServTerceiroPF = new ActiveDataProvider([
             'query' => Item::find()->where(['tipo_item' => 3, 'id_projeto' => $id_projeto]),
         ]);
 
+        $subtotalServTerceiroPF = Item::find()->
+        where(['tipo_item' => 3, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
         $dataProviderServTerceiroPJ = new ActiveDataProvider([
             'query' => Item::find()->where(['tipo_item' => 4, 'id_projeto' => $id_projeto]),
         ]);
+
+        $subtotalServTerceiroPJ = Item::find()->
+        where(['tipo_item' => 4, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
 
         $dataProviderPassagemNacional = new ActiveDataProvider([
             'query' => Item::find()->where(['tipo_item' => 5, 'id_projeto' => $id_projeto]),
         ]);
 
+        $subtotalPassagemNacional = Item::find()->
+        where(['tipo_item' => 5, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
         $dataProviderPassagemInternacional = new ActiveDataProvider([
             'query' => Item::find()->where(['tipo_item' => 6, 'id_projeto' => $id_projeto]),
         ]);
+
+        $subtotalPassagemInternacional = Item::find()->
+        where(['tipo_item' => 6, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
 
         $dataProviderDiariaNacional = new ActiveDataProvider([
             'query' => Item::find()->where(['tipo_item' => 7, 'id_projeto' => $id_projeto]),
         ]);
 
+        $subtotalDiariaNacional = Item::find()->
+        where(['tipo_item' => 7, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
         $dataProviderDiariaInternacional = new ActiveDataProvider([
             'query' => Item::find()->where(['tipo_item' => 8, 'id_projeto' => $id_projeto]),
         ]);
 
+        $subtotalDiariaInternacional = Item::find()->
+        where(['tipo_item' => 8, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
         return $this->render('index', [
+            'model' => $model,
+
             'dataProvider' => $dataProvider,
 
             'dataProviderMatConsumo' => $dataProviderMatConsumo,
@@ -91,6 +127,15 @@ class ItemController extends Controller
             'dataProviderDiariaInternacional' => $dataProviderDiariaInternacional,
 
             'id_projeto' => $id_projeto,
+
+            'subtotalMatConsumo' => $subtotalMatConsumo,
+            'subtotalMatPermanente' => $subtotalMatPermanente,
+            'subtotalServTerceiroPF' => $subtotalServTerceiroPF,
+            'subtotalServTerceiroPJ' => $subtotalServTerceiroPJ,
+            'subtotalPassagemNacional' => $subtotalPassagemNacional,
+            'subtotalPassagemInternacional' => $subtotalPassagemInternacional,
+            'subtotalDiariaNacional' => $subtotalDiariaNacional,
+            'subtotalDiariaInternacional' => $subtotalDiariaInternacional,
         ]);
     }
 
