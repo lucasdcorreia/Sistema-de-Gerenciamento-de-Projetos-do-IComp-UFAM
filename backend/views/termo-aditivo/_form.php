@@ -43,7 +43,7 @@ $this->registerJs("
 
     <?= $form->field($model, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
-    <?= $form->field($model, 'tipo')->dropDownList(['---Selecione uma opção---', 'Prorrogação de prazo', 'Outro']); ?>
+    <?= $form->field($model, 'tipo')->dropDownList(['---Selecione uma opção---', 'Prazo', 'Valor', 'Prazo e Valor']); ?>
 
     <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false); ?>
 
