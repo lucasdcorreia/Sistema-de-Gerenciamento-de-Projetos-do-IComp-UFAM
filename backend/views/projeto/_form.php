@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\bootstrap\Collapse;
 use yii\widgets\MaskMoney;
 
 /* @var $this yii\web\View */
