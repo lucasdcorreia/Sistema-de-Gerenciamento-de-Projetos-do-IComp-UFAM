@@ -16,6 +16,8 @@ use yii\bootstrap\Collapse;
 
     <?= $form->field($model, 'natureza')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'professor_responsavel')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'numero_item')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'justificativa')->textarea(['rows' => 6]) ?>

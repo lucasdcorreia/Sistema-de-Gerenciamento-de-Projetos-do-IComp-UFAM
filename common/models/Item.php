@@ -17,6 +17,7 @@ use Yii;
  * @property int $tipo_item
  * @property string $descricao
  * @property int $id_projeto
+ * @property int $professor_responsavel
  *
  * @property Despesa[] $despesas
  * @property Projeto $projeto
@@ -65,6 +66,7 @@ class Item extends \yii\db\ActiveRecord
             'tipo_item' => 'Tipo de Item',
             'descricao' => 'Descrição',
             'id_projeto' => 'Id Projeto',
+            'professor_responsavel' => 'Professor Responsável',
         ];
     }
 
