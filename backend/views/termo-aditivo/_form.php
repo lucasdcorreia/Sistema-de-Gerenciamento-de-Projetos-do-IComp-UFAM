@@ -43,9 +43,13 @@ $this->registerJs("
 
     <?= $form->field($model, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
+<<<<<<< HEAD
     <?= $form->field($model, 'tipo')->dropDownList(['Prorrogação de prazo', 'Outro']); ?>
 
     <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false); ?>
+=======
+    <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false) ?>
+>>>>>>> 57a74b72fd050a8bc2e7238b27e416bd71f17d96
 
     <?= $form->field($model, 'termoFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>
