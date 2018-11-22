@@ -28,7 +28,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row" >
             <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#collapseMatConsumo" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Material de Consumo</a>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseMatConsumo" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" 
+                style="width:95%;text-align:left">
+                Material de Consumo </i>
+                </a>
             </p>
             <div class="collapse multi-collapse" id="collapseMatConsumo">
                 <div class="card card-body">
@@ -70,7 +73,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatPermanente" aria-expanded="false" aria-controls="multiCollapseExample2">Material Permanente</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatPermanente" aria-expanded="false" aria-controls="multiCollapseExample2"
+                style="width:95%;text-align:left">Material Permanente</button>
             </p>
             <div class="collapse multi-collapse" id="collapseMatPermanente">
                 <div class="card card-body">
@@ -112,7 +116,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF" aria-expanded="false" aria-controls="multiCollapseExample2">Serviço de Terceiro Pessoa Física</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF" aria-expanded="false" aria-controls="multiCollapseExample2"
+                style="width:95%;text-align:left">Serviço de Terceiro Pessoa Física</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseServTerceiroPF">
@@ -156,7 +161,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPJ" aria-expanded="false" aria-controls="multiCollapseExample2">Serviço de Terceiro Pessoa Jurídica</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPJ" aria-expanded="false" aria-controls="multiCollapseExample2"
+                style="width:95%;text-align:left">Serviço de Terceiro Pessoa Jurídica</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseServTerceiroPJ">
@@ -199,7 +205,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemNacional" aria-expanded="false" aria-controls="multiCollapseExample2">Passagem Nacional</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                style="width:95%;text-align:left">Passagem Nacional</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapsePassagemNacional">
@@ -241,7 +248,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemInternacional" aria-expanded="false" aria-controls="multiCollapseExample2">Passagem Internacional</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                style="width:95%;text-align:left">Passagem Internacional</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapsePassagemInternacional">
@@ -285,7 +293,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaNacional" aria-expanded="false" aria-controls="multiCollapseExample2">Diária Nacional</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                style="width:95%;text-align:left">Diária Nacional</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseDiariaNacional">
@@ -328,7 +337,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaInternacional" aria-expanded="false" aria-controls="multiCollapseExample2">Diária Internacional</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                style="width:95%;text-align:left">Diária Internacional</button>
             </p>
             <div class="collapse multi-collapse" id="collapseDiariaInternacional">
                 <div class="card card-body">
@@ -369,5 +379,6 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
     </div>
+    
 
 </div>
