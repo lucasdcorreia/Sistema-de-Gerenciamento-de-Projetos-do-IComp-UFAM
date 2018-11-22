@@ -354,3 +354,745 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-11-22 14:20:26 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`)) in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+The SQL being executed was: INSERT INTO `item` (`tipo_item`, `id_projeto`, `natureza`, `professor_responsavel`, `numero_item`, `justificativa`, `quantidade`, `custo_unitario`, `descricao`) VALUES (1, 49, 'Natureza do item', 2, '2', '', NULL, NULL, '') in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `it...')
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+)
+
+2018-11-22 14:20:26 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/create'
+    'tipo_item' => '1'
+    'id_projeto' => '49'
+]
+
+$_POST = [
+    'Item' => [
+        'natureza' => 'Natureza do item'
+        'professor_responsavel' => '2'
+        'numero_item' => '2'
+        'justificativa' => ''
+        'quantidade' => ''
+        'custo_unitario' => ''
+        'tipo_item' => '1'
+        'descricao' => ''
+        'id_projeto' => '49'
+    ]
+    'item-custo_unitario-disp' => 'R$0,00'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '269'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8888'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58187'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542910826.39
+    'REQUEST_TIME' => 1542910826
+    'argv' => [
+        0 => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    ]
+    'argc' => 1
+]
+2018-11-22 14:21:12 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`)) in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+The SQL being executed was: INSERT INTO `item` (`tipo_item`, `id_projeto`, `natureza`, `professor_responsavel`, `numero_item`, `justificativa`, `quantidade`, `custo_unitario`, `descricao`) VALUES (1, 49, 'Natureza do item', 1, '2', '', NULL, NULL, '') in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `it...')
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+)
+
+2018-11-22 14:21:12 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/create'
+    'tipo_item' => '1'
+    'id_projeto' => '49'
+]
+
+$_POST = [
+    'Item' => [
+        'natureza' => 'Natureza do item'
+        'professor_responsavel' => '1'
+        'numero_item' => '2'
+        'justificativa' => ''
+        'quantidade' => ''
+        'custo_unitario' => ''
+        'tipo_item' => '1'
+        'descricao' => ''
+        'id_projeto' => '49'
+    ]
+    'item-custo_unitario-disp' => 'R$0,00'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '269'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8888'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58394'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542910872.18
+    'REQUEST_TIME' => 1542910872
+    'argv' => [
+        0 => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    ]
+    'argc' => 1
+]
+2018-11-22 14:22:36 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`)) in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+The SQL being executed was: INSERT INTO `item` (`tipo_item`, `id_projeto`, `natureza`, `professor_responsavel`, `numero_item`, `justificativa`, `quantidade`, `custo_unitario`, `descricao`) VALUES (1, 49, 'Natureza do item', 1, '2', '', NULL, NULL, '') in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `it...')
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+)
+
+2018-11-22 14:22:36 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/create'
+    'tipo_item' => '1'
+    'id_projeto' => '49'
+]
+
+$_POST = [
+    'Item' => [
+        'natureza' => 'Natureza do item'
+        'professor_responsavel' => '1'
+        'numero_item' => '2'
+        'justificativa' => ''
+        'quantidade' => ''
+        'custo_unitario' => ''
+        'tipo_item' => '1'
+        'descricao' => ''
+        'id_projeto' => '49'
+    ]
+    'item-custo_unitario-disp' => 'R$0,00'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '269'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8888'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542910956.5
+    'REQUEST_TIME' => 1542910956
+    'argv' => [
+        0 => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    ]
+    'argc' => 1
+]
+2018-11-22 14:25:04 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`)) in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+The SQL being executed was: INSERT INTO `item` (`tipo_item`, `id_projeto`, `natureza`, `professor_responsavel`, `numero_item`, `justificativa`, `quantidade`, `custo_unitario`, `descricao`) VALUES (1, 49, 'Natureza do item', 2, '2', '', NULL, NULL, '') in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `it...')
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `it...')
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('item', Array)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(166): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\ItemController->actionCreate('1', '49')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/create', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`projetos`.`item`, CONSTRAINT `item_user_FK` FOREIGN KEY (`professor_responsavel`) REFERENCES `user` (`id`))
+)
+
+2018-11-22 14:25:04 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/create'
+    'tipo_item' => '1'
+    'id_projeto' => '49'
+]
+
+$_POST = [
+    'Item' => [
+        'natureza' => 'Natureza do item'
+        'professor_responsavel' => '2'
+        'numero_item' => '2'
+        'justificativa' => ''
+        'quantidade' => ''
+        'custo_unitario' => ''
+        'tipo_item' => '1'
+        'descricao' => ''
+        'id_projeto' => '49'
+    ]
+    'item-custo_unitario-disp' => 'R$0,00'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '269'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8888'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59381'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542911104.78
+    'REQUEST_TIME' => 1542911104
+    'argv' => [
+        0 => 'r=item%2Fcreate&tipo_item=1&id_projeto=49'
+    ]
+    'argc' => 1
+]
+2018-11-22 14:32:18 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: item/Alterar in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('Alterar', Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/Alterar', Array)
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2018-11-22 14:32:18 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/Alterar'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '61233'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2FAlterar&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2FAlterar&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542911538.35
+    'REQUEST_TIME' => 1542911538
+    'argv' => [
+        0 => 'r=item%2FAlterar&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-22 14:32:35 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: item/Update in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('Update', Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/Update', Array)
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2018-11-22 14:32:35 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/Update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '61300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2FUpdate&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2FUpdate&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542911555.48
+    'REQUEST_TIME' => 1542911555
+    'argv' => [
+        0 => 'r=item%2FUpdate&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-22 14:32:41 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: item/Update in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('Update', Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/Update', Array)
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2018-11-22 14:32:41 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/Update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '61330'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2FUpdate&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2FUpdate&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542911561.27
+    'REQUEST_TIME' => 1542911561
+    'argv' => [
+        0 => 'r=item%2FUpdate&id=1'
+    ]
+    'argc' => 1
+]
+2018-11-22 14:32:43 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: item/Update in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('Update', Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/Update', Array)
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2018-11-22 14:32:43 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/Update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '61330'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2FUpdate&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2FUpdate&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542911563.3
+    'REQUEST_TIME' => 1542911563
+    'argv' => [
+        0 => 'r=item%2FUpdate&id=1'
+    ]
+    'argc' => 1
+]

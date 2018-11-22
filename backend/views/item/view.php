@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Item */
 
-$this->title = $model->id;
+$this->title = $model->natureza;
 $this->params['breadcrumbs'][] = ['label' => 'Itens', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -19,8 +19,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['Alterar', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['Excluir', 'id' => $model->id], [
+        <?= Html::a('Alterar', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Excluir', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Deseja realmente excluir este item?',
@@ -42,6 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'tipo_item',
             'descricao:ntext',
             'id_projeto',
+            'professor_responsavel',
         ],
     ]) ?>
 
