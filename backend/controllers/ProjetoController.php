@@ -6,6 +6,7 @@ use Yii;
 use common\models\Projeto;
 use common\models\TermoAditivo;
 use common\models\RelatorioPrestacao;
+use common\models\Item;
 use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
@@ -284,8 +285,13 @@ class ProjetoController extends Controller
     public function actionDelete($id){
       $projeto = $this->findModel($id);
       $temTermoAditivo = TermoAditivo::find()->where(['id_projeto' => $projeto->id])->one();
+      $temItem = Item::find()->where(['id_projeto' => $projeto->id])->one();
       if(isset($temTermoAditivo)){
         $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem termos aditivos atrelados ao mesmo');
+        return $this->redirect(['index']);
+      }
+      else if(isset($temItem)){
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem itens atrelados ao mesmo');
         return $this->redirect(['index']);
       }
       else{
