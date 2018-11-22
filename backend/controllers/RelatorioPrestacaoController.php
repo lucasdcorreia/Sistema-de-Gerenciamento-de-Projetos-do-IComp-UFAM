@@ -70,7 +70,12 @@ class RelatorioPrestacaoController extends Controller
         $model = new RelatorioPrestacao();
         $projetos = Projeto::find()->all();
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
+
+        //atribuindo o id do projeto que foi dado como parâmetro da action, para que o relatorio seja associado ao projeto corretamente
         $model->id_projeto = $id;
+
+        //'1' é relatório técnico e '2' é prestação de contas, como esse é o controller de relatorio técnico, então é sempre '1'
+        $model->tipo_anexo = 1;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
           $model->relatorioFile = UploadedFile::getInstance($model, 'relatorioFile');
@@ -106,16 +111,28 @@ class RelatorioPrestacaoController extends Controller
 
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->relatorioFile = UploadedFile::getInstance($model, 'relatorioFile');
-            if($model->relatorioFile){
-              if ($model->upload()) {
-                // file is uploaded successfully
-              }else{
-                //error message
+          $model->relatorioFile = UploadedFile::getInstance($model, 'relatorioFile');
+          if($model->relatorioFile){
+            $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+
+            $files = \yii\helpers\FileHelper::findFiles($path, [
+              'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+            ]);
+            if (isset($files[0])) {
+              $file = $files[0];
+
+              if (file_exists($file)) {
+                unlink($file);
               }
             }
-            $this->mensagens('success', 'Relatório Técnico', 'Alterações realizadas com sucesso.');
-            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+            if ($model->upload()) {
+              // file is uploaded successfully
+            }else{
+              //error message
+            }
+          }
+          $this->mensagens('success', 'Relatório Técnico', 'Alterações realizadas com sucesso.');
+          return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
         }
 
         return $this->render('update', [
@@ -135,6 +152,18 @@ class RelatorioPrestacaoController extends Controller
     {
         $model = $this->findModel($id);
         $id_projeto = $model->id_projeto;
+        $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if (file_exists($file)) {
+            unlink($file);
+          }
+        }
         $model->delete();
         $this->mensagens('success', 'Relatório técnico excluído', 'Relatório técnico excluído com sucesso.');
         return $this->redirect(['/projeto/view', 'id' => $id_projeto]);

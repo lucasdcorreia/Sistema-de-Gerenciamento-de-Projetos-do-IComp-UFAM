@@ -195,6 +195,18 @@ class TermoAditivoController extends Controller
     {
         $termoAditivo = $this->findModel($id);
         $idProjeto = $termoAditivo->id_projeto;
+        $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$termoAditivo->id . '_' . $termoAditivo->id_projeto . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if (file_exists($file)) {
+            unlink($file);
+          }
+        }
         $termoAditivo->delete();
         $this->mensagens('success', 'Termo aditivo excluído', 'Termo aditivo excluído com sucesso.');
         return $this->redirect(['/projeto/view', 'id' => $idProjeto]);

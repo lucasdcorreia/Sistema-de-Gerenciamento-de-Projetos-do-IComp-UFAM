@@ -43,7 +43,7 @@ $this->registerJs("
 
     <?= $form->field($model, 'situacao')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'tipo_anexo')->textInput() ?>
+    <?= $form->field($model, 'tipo_anexo')->hiddenInput(['tipo_anexo' => 1])->label(false) ?>
 
     <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false) ?>
 
@@ -54,7 +54,7 @@ $this->registerJs("
         $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
 
         $files = \yii\helpers\FileHelper::findFiles($path, [
-          'only' => [$model->id . '.*'],
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
         ]);
         if (isset($files[0])) {
           $file = $files[0];
@@ -65,7 +65,7 @@ $this->registerJs("
           }else{
             echo 'Escolha um arquivo';
           }
-        }
+        }else echo 'Escolha um arquivo';
       ?></span>
     </div>
 

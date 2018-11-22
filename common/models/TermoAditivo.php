@@ -40,11 +40,10 @@ class TermoAditivo extends \yii\db\ActiveRecord
         return [
             [['motivo'], 'string'],
             [['vigencia'], 'date', 'format' => 'dd/mm/yyyy'],
-            [['id_projeto'], 'integer'],
+            [['id_projeto', 'tipo'], 'integer'],
             [['numero_do_termo'], 'string', 'max' => 50],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
             [['termoFile'], 'file', 'skipOnEmpty' => true],
-            [['tipo'], 'string', 'max' => 30],
         ];
     }
 
@@ -79,7 +78,7 @@ class TermoAditivo extends \yii\db\ActiveRecord
             if($this->vigencia != NULL){
               $myDateTime = DateTime::createFromFormat('d/m/Y', $this->vigencia);
               $this->vigencia = $myDateTime->format('Y-m-d 00:00:00');
-              if($this->tipo=='0'){
+              if($this->tipo==1){
                 echo 'entrei aqui';
                 \Yii::$app->db->createCommand('UPDATE projeto SET termino=:termino WHERE id=:id')
                 ->bindValue(':id', $this->id_projeto)

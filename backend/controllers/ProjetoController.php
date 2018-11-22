@@ -295,6 +295,28 @@ class ProjetoController extends Controller
         return $this->redirect(['index']);
       }
       else{
+        $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if (file_exists($file)) {
+            unlink($file);
+          }
+        }
+        $path = \Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/');
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$id . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if (file_exists($file)) {
+            unlink($file);
+          }
+        }
         $this->findModel($id)->delete();
         $this->mensagens('success', 'Projeto excluído', 'Projeto excluído com sucesso.');
         return $this->redirect(['index']);

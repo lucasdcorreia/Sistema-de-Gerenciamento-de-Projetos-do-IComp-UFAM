@@ -26,17 +26,42 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
         <?= Html::a('Voltar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
     </p>
+    <?php
+    function existeRelatorio($model){
+      $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
 
+      $files = \yii\helpers\FileHelper::findFiles($path, [
+        'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+      ]);
+      if (isset($files[0])) {
+        $file = $files[0];
+
+        if(file_exists($file)) {
+          return true;
+        }else{
+          return false;
+        }
+      }
+    }
+  ?>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'data_prevista',
             'data_enviada',
             'tipo',
             'situacao',
-            'tipo_anexo',
-            'id_projeto',
+            //'tipo_anexo',
+            //'id_projeto',
+            [
+              'attribute' => 'Anexo',
+              'label' => 'Anexo',
+              'format' => 'raw',
+              'value' => function($model){
+                return (existeRelatorio($model) ? Html::a(($model->tipo!='' ? $model->tipo : 'Anexo') . ' <i class="fas fa-paperclip" ></i>', ['/relatorio-prestacao/download', 'id' => $model->id] ) . Html::a(existeRelatorio($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/relatorio-prestacao/deleteanexo', 'id' => $model->id] ) : '');
+              },
+            ],
         ],
     ]) ?>
 
