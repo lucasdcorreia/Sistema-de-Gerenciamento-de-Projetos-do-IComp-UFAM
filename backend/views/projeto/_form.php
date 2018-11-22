@@ -84,7 +84,7 @@ $this->registerJs("
           }else{
             echo 'Escolha um arquivo';
           }
-        }
+        }else echo 'Escolha um arquivo';
       ?></span>
     </div>
 
@@ -115,7 +115,7 @@ $this->registerJs("
           }else{
             echo 'Escolha um arquivo';
           }
-        }
+        }else echo 'Escolha um arquivo';
       ?></span>
     </div>
 

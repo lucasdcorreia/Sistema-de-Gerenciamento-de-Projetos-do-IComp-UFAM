@@ -187,7 +187,7 @@ class ProjetoController extends Controller
               if ($model->upload('edital')) {
                 // file is uploaded successfully
               }else{
-                $this->mensagens('error', 'Upload', 'erro no upload do arquivo');
+                $this->mensagens('info', 'Edital', 'erro no upload do arquivo');
               }
             }
 
@@ -211,7 +211,7 @@ class ProjetoController extends Controller
               if ($model->upload('titulo_projeto')) {
                 // file is uploaded successfully
               }else{
-                $this->mensagens('error', 'Upload', 'erro no upload do arquivo');
+                $this->mensagens('info', 'Titulo projeto', 'erro no upload do arquivo');
               }
             }
 

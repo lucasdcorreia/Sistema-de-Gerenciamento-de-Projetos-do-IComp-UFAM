@@ -71,6 +71,7 @@ class TermoAditivoController extends Controller
         $model = new TermoAditivo();
         $projetos = Projeto::find()->all();
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
+        $model->id_projeto = $id;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->termoFile = UploadedFile::getInstance($model, 'termoFile');
@@ -156,6 +157,18 @@ class TermoAditivoController extends Controller
       if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->termoFile = UploadedFile::getInstance($model, 'termoFile');
             if($model->termoFile){
+              $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
+
+              $files = \yii\helpers\FileHelper::findFiles($path, [
+                'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+              ]);
+              if (isset($files[0])) {
+                $file = $files[0];
+
+                if (file_exists($file)) {
+                  unlink($file);
+                }
+              }
               if ($model->upload()) {
                 // file is uploaded successfully
               }else{

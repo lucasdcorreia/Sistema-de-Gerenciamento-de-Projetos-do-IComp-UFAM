@@ -116,7 +116,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'attribute' => 'titulo_projeto',
               'label' => 'Titulo do projeto',
               'format' => 'raw',
-              'value' => Html::a(($model->titulo_projeto!='' ? $model->titulo_projeto : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['downloadtitulo', 'id' => $model->id] ) . Html::a(existeTituloProjeto($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deletetitulo', 'id' => $model->id] ),
+              'value' => Html::a(($model->titulo_projeto!='' ? $model->titulo_projeto : 'Nenhum documento anexado') . ' <i class="fas fa-paperclip" ></i>', ['downloadtitulo', 'id' => $model->id] ) . Html::a(existeTituloProjeto($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deletetitulo', 'id' => $model->id] ),
             ],
             'nome_coordenador',
             'num_processo',
@@ -125,7 +125,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'attribute' => 'edital',
               'label' => 'Edital',
               'format' => 'raw',
-              'value' => Html::a(($model->edital!='' ? $model->edital : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['downloadedital', 'id' => $model->id] ) . Html::a(existeEdital($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deleteedital', 'id' => $model->id] ),
+              'value' => Html::a(($model->edital!='' ? $model->edital : 'Nenhum documento anexado') . ' <i class="fas fa-paperclip" ></i>', ['downloadedital', 'id' => $model->id] ) . Html::a(existeEdital($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['deleteedital', 'id' => $model->id] ),
             ],
             'inicio_previsto',//:datetime',
             'termino',
@@ -143,9 +143,6 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     <?= GridView::widget([
         'dataProvider' => $dataProviderTermoAditivo,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
             'numero_do_termo',
             'motivo:ntext',
             'vigencia',
@@ -154,7 +151,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'label' => 'Anexo',
               'format' => 'raw',
               'value' => function($model){
-                return Html::a(($model->numero_do_termo!='' ? $model->numero_do_termo : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['/termo-aditivo/download', 'id' => $model->id] ) . Html::a(existeTermo($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/termo-aditivo/deleteanexo', 'id' => $model->id] );
+                return Html::a(($model->numero_do_termo!='' ? $model->numero_do_termo : 'Nenhum documento anexado') . ' <i class="fas fa-paperclip" ></i>', ['/termo-aditivo/download', 'id' => $model->id] ) . Html::a(existeTermo($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/termo-aditivo/deleteanexo', 'id' => $model->id] );
               },
             ],
 /*          [
@@ -229,7 +226,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
               'label' => 'Anexo',
               'format' => 'raw',
               'value' => function($model){
-                return Html::a(($model->tipo!='' ? $model->tipo : 'Nome não definido') . ' <i class="fas fa-paperclip" ></i>', ['/relatorio-prestacao/download', 'id' => $model->id] ) . Html::a(existeRelatorio($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/relatorio-prestacao/deleteanexo', 'id' => $model->id] );
+                return Html::a(($model->tipo!='' ? $model->tipo : 'Nenhum documento anexado') . ' <i class="fas fa-paperclip" ></i>', ['/relatorio-prestacao/download', 'id' => $model->id] ) . Html::a(existeRelatorio($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/relatorio-prestacao/deleteanexo', 'id' => $model->id] );
               },
             ],
             [

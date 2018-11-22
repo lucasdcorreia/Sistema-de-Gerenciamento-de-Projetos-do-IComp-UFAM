@@ -41,11 +41,12 @@ $this->registerJs("
 
     <?= $form->field($model, 'motivo')->textarea(['rows' => 6]) ?>
 
-    <!-- <?= $form->field($model, 'vigencia')->textInput() ?> -->
-
     <?= $form->field($model, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
-    <?= $form->field($model, 'id_projeto')->dropDownList($array_projetos) ?>
+    <?= $form->field($model, 'tipo')->dropDownList(['Prorrogação de prazo', 'Outro']); ?>
+
+    <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false); ?>
+
     <?= $form->field($model, 'termoFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>
       <input type="button" id='select-file' value="Selecione o Arquivo"></input>
@@ -53,18 +54,18 @@ $this->registerJs("
         $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
 
         $files = \yii\helpers\FileHelper::findFiles($path, [
-          'only' => [$model->id . '.*'],
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
         ]);
         if (isset($files[0])) {
           $file = $files[0];
 
           if(file_exists($file)) {
             if(basename($file)!='.gitignore')echo basename($file);
-            else echo 'Escolha um arquivo';
+            else echo 'Escolha um arquivo1';
           }else{
-            echo 'Escolha um arquivo';
+            echo 'Escolha um arquivo2';
           }
-        }
+        }else echo 'Escolha um arquivo3';
       ?></span>
     </div>
 
