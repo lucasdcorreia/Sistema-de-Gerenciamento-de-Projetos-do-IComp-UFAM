@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Item;
+use common\models\User;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -109,21 +110,13 @@ class ItemController extends Controller
             'model' => $model,
 
             'dataProvider' => $dataProvider,
-
             'dataProviderMatConsumo' => $dataProviderMatConsumo,
-
             'dataProviderMatPermanente' => $dataProviderMatPermanente,
-
             'dataProviderServTerceiroPF' => $dataProviderServTerceiroPF,
-
             'dataProviderServTerceiroPJ' => $dataProviderServTerceiroPJ,
-
             'dataProviderPassagemNacional' => $dataProviderPassagemNacional,
-
             'dataProviderPassagemInternacional' => $dataProviderPassagemInternacional,
-
             'dataProviderDiariaNacional' => $dataProviderDiariaNacional,
-
             'dataProviderDiariaInternacional' => $dataProviderDiariaInternacional,
 
             'id_projeto' => $id_projeto,

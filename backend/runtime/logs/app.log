@@ -1308,3 +1308,410 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2018-11-23 15:50:44 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][Error] Error: Class 'Item' not found in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php:49
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(common\models\Item), Object(yii\widgets\DetailView))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(245): call_user_func(Object(Closure), Object(common\models\Item), Object(yii\widgets\DetailView))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#4 [internal function]: yii\base\BaseObject->__construct(Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(50): yii\base\Widget::widget(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ItemController))
+#14 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(144): yii\base\Controller->render('view', Array)
+#15 [internal function]: backend\controllers\ItemController->actionView('7')
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/view', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2018-11-23 15:50:44 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=47'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '64118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Fview&id=7'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=7'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543002644.33
+    'REQUEST_TIME' => 1543002644
+    'argv' => [
+        0 => 'r=item%2Fview&id=7'
+    ]
+    'argc' => 1
+]
+2018-11-23 15:51:17 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php:50
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(50): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/M...', 50, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), Object(yii\widgets\DetailView))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(245): call_user_func(Object(Closure), Object(common\models\Item), Object(yii\widgets\DetailView))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(51): yii\base\Widget::widget(Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ItemController))
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(144): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ItemController->actionView('7')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/view', Array)
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+2018-11-23 15:51:17 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=47'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '64130'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Fview&id=7'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=7'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543002677.19
+    'REQUEST_TIME' => 1543002677
+    'argv' => [
+        0 => 'r=item%2Fview&id=7'
+    ]
+    'argc' => 1
+]
+2018-11-23 15:51:35 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php:50
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(50): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/M...', 50, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), Object(yii\widgets\DetailView))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(245): call_user_func(Object(Closure), Object(common\models\Item), Object(yii\widgets\DetailView))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(51): yii\base\Widget::widget(Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ItemController))
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(144): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ItemController->actionView('7')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/view', Array)
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+2018-11-23 15:51:35 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=47'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '64138'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Fview&id=7'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=7'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543002695.79
+    'REQUEST_TIME' => 1543002695
+    'argv' => [
+        0 => 'r=item%2Fview&id=7'
+    ]
+    'argc' => 1
+]
+2018-11-23 15:53:04 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(49): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Applications/M...', 49, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), Object(yii\widgets\DetailView))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(245): call_user_func(Object(Closure), Object(common\models\Item), Object(yii\widgets\DetailView))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(50): yii\base\Widget::widget(Array)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ItemController))
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(144): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\ItemController->actionView('7')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/view', Array)
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+2018-11-23 15:53:04 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=47'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '64159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Fview&id=7'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=7'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543002784.16
+    'REQUEST_TIME' => 1543002784
+    'argv' => [
+        0 => 'r=item%2Fview&id=7'
+    ]
+    'argc' => 1
+]
+2018-11-23 15:53:35 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][Error] Error: Class 'User' not found in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php:49
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(common\models\Item), Object(yii\widgets\DetailView))
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(245): call_user_func(Object(Closure), Object(common\models\Item), Object(yii\widgets\DetailView))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#4 [internal function]: yii\base\BaseObject->__construct(Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/view.php(50): yii\base\Widget::widget(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(backend\controllers\ItemController))
+#14 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(144): yii\base\Controller->render('view', Array)
+#15 [internal function]: backend\controllers\ItemController->actionView('7')
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/view', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2018-11-23 15:53:35 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = [
+    'r' => 'item/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=47'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '64179'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Fview&id=7'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Fview&id=7'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543002815.82
+    'REQUEST_TIME' => 1543002815
+    'argv' => [
+        0 => 'r=item%2Fview&id=7'
+    ]
+    'argc' => 1
+]

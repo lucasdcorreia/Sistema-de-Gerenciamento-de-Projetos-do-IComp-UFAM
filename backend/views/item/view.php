@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use common\models\User;
+
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Item */
@@ -42,7 +44,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'tipo_item',
             'descricao:ntext',
             'id_projeto',
-            'professor_responsavel',
+            [
+                'attribute' => 'professor_responsavel',
+                'value' => function($data){
+                    return User::findOne($data->professor_responsavel)->nome;
+                }
+            ]
         ],
     ]) ?>
 
