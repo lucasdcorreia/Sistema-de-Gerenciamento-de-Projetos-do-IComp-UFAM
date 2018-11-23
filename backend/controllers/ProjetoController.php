@@ -285,9 +285,14 @@ class ProjetoController extends Controller
     public function actionDelete($id){
       $projeto = $this->findModel($id);
       $temTermoAditivo = TermoAditivo::find()->where(['id_projeto' => $projeto->id])->one();
+      $temRelatorioTecnico = RelatorioPrestacao::find()->where(['id_projeto' => $projeto->id])->one();
       $temItem = Item::find()->where(['id_projeto' => $projeto->id])->one();
       if(isset($temTermoAditivo)){
         $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem termos aditivos atrelados ao mesmo');
+        return $this->redirect(['index']);
+      }
+      else if(isset($temRelatorioTecnico)){
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem relatórios técnicos atrelados ao mesmo');
         return $this->redirect(['index']);
       }
       else if(isset($temItem)){
