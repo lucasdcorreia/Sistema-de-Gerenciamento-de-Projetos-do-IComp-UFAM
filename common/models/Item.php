@@ -43,7 +43,7 @@ class Item extends \yii\db\ActiveRecord
         return [
             [[/*'valor', */'custo_unitario'], 'double'],
             [['justificativa', 'descricao'], 'string'],
-            [['quantidade', 'tipo_item', 'id_projeto'], 'integer'],
+            [['quantidade', 'tipo_item', 'id_projeto', 'professor_responsavel'], 'integer'],
             [['natureza'], 'string', 'max' => 40],
             [['numero_item'], 'string', 'max' => 100],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],

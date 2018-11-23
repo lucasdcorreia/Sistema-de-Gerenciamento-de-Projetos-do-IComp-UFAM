@@ -1096,3 +1096,215 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-11-22 14:44:22 [::1][-][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'ppgi' in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('user')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /Applications/MAMP/htdocs/PAPS/projetos/common/models/User.php(102): yii\db\BaseActiveRecord::findOne(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(78)
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#27 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#28 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#31 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#32 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#36 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#37 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#38 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#39 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#40 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#41 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'ppgi' in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('user')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /Applications/MAMP/htdocs/PAPS/projetos/common/models/User.php(102): yii\db\BaseActiveRecord::findOne(Array)
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(78)
+#15 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#20 [internal function]: yii\base\BaseObject->__construct(Array)
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#27 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#28 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#29 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#30 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#31 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#32 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#33 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#34 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#35 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#36 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#37 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#38 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#39 {main}
+Additional Information:
+
+2018-11-22 14:44:22 [::1][-][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '64290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542912262.51
+    'REQUEST_TIME' => 1542912262
+    'argv' => []
+    'argc' => 0
+]
+2018-11-22 14:45:21 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: /Applications/MAMP/htdocs/PAPS/projetos/vendor/bower/jquery/dist in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetManager.php:456
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetBundle.php(185): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#7 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/adminLTE/yiisoft/yii2-app/layouts/main.php(20): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/SiteController.php(81): yii\base\Controller->render('index')
+#13 [internal function]: backend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2018-11-22 14:45:21 [::1][78][f9a1e8a0ac6e17276976b7921554c0a2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    '_backendUser' => 'caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'f9a1e8a0ac6e17276976b7921554c0a2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; _backendUser=caa79eeab14560c6fc0504045b14f6935a4b41f885e17b6c738b8d9ae7f84fd7a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=f9a1e8a0ac6e17276976b7921554c0a2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '64541'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1542912321.46
+    'REQUEST_TIME' => 1542912321
+    'argv' => []
+    'argc' => 0
+]

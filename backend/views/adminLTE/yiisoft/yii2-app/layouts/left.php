@@ -33,25 +33,12 @@
                         ['label' => 'Listar Usuários', 'icon' => 'fa fa-list', 'url' => ['user/index'], 'active' => $this->context->route == 'user/update' || $this->context->route == 'user/view' || $this->context->route == 'user/index' ],
                     ],
                 ],
-                ['label' => 'Secretaria', 'options' => ['class' => 'header'], 'visible' => Yii::$app->user->identity->checarAcesso('administrador')],
                 [
                     'label' => 'Projetos',
                     'icon' => 'fa fa-file-excel',
                     'url' => ['projeto/index'],
                     'visible' => (Yii::$app->user->identity->checarAcesso('administrador') || Yii::$app->user->identity->checarAcesso('secretaria')),
                 ],
-                /*[
-                    'label' => 'Termos Aditivos',
-                    'icon' => 'fa fa-file-excel',
-                    'url' => ['termo-aditivo/index'],
-                    'visible' => (Yii::$app->user->identity->checarAcesso('administrador') || Yii::$app->user->identity->checarAcesso('secretaria')),
-                ],
-                [
-                    'label' => 'Relatório Prestação',
-                    'icon' => 'fa fa-file-excel',
-                    'url' => ['relatorio-prestacao/index'],
-                    'visible' => (Yii::$app->user->identity->checarAcesso('administrador') || Yii::$app->user->identity->checarAcesso('secretaria')),
-                ],*/
             ]
         ]) ?>
     </section>
