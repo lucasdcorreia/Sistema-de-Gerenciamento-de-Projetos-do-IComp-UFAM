@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             [
                                 'attribute' => 'Valor Total',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custo_unitario;
+                                    return number_format($data->quantidade * $data->custo_unitario, 2);
                                 }
                             ],
 
@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em material de consumo:  <?php echo $subtotalMatConsumo; ?></h3>
+                        <h3>Custo total em material de consumo:  <?php echo number_format($subtotalMatConsumo, 2); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Novo Material de Consumo', ['create', 'tipo_item' => 1, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -95,7 +95,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             [
                                 'attribute' => 'Valor Total',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custo_unitario;
+                                    return number_format($data->quantidade * $data->custo_unitario, 2);
                                 }
                             ],
 
@@ -103,7 +103,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em material permanente:  <?php echo $subtotalMatPermanente; ?></h3>
+                    
+                        <h3>Custo total em material permanente:  <?php echo number_format($subtotalMatPermanente, 2); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Novo Material Permanente', ['create', 'tipo_item' => 2, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -139,7 +140,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         [
                             'attribute' => 'Valor Total',
                             'value' => function($data){
-                                return $data->quantidade * $data->custo_unitario;
+                                return number_format($data->quantidade * $data->custo_unitario, 2);
                             }
                         ],
 
@@ -147,7 +148,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ],
                 ]); ?>
                 <p>
-                        <h3>Custo total em serviços Pessoa Física:  <?php echo $subtotalServTerceiroPF; ?></h3>
+                        <h3>Custo total em serviços Pessoa Física:  <?php echo number_format($subtotalServTerceiroPF, 2); ?></h3>
                 </p>
                 <p>
                     <?= Html::a('Novo Serv. de Terceiro Pessoa Física', ['create', 'tipo_item' => 3, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -184,7 +185,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         [
                             'attribute' => 'Valor Total',
                             'value' => function($data){
-                                return $data->quantidade * $data->custo_unitario;
+                                return number_format($data->quantidade * $data->custo_unitario,2);
                             }
                         ],
 
@@ -192,7 +193,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ],
                 ]); ?>
                 <p>
-                        <h3>Custo total em serviços Pessoa Jurídica:  <?php echo $subtotalServTerceiroPJ; ?></h3>
+                        <h3>Custo total em serviços Pessoa Jurídica:  <?php echo number_format($subtotalServTerceiroPJ,2); ?></h3>
                 </p>
                 <p>
                     <?= Html::a('Novo Serv. de Terceiro Pessoa Jurídica', ['create', 'tipo_item' => 4, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -228,7 +229,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             [
                                 'attribute' => 'Valor Total',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custo_unitario;
+                                    return number_format($data->quantidade * $data->custo_unitario, 2);
                                 }
                             ],
 
@@ -236,7 +237,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Passagem Nacional:  <?php echo $subtotalPassagemNacional; ?></h3>
+                        <h3>Custo total em Passagem Nacional:  <?php echo number_format($subtotalPassagemNacional, 2); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Passagem Nacional', ['create', 'tipo_item' => 5, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -280,7 +281,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Passagem Internacional:  <?php echo $subtotalPassagemInternacional; ?></h3>
+                        <h3>Custo total em Passagem Internacional:  <?php echo number_format($subtotalPassagemInternacional,2); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Passagem Internacional', ['create', 'tipo_item' => 6, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -324,7 +325,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Diárias Nacionais:  <?php echo $subtotalDiariaNacional; ?></h3>
+                        <h3>Custo total em Diárias Nacionais:  <?php echo number_format($subtotalDiariaNacional,2); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Diária Nacional', ['create', 'tipo_item' => 7, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -367,7 +368,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Diárias Internacionais:  <?php echo $subtotalDiariaInternacional; ?></h3>
+                        <h3>Custo total em Diárias Internacionais:  <?php echo number_format($subtotalDiariaInternacional,2); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Diária Internacional', ['create', 'tipo_item' => 8, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
