@@ -1715,3 +1715,535 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-11-24 23:53:30 [::1][78][rki4nh6l458ie1bomtr0at17ln][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Parâmetros obrigatórios ausentes: id_projeto in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2018-11-24 23:53:30 [::1][78][rki4nh6l458ie1bomtr0at17ln][info][application] $_GET = [
+    'r' => 'item/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'rki4nh6l458ie1bomtr0at17ln'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Projeto criado com sucesso.'
+        'title' => 'Projeto criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=rki4nh6l458ie1bomtr0at17ln'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '28906'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543118010.601
+    'REQUEST_TIME' => 1543118010
+]
+2018-11-25 00:02:12 [::1][78][rki4nh6l458ie1bomtr0at17ln][error][ParseError] ParseError: syntax error, unexpected ''htmlOptions'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/dofafis/projetos/backend/views/projeto/_form.php:53
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, NULL)
+#2 /home/dofafis/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\ProjetoController))
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#7 /home/dofafis/projetos/backend/controllers/ProjetoController.php(117): yii\base\Controller->render('create', Array)
+#8 [internal function]: backend\controllers\ProjetoController->actionCreate()
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#12 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#13 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2018-11-25 00:02:12 [::1][78][rki4nh6l458ie1bomtr0at17ln][info][application] $_GET = [
+    'r' => 'projeto/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'rki4nh6l458ie1bomtr0at17ln'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=rki4nh6l458ie1bomtr0at17ln'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '28994'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543118532.745
+    'REQUEST_TIME' => 1543118532
+]
+2018-11-25 00:02:38 [::1][78][rki4nh6l458ie1bomtr0at17ln][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ActiveForm::htmlOptions in /home/dofafis/projetos/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('htmlOptions', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\widgets\ActiveForm), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Act...', Array, Array)
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Act...', Array, Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Widget.php(89): yii\BaseYii::createObject(Array)
+#7 /home/dofafis/projetos/backend/views/projeto/_form.php(52): yii\base\Widget::begin(Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#10 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, NULL)
+#11 /home/dofafis/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#12 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#13 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#14 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\ProjetoController))
+#15 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#16 /home/dofafis/projetos/backend/controllers/ProjetoController.php(117): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\ProjetoController->actionCreate()
+#18 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#21 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#22 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2018-11-25 00:02:38 [::1][78][rki4nh6l458ie1bomtr0at17ln][info][application] $_GET = [
+    'r' => 'projeto/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'rki4nh6l458ie1bomtr0at17ln'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=rki4nh6l458ie1bomtr0at17ln'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '28998'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543118558.264
+    'REQUEST_TIME' => 1543118558
+]
+2018-11-25 00:02:48 [::1][78][rki4nh6l458ie1bomtr0at17ln][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ActiveForm::0 in /home/dofafis/projetos/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('0', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\widgets\ActiveForm), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Act...', Array, Array)
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Act...', Array, Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Widget.php(89): yii\BaseYii::createObject(Array)
+#7 /home/dofafis/projetos/backend/views/projeto/_form.php(52): yii\base\Widget::begin(Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#10 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, NULL)
+#11 /home/dofafis/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#12 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#13 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#14 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\ProjetoController))
+#15 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#16 /home/dofafis/projetos/backend/controllers/ProjetoController.php(117): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\ProjetoController->actionCreate()
+#18 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#21 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#22 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2018-11-25 00:02:48 [::1][78][rki4nh6l458ie1bomtr0at17ln][info][application] $_GET = [
+    'r' => 'projeto/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'rki4nh6l458ie1bomtr0at17ln'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=rki4nh6l458ie1bomtr0at17ln'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '29002'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543118568.559
+    'REQUEST_TIME' => 1543118568
+]
+2018-11-25 00:37:59 [::1][78][-][warning][yii\validators\FileValidator::validateValue] File was only partially uploaded: 533638.jpg
+    in /home/dofafis/projetos/backend/controllers/ProjetoController.php:179
+2018-11-25 00:37:59 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/update'
+    'id' => '35'
+]
+
+$_POST = [
+    'Projeto' => [
+        'titulo_projeto' => ''
+        'tituloProjetoFile' => ''
+    ]
+]
+
+$_FILES = [
+    'Projeto' => [
+        'name' => [
+            'tituloProjetoFile' => '533638.jpg'
+        ]
+        'type' => [
+            'tituloProjetoFile' => ''
+        ]
+        'tmp_name' => [
+            'tituloProjetoFile' => ''
+        ]
+        'error' => [
+            'tituloProjetoFile' => 3
+        ]
+        'size' => [
+            'tituloProjetoFile' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'rki4nh6l458ie1bomtr0at17ln'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2727054'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryacHWfosEkxHKzXlH'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fupdate&id=35'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=rki4nh6l458ie1bomtr0at17ln'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '29322'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=projeto%2Fupdate&id=35'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fupdate&id=35'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543120679.559
+    'REQUEST_TIME' => 1543120679
+]
+2018-11-25 00:44:49 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/projeto/view.php:168
+    in /home/dofafis/projetos/backend/views/projeto/view.php:202
+    in /home/dofafis/projetos/backend/controllers/ProjetoController.php:72
+2018-11-25 00:44:49 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '37'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'rki4nh6l458ie1bomtr0at17ln'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Termo aditivo criado com sucesso.'
+        'title' => 'Termo aditivo criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=termo-aditivo%2Fcreate&id=37'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=rki4nh6l458ie1bomtr0at17ln'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '29350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=37'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fview&id=37'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543121089.171
+    'REQUEST_TIME' => 1543121089
+]
+2018-11-25 00:44:53 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/projeto/view.php:168
+    in /home/dofafis/projetos/backend/views/projeto/view.php:202
+    in /home/dofafis/projetos/backend/controllers/ProjetoController.php:72
+2018-11-25 00:44:53 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '37'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'rki4nh6l458ie1bomtr0at17ln'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Termo aditivo excluido com sucesso.'
+        'title' => 'Anexo'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=37'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=rki4nh6l458ie1bomtr0at17ln'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '29350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=37'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fview&id=37'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1543121093.709
+    'REQUEST_TIME' => 1543121093
+]

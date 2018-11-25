@@ -82,28 +82,34 @@ class ProjetoController extends Controller
     {
         $model = new Projeto();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
+        if ($model->load(Yii::$app->request->post())) {
+          $model->tituloProjetoFile = UploadedFile::getInstance($model, 'tituloProjetoFile');
+          $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
+          if($model->validate() && $model->save()){
             if($model->editalFile){
               if ($model->upload('edital')) {
                 // file is uploaded successfully
               }else{
                 //error message
+                $this->mensagens('info', 'Edital', 'erro no upload do arquivo');
               }
             }
 
-            $model->tituloProjetoFile = UploadedFile::getInstance($model, 'tituloProjetoFile');
             if($model->tituloProjetoFile){
               if ($model->upload('titulo_projeto')) {
                 // file is uploaded successfully
               }else{
                 //error message
+                $this->mensagens('info', 'Edital', 'erro no upload do arquivo');
               }
             }
 
-            $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
 
+            $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
             return $this->redirect(['item/index', 'id_projeto' => $model->id]);
+
+
+          }
         }
 
         return $this->render('create', [
@@ -167,9 +173,10 @@ class ProjetoController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
-
+        if ($model->load(Yii::$app->request->post())) {
+          $model->tituloProjetoFile = UploadedFile::getInstance($model, 'tituloProjetoFile');
+          $model->editalFile = UploadedFile::getInstance($model, 'editalFile');
+          if($model->validate() && $model->save()){
             if($model->editalFile){
 
               $path = \Yii::getAlias('@backend/../uploads/projetos/edital/');
@@ -191,8 +198,6 @@ class ProjetoController extends Controller
                 $this->mensagens('info', 'Edital', 'erro no upload do arquivo');
               }
             }
-
-            $model->tituloProjetoFile = UploadedFile::getInstance($model, 'tituloProjetoFile');
 
             if($model->tituloProjetoFile){
 
@@ -219,6 +224,7 @@ class ProjetoController extends Controller
 
             $this->mensagens('success', 'Projeto alterado', 'Projeto alterado com sucesso.');
             return $this->redirect(['view', 'id' => $model->id]);
+          }
         }
 
         return $this->render('update', [

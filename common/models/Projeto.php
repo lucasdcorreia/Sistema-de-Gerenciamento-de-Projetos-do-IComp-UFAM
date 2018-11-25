@@ -53,34 +53,29 @@ class Projeto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['inicio_previsto', 'termino', 'publicacao_diario_oficial'], 'date', 'format' => 'dd/mm/yyyy'],
+            [['inicio_previsto', 'termino'], 'date', 'format' => 'dd/mm/yyyy'],
             [['cotacao_moeda_estrangeira'], 'double'],
             [['num_processo', 'num_protocolo'], 'string', 'max' => 100],
             [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
             [['duracao'], 'safe'],
-            [['editalFile'], 'file', 'skipOnEmpty' => true],
-            [['tituloProjetoFile'], 'file', 'skipOnEmpty' => true],
+            [['editalFile'], 'file', 'skipOnEmpty' => true, 'maxSize' => 1024*1024*1024*1024*1024, 'tooBig' => 'Arquivo é muito grande para o upload'],
+            [['tituloProjetoFile'], 'file', 'skipOnEmpty' => true, 'maxSize' => 1024*1024*1024*1024, 'tooBig' => 'Arquivo é muito grande para o upload'],
             [['termino'], 'compare', 'compareAttribute'=>'inicio_previsto', 'operator'=>'>', 'message'=>'A data de início previsto deve ser anterior à data de término.'],
         ];
     }
 
     public function upload($tipo)
     {
+
       if($tipo=='edital'){
-          if ($this->validate()) {
+          //if ($this->validate()) {
               $this->editalFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/edital/') . $this->id . '.' . $this->editalFile->extension);
               return true;
-          } else {
-              return false;
-          }
       }else if ($tipo=='titulo_projeto'){
-          if ($this->validate()) {
               $this->tituloProjetoFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/titulo_projeto/') . $this->id . '.' . $this->tituloProjetoFile->extension);
               return true;
-          } else {
-              return false;
-          }
-      }
+      }else return false;
+
     }
 
     public function beforeSave($insert){
@@ -172,7 +167,6 @@ class Projeto extends \yii\db\ActiveRecord
             'num_protocolo' => 'Número do Protocolo',
             'cotacao_moeda_estrangeira' => 'Cotação da Moeda Estrangeira',
             'numero_fapeam_outorga' => 'Número da FAPEAM',
-            'publicacao_diario_oficial' => 'Publicação D.O',
             'duracao' => 'Duração',
         ];
     }

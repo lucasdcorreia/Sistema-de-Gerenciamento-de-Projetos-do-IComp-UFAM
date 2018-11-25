@@ -49,7 +49,8 @@ $this->registerJs("
 
 
     <?php $form = ActiveForm::begin([
-      'id' => 'projeto'
+      'id' => 'projeto',
+      'options' => ['enctype' => 'multipart/form-data'],
     ]); ?>
 
     <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
