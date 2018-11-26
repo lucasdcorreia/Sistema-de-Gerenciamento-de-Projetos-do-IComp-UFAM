@@ -71,10 +71,11 @@ $this->registerJs("
 
     <br>
 
-
+    <div class="form-group" style="float: left">
+        <?= Html::a('Voltar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
+    </div>
 
     <div class="form-group" style="text-align: right">
-        <?= Html::a('Cancelar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 

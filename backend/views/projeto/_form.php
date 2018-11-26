@@ -138,8 +138,12 @@ $this->registerJs("
 
 <!--    <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 -->
+    
+    <div class="form-group" style="float: left">
+        <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
+    </div>
+
     <div class="form-group" style="text-align: right">
-        <?= Html::a('Cancelar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
         <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
     </div>
 
