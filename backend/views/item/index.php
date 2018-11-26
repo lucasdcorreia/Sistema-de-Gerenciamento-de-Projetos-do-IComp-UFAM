@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="forms" style="margin-left:25px;">
 
+        <!-- Material de Consumo -->
         <div class="row" >
             <p>
                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseMatConsumo" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" 
@@ -61,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em material de consumo:  <?php echo number_format($subtotalMatConsumo, 2); ?></h3>
+                        <h3>Custo total em material de consumo:  <?php echo number_format($subtotalMatConsumo, 2, ",", '.'); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Novo Material de Consumo', ['create', 'tipo_item' => 1, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -71,6 +72,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
+        <!-- Material Permanente -->
         <div class="row">
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatPermanente" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -104,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ]); ?>
                     <p>
                     
-                        <h3>Custo total em material permanente:  <?php echo number_format($subtotalMatPermanente, 2); ?></h3>
+                        <h3>Custo total em material permanente:  <?php echo number_format($subtotalMatPermanente, 2, ",", '.'); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Novo Material Permanente', ['create', 'tipo_item' => 2, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -115,6 +117,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
+        <!-- Serviço de Terceiro Pessoa Física -->
         <div class="row">
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -140,7 +143,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         [
                             'attribute' => 'Valor Total',
                             'value' => function($data){
-                                return number_format($data->quantidade * $data->custo_unitario, 2);
+                                return number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
                             }
                         ],
 
@@ -160,6 +163,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
+        <!-- Serviço de Terceiro Pessoa Jurídica -->
         <div class="row">
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPJ" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -193,7 +197,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ],
                 ]); ?>
                 <p>
-                        <h3>Custo total em serviços Pessoa Jurídica:  <?php echo number_format($subtotalServTerceiroPJ,2); ?></h3>
+                        <h3>Custo total em serviços Pessoa Jurídica:  <?php echo number_format($subtotalServTerceiroPJ, 2, ",", '.'); ?></h3>
                 </p>
                 <p>
                     <?= Html::a('Novo Serv. de Terceiro Pessoa Jurídica', ['create', 'tipo_item' => 4, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -204,6 +208,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
+        <!-- Passagem Nacional -->
         <div class="row">
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -229,7 +234,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             [
                                 'attribute' => 'Valor Total',
                                 'value' => function($data){
-                                    return number_format($data->quantidade * $data->custo_unitario, 2);
+                                    return number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
                                 }
                             ],
 
@@ -237,7 +242,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Passagem Nacional:  <?php echo number_format($subtotalPassagemNacional, 2); ?></h3>
+                        <h3>Custo total em Passagem Nacional:  <?php echo number_format($subtotalPassagemNacional, 2, ",", '.'); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Passagem Nacional', ['create', 'tipo_item' => 5, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -247,6 +252,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
+        <!-- Passagem Internacional -->
         <div class="row">
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -281,7 +287,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Passagem Internacional:  <?php echo number_format($subtotalPassagemInternacional,2); ?></h3>
+                        <h3>Custo total em Passagem Internacional:  <?php echo number_format($subtotalPassagemInternacional,2, ",", '.'); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Passagem Internacional', ['create', 'tipo_item' => 6, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -292,6 +298,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
+        <!-- Diária Nacional -->
         <div class="row">
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -325,7 +332,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Diárias Nacionais:  <?php echo number_format($subtotalDiariaNacional,2); ?></h3>
+                        <h3>Custo total em Diárias Nacionais:  <?php echo number_format($subtotalDiariaNacional,2, ",", '.'); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Diária Nacional', ['create', 'tipo_item' => 7, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
@@ -336,6 +343,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
+        <!-- Diária Internacional -->
         <div class="row">
             <p>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -368,7 +376,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                        <h3>Custo total em Diárias Internacionais:  <?php echo number_format($subtotalDiariaInternacional,2); ?></h3>
+                        <h3>Custo total em Diárias Internacionais:  <?php echo number_format($subtotalDiariaInternacional,2, ",", '.'); ?></h3>
                     </p>
                     <p>
                         <?= Html::a('Nova Diária Internacional', ['create', 'tipo_item' => 8, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
