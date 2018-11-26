@@ -27,6 +27,7 @@ use Yii;
  */
 class Item extends \yii\db\ActiveRecord
 {
+    private $custoUnitarioReal;
     /**
      * {@inheritdoc}
      */
@@ -45,6 +46,7 @@ class Item extends \yii\db\ActiveRecord
             [['justificativa', 'descricao'], 'string'],
             [['quantidade', 'tipo_item', 'id_projeto', 'professor_responsavel'], 'integer'],
             [['natureza'], 'string', 'max' => 40],
+            [['custoUnitarioReal'], 'safe'],
             [['numero_item'], 'string', 'max' => 100],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
         ];
@@ -62,12 +64,20 @@ class Item extends \yii\db\ActiveRecord
             'numero_item' => 'Número Item',
             'justificativa' => 'Justificativa',
             'quantidade' => 'Quantidade',
-            'custo_unitario' => 'Custo Unitário',
+            'custo_unitario' => ($this->tipo_item==8 || $this->tipo_item==6)?'Custo Unitário(US$)':'Custo Unitário(R$)',
+            'custoUnitarioReal' => 'Custo Unitário(R$)',
             'tipo_item' => 'Tipo de Item',
             'descricao' => 'Descrição',
             'id_projeto' => 'Id Projeto',
             'professor_responsavel' => 'Professor Responsável',
         ];
+    }
+
+    public function getCustoUnitarioReal(){
+        $projeto = \Yii::$app->db->createCommand('SELECT * FROM projetos.projeto WHERE id=:id_projeto')
+           ->bindValue(':id_projeto', $this->id_projeto)
+           ->queryOne();
+        return $this->custo_unitario * ($projeto['cotacao_moeda_estrangeira']);
     }
 
     /**

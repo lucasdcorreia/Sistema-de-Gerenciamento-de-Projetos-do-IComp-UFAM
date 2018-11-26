@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Material de Consumo -->
         <div class="row" >
             <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#collapseMatConsumo" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" 
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseMatConsumo" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
                 style="width:95%;text-align:left">
                 Material de Consumo </i>
                 </a>
@@ -50,9 +50,9 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
-                            
+
                             [
-                                'attribute' => 'Valor Total',
+                                'attribute' => 'Total',
                                 'value' => function($data){
                                     return number_format($data->quantidade * $data->custo_unitario, 2);
                                 }
@@ -95,7 +95,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'descricao:ntext',
                             //'id_projeto',
                             [
-                                'attribute' => 'Valor Total',
+                                'attribute' => 'Total',
                                 'value' => function($data){
                                     return number_format($data->quantidade * $data->custo_unitario, 2);
                                 }
@@ -105,7 +105,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ],
                     ]); ?>
                     <p>
-                    
+
                         <h3>Custo total em material permanente:  <?php echo number_format($subtotalMatPermanente, 2, ",", '.'); ?></h3>
                     </p>
                     <p>
@@ -141,7 +141,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'descricao:ntext',
                         //'id_projeto',
                         [
-                            'attribute' => 'Valor Total',
+                            'attribute' => 'Total',
                             'value' => function($data){
                                 return number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
                             }
@@ -187,7 +187,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'descricao:ntext',
                         //'id_projeto',
                         [
-                            'attribute' => 'Valor Total',
+                            'attribute' => 'Total',
                             'value' => function($data){
                                 return number_format($data->quantidade * $data->custo_unitario,2);
                             }
@@ -232,12 +232,11 @@ $this->params['breadcrumbs'][] = $this->title;
                             'descricao:ntext',
                             //'id_projeto',
                             [
-                                'attribute' => 'Valor Total',
+                                'attribute' => 'Total',
                                 'value' => function($data){
                                     return number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
                                 }
                             ],
-
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
                     ]); ?>
@@ -273,13 +272,21 @@ $this->params['breadcrumbs'][] = $this->title;
                             'justificativa:ntext',
                             'quantidade',
                             'custo_unitario',
+                            'custoUnitarioReal',
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
                             [
-                                'attribute' => 'Valor Total',
+                                'attribute' => 'Total US$',
                                 'value' => function($data){
                                     return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
+
+                            [
+                                'attribute' => 'Total R$',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custoUnitarioReal;
                                 }
                             ],
 
@@ -322,7 +329,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'descricao:ntext',
                             //'id_projeto',
                             [
-                                'attribute' => 'Valor Total',
+                                'attribute' => 'Total',
                                 'value' => function($data){
                                     return $data->quantidade * $data->custo_unitario;
                                 }
@@ -362,13 +369,21 @@ $this->params['breadcrumbs'][] = $this->title;
                             'justificativa:ntext',
                             'quantidade',
                             'custo_unitario',
+                            'custoUnitarioReal',
                             //'tipo_item',
                             'descricao:ntext',
                             //'id_projeto',
                             [
-                                'attribute' => 'Valor Total',
+                                'attribute' => 'Total US$',
                                 'value' => function($data){
                                     return $data->quantidade * $data->custo_unitario;
+                                }
+                            ],
+
+                            [
+                                'attribute' => 'Total R$',
+                                'value' => function($data){
+                                    return $data->quantidade * $data->custoUnitarioReal;
                                 }
                             ],
 
@@ -388,6 +403,6 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
     </div>
-    
+
 
 </div>

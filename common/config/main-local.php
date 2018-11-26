@@ -5,7 +5,7 @@ return [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=projetos',
             'username' => 'root',
-            'password' => 'root',
+            'password' => 'EllE2327',
             'charset' => 'utf8',
         ],
         'mailer' => [

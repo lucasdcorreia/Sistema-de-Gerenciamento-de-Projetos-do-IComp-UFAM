@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= DetailView::widget([
         'model' => $model,
-        'attributes' => [
+        'attributes' => ($model->tipo_item==8 || $model->tipo_item==6)?[
             'id',
             'natureza',
             'valor',
@@ -41,15 +41,36 @@ $this->params['breadcrumbs'][] = $this->title;
             'justificativa:ntext',
             'quantidade',
             'custo_unitario',
-            'tipo_item',
+            'custoUnitarioReal',
+            //'tipo_item',
             'descricao:ntext',
-            'id_projeto',
-            [
+
+            //'id_projeto',
+            /*[
                 'attribute' => 'professor_responsavel',
                 'value' => function($data){
                     return User::findOne($data->professor_responsavel)->nome;
                 }
-            ]
+            ]*/
+        ]:[
+          'id',
+          'natureza',
+          'valor',
+          'numero_item',
+          'justificativa:ntext',
+          'quantidade',
+          'custo_unitario',
+          //'custoUnitarioReal',
+          'tipo_item',
+          'descricao:ntext',
+
+          //'id_projeto',
+          /*[
+              'attribute' => 'professor_responsavel',
+              'value' => function($data){
+                  return User::findOne($data->professor_responsavel)->nome;
+              }
+          ]*/
         ],
     ]) ?>
 
