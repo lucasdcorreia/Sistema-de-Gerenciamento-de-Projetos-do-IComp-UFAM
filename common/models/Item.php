@@ -43,8 +43,8 @@ class Item extends \yii\db\ActiveRecord
     {
         return [
             [[/*'valor', */'custo_unitario'], 'double'],
-            [['justificativa', 'descricao'], 'string'],
-            [['quantidade', 'tipo_item', 'id_projeto', 'professor_responsavel'], 'integer'],
+            [['justificativa', 'descricao', 'professor_responsavel'], 'string'],
+            [['quantidade', 'tipo_item', 'id_projeto'], 'integer'],
             [['natureza'], 'string', 'max' => 40],
             [['custoUnitarioReal'], 'safe'],
             [['numero_item'], 'string', 'max' => 100],

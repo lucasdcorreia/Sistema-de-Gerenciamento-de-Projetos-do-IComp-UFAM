@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'custoUnitarioReal',
             //'tipo_item',
             'descricao:ntext',
-
+            'professor_responsavel',
             //'id_projeto',
             /*[
                 'attribute' => 'professor_responsavel',
@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
           //'custoUnitarioReal',
           'tipo_item',
           'descricao:ntext',
-
+          'professor_responsavel',
           //'id_projeto',
           /*[
               'attribute' => 'professor_responsavel',

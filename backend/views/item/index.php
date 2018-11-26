@@ -49,6 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'custo_unitario',
                             //'tipo_item',
                             'descricao:ntext',
+                            'professor_responsavel',
                             //'id_projeto',
 
                             [
@@ -93,6 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'custo_unitario',
                             //'tipo_item',
                             'descricao:ntext',
+                            'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total',
@@ -139,6 +141,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'custo_unitario',
                         //'tipo_item',
                         'descricao:ntext',
+                        'professor_responsavel',
                         //'id_projeto',
                         [
                             'attribute' => 'Total',
@@ -185,6 +188,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'custo_unitario',
                         //'tipo_item',
                         'descricao:ntext',
+                        'professor_responsavel',
                         //'id_projeto',
                         [
                             'attribute' => 'Total',
@@ -230,6 +234,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'custo_unitario',
                             //'tipo_item',
                             'descricao:ntext',
+                            'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total',
@@ -275,6 +280,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'custoUnitarioReal',
                             //'tipo_item',
                             'descricao:ntext',
+                            'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total US$',
@@ -327,6 +333,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'custo_unitario',
                             //'tipo_item',
                             'descricao:ntext',
+                            'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total',
@@ -372,6 +379,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'custoUnitarioReal',
                             //'tipo_item',
                             'descricao:ntext',
+                            'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total US$',
