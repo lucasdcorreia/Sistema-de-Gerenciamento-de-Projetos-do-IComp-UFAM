@@ -24,7 +24,11 @@ use yii\bootstrap\Collapse;
 
     <?= $form->field($model, 'quantidade')->textInput() ?>
 
-    <?= $form->field($model, 'custo_unitario')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
+    <?php if (($tipo_item == 6) || ($tipo_item == 8)): ?>
+        <?= $form->field($model, 'custo_unitario')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'US$', 'thousands' => '.', 'decimal' => ','] ]) ?>
+    <?php else: ?>
+        <?= $form->field($model, 'custo_unitario')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
+    <?php endif; ?>
 
     <?= $form->field($model, 'tipo_item')->hiddenInput(['tipo_item' => $tipo_item])->label(false); ?>
 
