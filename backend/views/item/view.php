@@ -15,7 +15,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="item-view">
 
-    <?= Html::a('Voltar', ['item/index', 'id_projeto' => $model->id_projeto], ['class' => 'btn btn-default btn-lg']) ?>
     <hr>
 
     <h1><?= Html::encode($this->title) ?></h1>
@@ -29,6 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Voltar', ['item/index', 'id_projeto' => $model->id_projeto], ['class' => 'btn btn-default']) ?>
     </p>
 
     <?= DetailView::widget([
