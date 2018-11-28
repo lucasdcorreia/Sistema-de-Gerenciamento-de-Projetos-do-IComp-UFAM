@@ -61,15 +61,15 @@ class Item extends \yii\db\ActiveRecord
             'id' => 'ID',
             'natureza' => 'Natureza',
             //'valor' => 'Valor',
-            'numero_item' => 'Número Item',
+            'numero_item' => 'Nº Item',
             'justificativa' => 'Justificativa',
-            'quantidade' => 'Quantidade',
-            'custo_unitario' => ($this->tipo_item==8 || $this->tipo_item==6)?'Custo Unitário(US$)':'Custo Unitário(R$)',
+            'quantidade' => 'Qtde',
+            'custo_unitario' => 'Custo Unitário',
             'custoUnitarioReal' => 'Custo Unitário(R$)',
             'tipo_item' => 'Tipo de Item',
             'descricao' => 'Descrição',
             'id_projeto' => 'Id Projeto',
-            'professor_responsavel' => 'Professor Responsável',
+            'professor_responsavel' => 'Prof. Responsável',
         ];
     }
 

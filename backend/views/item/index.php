@@ -25,49 +25,56 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <div class="forms" style="margin-left:25px;">
-
+      <div class="pull-right">
+          <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF,#collapseServTerceiroPJ,#collapseMatConsumo,#collapseMatPermanente,#collapseDiariaNacional,#collapsePassagemNacional,#collapseDiariaInternacional,#collapsePassagemInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+          style="text-align:left">Expandir tudo</button>
+      </div>
+      <br/>
+      <br/>
+      <br/>
         <!-- Material de Consumo -->
         <div class="row" >
             <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#collapseMatConsumo" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
+                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapseMatConsumo" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
                 style="width:95%;text-align:left">
                 Material de Consumo </i>
                 </a>
             </p>
             <div class="collapse multi-collapse" id="collapseMatConsumo">
                 <div class="card card-body">
-                    <h2>Material de Consumo</h2>
+                  <p>
+                    <h4>Custo total em material de consumo:  <?php echo 'R$ ' .  number_format($subtotalMatConsumo, 2, ",", '.') . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 1, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']); ?></h4>
+                  </p>
                     <?= GridView::widget([
                     'dataProvider' => $dataProviderMatConsumo,
                     'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            'numero_item',
                             'natureza',
                             //'valor',
-                            'numero_item',
-                            'justificativa:ntext',
+                            //'justificativa:ntext',
                             'quantidade',
-                            'custo_unitario',
+                            [
+                                'attribute' => 'Custo Unitário',
+                                'value' => function($data){
+                                    return 'R$' . $data->custo_unitario;
+                                }
+                            ],
                             //'tipo_item',
-                            'descricao:ntext',
+                            //'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
 
                             [
                                 'attribute' => 'Total',
                                 'value' => function($data){
-                                    return number_format($data->quantidade * $data->custo_unitario, 2);
+                                    return 'R$' . number_format($data->quantidade * $data->custo_unitario, 2);
                                 }
                             ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                             ],
                     ]); ?>
-                    <p>
-                        <h3>Custo total em material de consumo:  <?php echo number_format($subtotalMatConsumo, 2, ",", '.'); ?></h3>
-                    </p>
-                    <p>
-                        <?= Html::a('Novo Material de Consumo', ['create', 'tipo_item' => 1, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                    </p>
                 </div>
                 <hr>
             </div>
@@ -76,43 +83,43 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Material Permanente -->
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatPermanente" aria-expanded="false" aria-controls="multiCollapseExample2"
+                <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseMatPermanente" aria-expanded="false" aria-controls="multiCollapseExample2"
                 style="width:95%;text-align:left">Material Permanente</button>
             </p>
             <div class="collapse multi-collapse" id="collapseMatPermanente">
                 <div class="card card-body">
-                <h2>Material Permanente</h2>
+                  <p>
+                    <h4>Custo total em material permanente:  <?php echo 'R$ ' .  number_format($subtotalMatPermanente, 2, ",", '.') . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 2, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
+                  </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderMatPermanente,
                         'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            'numero_item',
                             'natureza',
                             //'valor',
-                            'numero_item',
-                            'justificativa:ntext',
+                            //'justificativa:ntext',
                             'quantidade',
-                            'custo_unitario',
+                            [
+                                'attribute' => 'Custo Unitário',
+                                'value' => function($data){
+                                    return 'R$' . $data->custo_unitario;
+                                }
+                            ],
                             //'tipo_item',
-                            'descricao:ntext',
+                            //'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total',
                                 'value' => function($data){
-                                    return number_format($data->quantidade * $data->custo_unitario, 2);
+                                    return 'R$' . number_format($data->quantidade * $data->custo_unitario, 2);
                                 }
                             ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
                     ]); ?>
-                    <p>
-
-                        <h3>Custo total em material permanente:  <?php echo number_format($subtotalMatPermanente, 2, ",", '.'); ?></h3>
-                    </p>
-                    <p>
-                        <?= Html::a('Novo Material Permanente', ['create', 'tipo_item' => 2, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                    </p>
 
                 </div>
                 <hr>
@@ -122,43 +129,44 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Serviço de Terceiro Pessoa Física -->
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF" aria-expanded="false" aria-controls="multiCollapseExample2"
+                <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF" aria-expanded="false" aria-controls="multiCollapseExample2"
                 style="width:95%;text-align:left">Serviço de Terceiro Pessoa Física</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseServTerceiroPF">
                 <div class="card card-body">
-                <h2>Serviço de Terceiro Pessoa Física</h2>
+                  <p>
+                    <h4>Custo total em serviços Pessoa Física:  <?php echo 'R$ ' .  number_format($subtotalServTerceiroPF, 2) . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 3, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
+                  </p>
                 <?= GridView::widget([
                     'dataProvider' => $dataProviderServTerceiroPF,
                     'columns' => [
-                        ['class' => 'yii\grid\SerialColumn'],
+                        'numero_item',
                         'natureza',
                         //'valor',
-                        'numero_item',
-                        'justificativa:ntext',
+                        //'justificativa:ntext',
                         'quantidade',
-                        'custo_unitario',
+                        [
+                            'attribute' => 'Custo Unitário',
+                            'value' => function($data){
+                                return 'R$' . $data->custo_unitario;
+                            }
+                        ],
                         //'tipo_item',
-                        'descricao:ntext',
+                        //'descricao:ntext',
                         'professor_responsavel',
                         //'id_projeto',
                         [
                             'attribute' => 'Total',
                             'value' => function($data){
-                                return number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
+                                return 'R$' . number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
                             }
                         ],
 
                         ['class' => 'yii\grid\ActionColumn'],
                     ],
                 ]); ?>
-                <p>
-                        <h3>Custo total em serviços Pessoa Física:  <?php echo number_format($subtotalServTerceiroPF, 2); ?></h3>
-                </p>
-                <p>
-                    <?= Html::a('Novo Serv. de Terceiro Pessoa Física', ['create', 'tipo_item' => 3, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                </p>
 
 
                 </div>
@@ -169,43 +177,44 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Serviço de Terceiro Pessoa Jurídica -->
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPJ" aria-expanded="false" aria-controls="multiCollapseExample2"
+                <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPJ" aria-expanded="false" aria-controls="multiCollapseExample2"
                 style="width:95%;text-align:left">Serviço de Terceiro Pessoa Jurídica</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseServTerceiroPJ">
                 <div class="card card-body">
-                <h2>Serviço de Terceiro Pessoa Jurídica</h2>
+                  <p>
+                    <h4>Custo total em serviços Pessoa Jurídica:  <?php echo 'R$ ' .  number_format($subtotalServTerceiroPJ, 2, ",", '.') . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 4, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
+                  </p>
                 <?= GridView::widget([
                     'dataProvider' => $dataProviderServTerceiroPJ,
                     'columns' => [
-                        ['class' => 'yii\grid\SerialColumn'],
+                        'numero_item',
                         'natureza',
                         //'valor',
-                        'numero_item',
-                        'justificativa:ntext',
+                        //'justificativa:ntext',
                         'quantidade',
-                        'custo_unitario',
+                        [
+                            'attribute' => 'Custo Unitário',
+                            'value' => function($data){
+                                return 'R$' . $data->custo_unitario;
+                            }
+                        ],
                         //'tipo_item',
-                        'descricao:ntext',
+                        //'descricao:ntext',
                         'professor_responsavel',
                         //'id_projeto',
                         [
                             'attribute' => 'Total',
                             'value' => function($data){
-                                return number_format($data->quantidade * $data->custo_unitario,2);
+                                return 'R$' . number_format($data->quantidade * $data->custo_unitario,2);
                             }
                         ],
 
                         ['class' => 'yii\grid\ActionColumn'],
                     ],
                 ]); ?>
-                <p>
-                        <h3>Custo total em serviços Pessoa Jurídica:  <?php echo number_format($subtotalServTerceiroPJ, 2, ",", '.'); ?></h3>
-                </p>
-                <p>
-                    <?= Html::a('Novo Serv. de Terceiro Pessoa Jurídica', ['create', 'tipo_item' => 4, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                </p>
 
                 </div>
                 <hr>
@@ -215,42 +224,43 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Passagem Nacional -->
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapsePassagemNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
                 style="width:95%;text-align:left">Passagem Nacional</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapsePassagemNacional">
                 <div class="card card-body">
-                    <h2>Passagem Nacional</h2>
+                  <p>
+                    <h4>Custo total em Passagem Nacional:  <?php echo 'R$ ' .  number_format($subtotalPassagemNacional, 2, ",", '.') . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 5, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
+                  </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderPassagemNacional,
                         'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            'numero_item',
                             'natureza',
                             //'valor',
-                            'numero_item',
-                            'justificativa:ntext',
+                            //'justificativa:ntext',
                             'quantidade',
-                            'custo_unitario',
+                            [
+                                'attribute' => 'Custo Unitário',
+                                'value' => function($data){
+                                    return 'R$' . $data->custo_unitario;
+                                }
+                            ],
                             //'tipo_item',
-                            'descricao:ntext',
+                            //'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total',
                                 'value' => function($data){
-                                    return number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
+                                    return 'R$' . number_format($data->quantidade * $data->custo_unitario, 2, ",", '.');
                                 }
                             ],
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
                     ]); ?>
-                    <p>
-                        <h3>Custo total em Passagem Nacional:  <?php echo number_format($subtotalPassagemNacional, 2, ",", '.'); ?></h3>
-                    </p>
-                    <p>
-                        <?= Html::a('Nova Passagem Nacional', ['create', 'tipo_item' => 5, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                    </p>
                 </div>
                 <hr>
             </div>
@@ -259,52 +269,58 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Passagem Internacional -->
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePassagemInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapsePassagemInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
                 style="width:95%;text-align:left">Passagem Internacional</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapsePassagemInternacional">
 
                 <div class="card card-body">
-                    <h2>Passagem Internacional</h2>
+                  <p>
+                    <h4>Custo total em Passagem Internacional:  <?php echo 'US$ ' .  number_format($subtotalPassagemInternacional,2, ",", '.') . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 6, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
+                  </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderPassagemInternacional,
                         'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            'numero_item',
                             'natureza',
                             //'valor',
-                            'numero_item',
-                            'justificativa:ntext',
+                            //'justificativa:ntext',
                             'quantidade',
-                            'custo_unitario',
-                            'custoUnitarioReal',
+                            [
+                                'attribute' => 'Custo Unitário (US$)',
+                                'value' => function($data){
+                                    return 'US$' . $data->custo_unitario;
+                                }
+                            ],
+                            [
+                                'attribute' => 'Custo Unitário',
+                                'value' => function($data){
+                                    return 'R$' . $data->custoUnitarioReal;
+                                }
+                            ],
                             //'tipo_item',
-                            'descricao:ntext',
+                            //'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
-                                'attribute' => 'Total US$',
+                                'attribute' => 'Total',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custo_unitario;
+                                    return 'US$' . $data->quantidade * $data->custo_unitario;
                                 }
                             ],
 
                             [
                                 'attribute' => 'Total R$',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custoUnitarioReal;
+                                    return 'R$' . $data->quantidade * $data->custoUnitarioReal;
                                 }
                             ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
                     ]); ?>
-                    <p>
-                        <h3>Custo total em Passagem Internacional:  <?php echo number_format($subtotalPassagemInternacional,2, ",", '.'); ?></h3>
-                    </p>
-                    <p>
-                        <?= Html::a('Nova Passagem Internacional', ['create', 'tipo_item' => 6, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                    </p>
 
                 </div>
                 <hr>
@@ -314,43 +330,44 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Diária Nacional -->
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseDiariaNacional" aria-expanded="false" aria-controls="multiCollapseExample2"
                 style="width:95%;text-align:left">Diária Nacional</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseDiariaNacional">
                 <div class="card card-body">
-                    <h2>Diária Nacional</h2>
+                  <p>
+                    <h4>Custo total em Diárias Nacionais:  <?php echo 'R$ ' .  number_format($subtotalDiariaNacional,2, ",", '.') . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 7, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
+                  </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderDiariaNacional,
                         'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            'numero_item',
                             'natureza',
                             //'valor',
-                            'numero_item',
-                            'justificativa:ntext',
+                            //'justificativa:ntext',
                             'quantidade',
-                            'custo_unitario',
+                            [
+                                'attribute' => 'Custo Unitário',
+                                'value' => function($data){
+                                    return 'R$' . $data->custo_unitario;
+                                }
+                            ],
                             //'tipo_item',
-                            'descricao:ntext',
+                            //'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
                                 'attribute' => 'Total',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custo_unitario;
+                                    return 'R$' . $data->quantidade * $data->custo_unitario;
                                 }
                             ],
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],
                     ]); ?>
-                    <p>
-                        <h3>Custo total em Diárias Nacionais:  <?php echo number_format($subtotalDiariaNacional,2, ",", '.'); ?></h3>
-                    </p>
-                    <p>
-                        <?= Html::a('Nova Diária Nacional', ['create', 'tipo_item' => 7, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                    </p>
 
                 </div>
                 <hr>
@@ -360,50 +377,56 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Diária Internacional -->
         <div class="row">
             <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDiariaInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
+                <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseDiariaInternacional" aria-expanded="false" aria-controls="multiCollapseExample2"
                 style="width:95%;text-align:left">Diária Internacional</button>
             </p>
             <div class="collapse multi-collapse" id="collapseDiariaInternacional">
                 <div class="card card-body">
-                    <h2>Diária Internacional  </h2>
+                  <p>
+                    <h4>Custo total em Diárias Internacionais:  <?php echo 'US$ ' .  number_format($subtotalDiariaInternacional,2, ",", '.') . ' ' .
+                    Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 8, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
+                  </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderDiariaInternacional,
                         'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            'numero_item',
                             'natureza',
                             //'valor',
-                            'numero_item',
-                            'justificativa:ntext',
+                            //'justificativa:ntext',
                             'quantidade',
-                            'custo_unitario',
-                            'custoUnitarioReal',
+                            [
+                                'attribute' => 'Custo Unitário (US$)',
+                                'value' => function($data){
+                                    return 'US$' . $data->custo_unitario;
+                                }
+                            ],
+                            [
+                                'attribute' => 'Custo Unitário',
+                                'value' => function($data){
+                                    return 'R$' . $data->custo_unitario;
+                                }
+                            ],
                             //'tipo_item',
-                            'descricao:ntext',
+                            //'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
-                                'attribute' => 'Total US$',
+                                'attribute' => 'Total',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custo_unitario;
+                                    return 'US$' . $data->quantidade * $data->custo_unitario;
                                 }
                             ],
 
                             [
                                 'attribute' => 'Total R$',
                                 'value' => function($data){
-                                    return $data->quantidade * $data->custoUnitarioReal;
+                                    return 'R$' . $data->quantidade * $data->custoUnitarioReal;
                                 }
                             ],
 
                             ['class' => 'yii\grid\ActionColumn',],
                         ],
                     ]); ?>
-                    <p>
-                        <h3>Custo total em Diárias Internacionais:  <?php echo number_format($subtotalDiariaInternacional,2, ",", '.'); ?></h3>
-                    </p>
-                    <p>
-                        <?= Html::a('Nova Diária Internacional', ['create', 'tipo_item' => 8, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
-                    </p>
 
                 </div>
                 <hr>
