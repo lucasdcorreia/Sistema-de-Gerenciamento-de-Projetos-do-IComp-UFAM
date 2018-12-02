@@ -60,8 +60,20 @@ class Projeto extends \yii\db\ActiveRecord
             [['duracao'], 'safe'],
             [['editalFile'], 'file', 'skipOnEmpty' => true, 'maxSize' => 1024*1024*1024*1024*1024, 'tooBig' => 'Arquivo é muito grande para o upload'],
             [['tituloProjetoFile'], 'file', 'skipOnEmpty' => true, 'maxSize' => 1024*1024*1024*1024, 'tooBig' => 'Arquivo é muito grande para o upload'],
-            [['termino'], 'compare', 'compareAttribute'=>'inicio_previsto', 'operator'=>'>', 'message'=>'A data de início previsto deve ser anterior à data de término.'],
+            ['termino', 'validateDataInicioTermino', 'enableClientValidation' => 'false']
+            //['termino', 'compare', 'compareAttribute'=>'inicio_previsto', 'operator'=>'>', 'enableClientValidation' => 'false', 'message'=>'A data de início previsto deve ser anterior à data de término.'],
         ];
+    }
+
+    public function validateDataInicioTermino(){
+      if($this->inicio_previsto != NULL && $this->termino != NULL){
+        $inicio = DateTime::createFromFormat('d/m/Y', $this->inicio_previsto);
+        $fim = DateTime::createFromFormat('d/m/Y', $this->termino);
+        if($inicio > $fim){
+          $this->addError('termino', 'A data de término deve ser maior que a de início.');
+          $this->addError('termino', 'A data de início deve ser menor que a de término.');
+        }
+      }
     }
 
     public function upload($tipo)
@@ -77,6 +89,7 @@ class Projeto extends \yii\db\ActiveRecord
       }else return false;
 
     }
+
 
     public function beforeSave($insert){
       if(parent::beforeSave($insert)){
