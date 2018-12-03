@@ -54,10 +54,11 @@ $this->registerJs("
     ]); ?>
 
     <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
-    <div class="center-block" style="width:400px;max-width:100%;">
+    <div class="center-block" style="width:600px;max-width:100%;">
       <div class="btn-group">
         <?= Html::a('Informações de projeto', ['projeto/view', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg']) ?>
-        <?= Html::submitButton('Itens de projeto', ['class' => 'btn btn-default btn-lg']) ?>
+        <a class="btn btn-default btn-lg">Itens de projeto</a>
+        <a class="btn btn-default btn-lg">Informações financeiras</a>
       </div>
     </div>
     <hr>
@@ -138,7 +139,7 @@ $this->registerJs("
 
 <!--    <?= $form->field($model, 'publicacao_diario_oficial', ['options' => ['class' => 'col-md-6 col-right']])->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 -->
-    
+
     <div class="form-group" style="float: left">
         <?= Html::a('Voltar', ['projeto/index'], ['class'=>'btn btn-default']) ?>
     </div>

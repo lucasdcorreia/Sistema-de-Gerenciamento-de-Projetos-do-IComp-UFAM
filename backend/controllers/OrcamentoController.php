@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Orcamento;
+use common\models\ValorPago;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -33,14 +34,20 @@ class OrcamentoController extends Controller
      * Lists all Orcamento models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex($id_projeto)
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Orcamento::find(),
+            'query' => Orcamento::find()->where([ 'id_projeto' => $id_projeto ]),
+        ]);
+
+        $dataProviderValorPago = new ActiveDataProvider([
+            'query' => ValorPago::find()->where([ 'id_projeto' => $id_projeto ]),
         ]);
 
         return $this->render('index', [
             'dataProvider' => $dataProvider,
+            'dataProviderValorPago' => $dataProviderValorPago,
+            'id_projeto' => $id_projeto,
         ]);
     }
 
@@ -62,12 +69,13 @@ class OrcamentoController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($id_projeto)
     {
         $model = new Orcamento();
+        $model->id_projeto = $id_projeto;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['orcamento/index', 'id_projeto' => $model->id_projeto]);
         }
 
         return $this->render('create', [
@@ -87,7 +95,7 @@ class OrcamentoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['orcamento/index', 'id_projeto' => $model->id_projeto]);
         }
 
         return $this->render('update', [
@@ -104,9 +112,10 @@ class OrcamentoController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+        $model = $this->findModel($id);
+        $id_projeto = $model->id_projeto;
+        $model->delete();
+        return $this->redirect(['orcamento/index', 'id_projeto' => $id_projeto]);
     }
 
     /**
