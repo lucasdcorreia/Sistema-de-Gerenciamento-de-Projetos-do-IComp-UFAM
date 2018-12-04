@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Orcamento */
 
-$this->title = 'Create Orcamento';
-$this->params['breadcrumbs'][] = ['label' => 'Orcamentos', 'url' => ['index']];
+$this->title = 'Novo Orçamento';
+$this->params['breadcrumbs'][] = ['label' => 'Orçamentos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="orcamento-create">
