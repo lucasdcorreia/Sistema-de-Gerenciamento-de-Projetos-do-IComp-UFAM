@@ -196,48 +196,32 @@ $this->params['breadcrumbs'][] = $this->title;
                             'data_enviada',
                             'tipo',
                             'situacao',
-                        ],
-                        ['class' => 'yii\grid\ActionColumn',
-                            'buttons' => [
-                                'view' => function ($url, $model) {
-                                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
-                                        'title' => Yii::t('app', 'Exibir'),
-                                    ]);
-                                },
-                                'update' => function ($url, $model) {
-                                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
-                                        'title' => Yii::t('app', 'Alterar'),
-                                        'data-method' => 'post'
-                                    ]);
-                                },
-                                'delete' => function ($url, $model) {
-                                    return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
-                                        'title' => Yii::t('app', 'Excluir'),
-                                        'data' => [
-                                                'confirm' => 'Deseja realmente excluir este item?',
-                                                'method' => 'post',
-                                        ],
-                                    ]);
-                                },
+
+                            ['class' => 'yii\grid\ActionColumn',
+                                'buttons' => [
+                                    'view' => function ($url, $model) {
+                                        return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                                    'title' => Yii::t('app', 'Exibir'),
+                                        ]);
+                                    },
+                                    'update' => function ($url, $model) {
+                                        return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                                    'title' => Yii::t('app', 'Alterar'),
+                                                    'data-method' => 'post'
+                                        ]);
+                                    },
+                                    'delete' => function ($url, $model) {
+                                        return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                                    'title' => Yii::t('app', 'Excluir'),
+                                                    'data' => [
+                                                        'confirm' => 'Deseja realmente excluir este item?',
+                                                        'method' => 'post',
+                                                    ],
+                                        ]);
+                                    },
+                                ],
                             ],
-                            'urlCreator' => function ($action, $model, $key, $index) {
-                                if ($action === 'view') {
-                                    $url ='index.php?r=relatorio-prestacao/view&id='.$model->id;
-                                    return $url;
-                                }
-
-                                if ($action === 'update') {
-                                    $url ='index.php?r=relatorio-prestacao/update&id='.$model->id;
-                                    return $url;
-                                }
-                                if ($action === 'delete') {
-                                    $url ='index.php?r=relatorio-prestacao/delete&id='.$model->id;
-                                    return $url;
-                                }
-
-                            }
-                            
-                        ],
+                        ]
 
                     ]); ?>
                 </div>
