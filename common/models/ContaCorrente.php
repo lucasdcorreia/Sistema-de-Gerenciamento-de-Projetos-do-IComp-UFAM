@@ -18,6 +18,12 @@ use Yii;
  */
 class ContaCorrente extends \yii\db\ActiveRecord
 {
+
+    /**
+     * @var contaFile
+     */
+    public $contaFile;
+
     /**
      * {@inheritdoc}
      */
@@ -37,7 +43,23 @@ class ContaCorrente extends \yii\db\ActiveRecord
             [['agencia'], 'string', 'max' => 10],
             [['conta'], 'string', 'max' => 15],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
+            [['contaFile'], 'file', 'skipOnEmpty' => true],
         ];
+    }
+
+    public function upload()
+    {
+          if ($this->validate()) {
+              if($this->tipo_conta_corrente==1){
+                $this->contaFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/conta_corrente/desembolso/') . $this->id . '_' . $this->id_projeto . '.' . $this->contaFile->extension);
+                return true;
+              }else if($this->tipo_conta_corrente==2){
+                $this->contaFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/conta_corrente/recolhimento/') . $this->id . '_' . $this->id_projeto . '.' . $this->contaFile->extension);
+                return true;
+              }
+          } else {
+              return false;
+          }
     }
 
     /**

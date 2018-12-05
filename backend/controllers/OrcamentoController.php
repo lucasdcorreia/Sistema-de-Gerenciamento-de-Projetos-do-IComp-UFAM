@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\Orcamento;
 use common\models\ValorPago;
+use common\models\ContaCorrente;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -44,9 +45,19 @@ class OrcamentoController extends Controller
             'query' => ValorPago::find()->where([ 'id_projeto' => $id_projeto ]),
         ]);
 
+        $dataProviderContaCorrenteDesembolso = new ActiveDataProvider([
+            'query' => ContaCorrente::find()->where([ 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 1]),
+        ]);
+
+        $dataProviderContaCorrenteRecolhimento = new ActiveDataProvider([
+            'query' => ContaCorrente::find()->where([ 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 2]),
+        ]);
+
         return $this->render('index', [
             'dataProvider' => $dataProvider,
             'dataProviderValorPago' => $dataProviderValorPago,
+            'dataProviderContaCorrenteDesembolso' => $dataProviderContaCorrenteDesembolso,
+            'dataProviderContaCorrenteRecolhimento' => $dataProviderContaCorrenteRecolhimento,
             'id_projeto' => $id_projeto,
         ]);
     }

@@ -21,12 +21,34 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <hr>
 
+    <?php
+      function existeAnexo($model){
+        if($model->tipo_conta_corrente==1)
+          $path = \Yii::getAlias('@backend/../uploads/projetos/conta_corrente/desembolso/');
+        else if($model->tipo_conta_corrente==2)
+          $path = \Yii::getAlias('@backend/../uploads/projetos/conta_corrente/recolhimento/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
+
+    ?>
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <div class="forms" style="margin-left:25px;">
       <div class="pull-right">
-          <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseOrcamento,#collapseValorPago" aria-expanded="false" aria-controls="multiCollapseExample2"
+          <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseOrcamento,#collapseValorPago,#collapseContaCorrenteDesembolso,#collapseContaCorrenteRecolhimento" aria-expanded="false" aria-controls="multiCollapseExample2"
           style="text-align:left">Expandir tudo</button>
       </div>
       <br/>
@@ -134,4 +156,166 @@ $this->params['breadcrumbs'][] = $this->title;
                 <hr>
             </div>
         </div>
+
+        <div class="row">
+                <p>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteDesembolso" aria-expanded="false" aria-controls="multiCollapseExample2"
+                    style="width:95%;text-align:left">Conta Corrente para Desembolso de Recursos</button>
+                </p>
+                <div class="collapse multi-collapse" id="collapseContaCorrenteDesembolso">
+                    <div class="card card-body">
+
+                        <p>
+                            <?= Html::a('Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 1], ['class' => 'btn btn-success']) ?>
+                        </p>
+                            <?= GridView::widget([
+                                'dataProvider' => $dataProviderContaCorrenteDesembolso,
+                                'columns' => [
+                                    ['class' => 'yii\grid\SerialColumn'],
+
+                                    'id',
+                                    'id_projeto',
+                                    'banco',
+                                    'agencia',
+                                    'conta',
+                                    [
+                                      'attribute' => 'contaFile',
+                                      'label' => 'Anexo',
+                                      'format' => 'raw',
+                                      'value' => function($model){
+                                                    return ( existeAnexo($model) ? '  ' . Html::a('Baixar Anexo' . ' <i class="fas fa-paperclip" ></i>', ['conta-corrente/download', 'id' => $model->id] ) . Html::a(existeAnexo($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['conta-corrente/deleteanexo', 'id' => $model->id] ) : '');
+                                                },
+                                    ],
+                                    //'valor',
+                                    //'tipo',
+
+                                    ['class' => 'yii\grid\ActionColumn',
+                                    'buttons' => [
+                                        'view' => function ($url, $model) {
+                                            return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                                        'title' => Yii::t('app', 'Exibir'),
+                                            ]);
+                                        },
+                                        'update' => function ($url, $model) {
+                                            return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                                        'title' => Yii::t('app', 'Alterar'),
+                                                        'data-method' => 'post'
+                                            ]);
+                                        },
+                                        'delete' => function ($url, $model) {
+                                            return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                                        'title' => Yii::t('app', 'Excluir'),
+                                                        'data' => [
+                                                                        'confirm' => 'Deseja realmente excluir este item?',
+                                                                        'method' => 'post',
+                                                        ],
+                                            ]);
+                                        },
+                                    ],
+                                    'urlCreator' => function ($action, $model, $key, $index) {
+                                        if ($action === 'view') {
+                                            $url ='index.php?r=conta-corrente/view&id='.$model->id;
+                                            return $url;
+                                        }
+
+                                        if ($action === 'update') {
+                                            $url ='index.php?r=conta-corrente/update&id='.$model->id;
+                                            return $url;
+                                        }
+                                        if ($action === 'delete') {
+                                            $url ='index.php?r=conta-corrente/delete&id='.$model->id;
+                                            return $url;
+                                        }
+
+                                    }
+                                    ]
+                                ],
+                            ]); ?>
+                        </div>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                    <p>
+                        <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteRecolhimento" aria-expanded="false" aria-controls="multiCollapseExample2"
+                        style="width:95%;text-align:left">Conta Corrente para Recolhimento de Saldo</button>
+                    </p>
+                    <div class="collapse multi-collapse" id="collapseContaCorrenteRecolhimento">
+                        <div class="card card-body">
+
+                            <p>
+                                <?= Html::a('Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 2], ['class' => 'btn btn-success']) ?>
+                            </p>
+                                <?= GridView::widget([
+                                    'dataProvider' => $dataProviderContaCorrenteRecolhimento,
+                                    'columns' => [
+                                        ['class' => 'yii\grid\SerialColumn'],
+
+                                        'id',
+                                        'id_projeto',
+                                        'banco',
+                                        'agencia',
+                                        'conta',
+                                        [
+                                          'attribute' => 'contaFile',
+                                          'label' => 'Anexo',
+                                          'format' => 'raw',
+                                          'value' => function($model){
+                                                        return ( existeAnexo($model) ? '  ' . Html::a('Baixar Anexo' . ' <i class="fas fa-paperclip" ></i>', ['conta-corrente/download', 'id' => $model->id] ) . Html::a(existeAnexo($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['conta-corrente/deleteanexo', 'id' => $model->id] ) : '');
+                                                    }
+                                        ],
+                                        //'valor',
+                                        //'tipo',
+
+                                        ['class' => 'yii\grid\ActionColumn',
+                                        'buttons' => [
+                                            'view' => function ($url, $model) {
+                                                return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                                            'title' => Yii::t('app', 'Exibir'),
+                                                ]);
+                                            },
+                                            'update' => function ($url, $model) {
+                                                return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                                            'title' => Yii::t('app', 'Alterar'),
+                                                            'data-method' => 'post'
+                                                ]);
+                                            },
+                                            'delete' => function ($url, $model) {
+                                                return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                                            'title' => Yii::t('app', 'Excluir'),
+                                                            'data' => [
+                                                                            'confirm' => 'Deseja realmente excluir este item?',
+                                                                            'method' => 'post',
+                                                            ],
+                                                ]);
+                                            },
+                                        ],
+                                        'urlCreator' => function ($action, $model, $key, $index) {
+                                            if ($action === 'view') {
+                                                $url ='index.php?r=conta-corrente/view&id='.$model->id;
+                                                return $url;
+                                            }
+
+                                            if ($action === 'update') {
+                                                $url ='index.php?r=conta-corrente/update&id='.$model->id;
+                                                return $url;
+                                            }
+                                            if ($action === 'delete') {
+                                                $url ='index.php?r=conta-corrente/delete&id='.$model->id;
+                                                return $url;
+                                            }
+
+                                        }
+                                        ]
+                                    ],
+                                ]); ?>
+                            </div>
+                        <hr>
+                    </div>
+                </div>
+
+
+
+
 </div>
