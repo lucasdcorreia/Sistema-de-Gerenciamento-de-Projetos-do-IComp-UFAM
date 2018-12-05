@@ -48,13 +48,24 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="forms" style="margin-left:25px;">
       <div class="pull-right">
-          <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseOrcamento,#collapseValorPago,#collapseContaCorrenteDesembolso,#collapseContaCorrenteRecolhimento" aria-expanded="false" aria-controls="multiCollapseExample2"
-          style="text-align:left">Expandir tudo</button>
+          <button class="btn btn-success" type="button" data-toggle="collapse" 
+          data-target="#collapseOrcamento,
+                       #collapseValorPago,
+                       #collapseContaCorrenteDesembolso,
+                       #collapseContaCorrenteRecolhimento,
+                       #collapsePrestacaoConta" 
+                       aria-expanded="false" 
+                       aria-controls="multiCollapseExample2"
+                       style="text-align:left">Expandir tudo
+          </button>
       </div>
       <br/>
       <br/>
       <br/>
-      <div class="row" >
+
+
+<!-- Orçamento -->
+    <div class="row" >
             <p>
                 <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapseOrcamento" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
                 style="width:95%;text-align:left">
@@ -86,6 +97,8 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 
+
+<!-- Valor pago -->
     <div class="row">
             <p>
                 <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseValorPago" aria-expanded="false" aria-controls="multiCollapseExample2"
@@ -155,9 +168,86 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 <hr>
             </div>
-        </div>
+    </div>
 
-        <div class="row">
+
+<!-- Prestação de conta financeira -->
+    <div class="row" >
+            <p>
+                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapsePrestacaoConta" 
+                role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
+                style="width:95%;text-align:left">
+                Prestação de conta financeira </i>
+                </a>
+            </p>
+            <div class="collapse multi-collapse" id="collapsePrestacaoConta">
+                <div class="card card-body">
+                    <p>
+                        <?= Html::a('Novo', ['relatorio-prestacao/create', 'id' => $id_projeto], ['class' => 'btn btn-success']) ?>
+                    </p>
+
+                    <?= GridView::widget([
+                        'dataProvider' => $dataProviderPrestacaoConta,
+                        'columns' => [
+                            ['class' => 'yii\grid\SerialColumn'],
+
+                            'id',
+                            'data_prevista',
+                            'data_enviada',
+                            'tipo',
+                            'situacao',
+                        ],
+                        ['class' => 'yii\grid\ActionColumn',
+                            'buttons' => [
+                                'view' => function ($url, $model) {
+                                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                        'title' => Yii::t('app', 'Exibir'),
+                                    ]);
+                                },
+                                'update' => function ($url, $model) {
+                                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                        'title' => Yii::t('app', 'Alterar'),
+                                        'data-method' => 'post'
+                                    ]);
+                                },
+                                'delete' => function ($url, $model) {
+                                    return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                        'title' => Yii::t('app', 'Excluir'),
+                                        'data' => [
+                                                'confirm' => 'Deseja realmente excluir este item?',
+                                                'method' => 'post',
+                                        ],
+                                    ]);
+                                },
+                            ],
+                            'urlCreator' => function ($action, $model, $key, $index) {
+                                if ($action === 'view') {
+                                    $url ='index.php?r=relatorio-prestacao/view&id='.$model->id;
+                                    return $url;
+                                }
+
+                                if ($action === 'update') {
+                                    $url ='index.php?r=relatorio-prestacao/update&id='.$model->id;
+                                    return $url;
+                                }
+                                if ($action === 'delete') {
+                                    $url ='index.php?r=relatorio-prestacao/delete&id='.$model->id;
+                                    return $url;
+                                }
+
+                            }
+                            
+                        ],
+
+                    ]); ?>
+                </div>
+            <hr>
+        </div>
+    </div>
+
+
+<!-- Conta corrente desembolso -->
+    <div class="row">
                 <p>
                     <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteDesembolso" aria-expanded="false" aria-controls="multiCollapseExample2"
                     style="width:95%;text-align:left">Conta Corrente para Desembolso de Recursos</button>
@@ -234,9 +324,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     <hr>
                 </div>
-            </div>
-
-            <div class="row">
+    </div>
+    
+    <div class="row">
                     <p>
                         <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteRecolhimento" aria-expanded="false" aria-controls="multiCollapseExample2"
                         style="width:95%;text-align:left">Conta Corrente para Recolhimento de Saldo</button>
