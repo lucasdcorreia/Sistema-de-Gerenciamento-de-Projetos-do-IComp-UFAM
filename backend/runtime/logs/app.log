@@ -17684,3 +17684,362 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-12-05 18:55:11 [::1][78][530152a30188a84fa204b04627bac514][error][yii\base\ErrorException:2] yii\base\ErrorException: array_merge(): Argument #2 is not an array in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php:552
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'array_merge(): ...', '/Applications/M...', 552, Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(552): array_merge(Array, Object(Closure))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(288): yii\grid\GridView->initColumns()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\grid\GridView->init()
+#4 [internal function]: yii\base\BaseObject->__construct(Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/orcamento/index.php(239): yii\base\Widget::widget(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\OrcamentoController))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#14 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#15 [internal function]: backend\controllers\OrcamentoController->actionIndex('1')
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2018-12-05 18:55:11 [::1][78][530152a30188a84fa204b04627bac514][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    'advanced-frontend' => 'c35b7770aaaad9fce8ea674ac8ab4197'
+    '_csrf-frontend' => '702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr\";}'
+    'PHPBACKENDSESSID' => '530152a30188a84fa204b04627bac514'
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/PAPS/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; advanced-frontend=c35b7770aaaad9fce8ea674ac8ab4197; _csrf-frontend=702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr%22%3B%7D; PHPBACKENDSESSID=530152a30188a84fa204b04627bac514; _backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '53945'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544050511.53
+    'REQUEST_TIME' => 1544050511
+    'argv' => [
+        0 => 'r=orcamento%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-05 18:55:50 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:238
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:273
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:72
+2018-12-05 18:55:49 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    'advanced-frontend' => 'c35b7770aaaad9fce8ea674ac8ab4197'
+    '_csrf-frontend' => '702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr\";}'
+    'PHPBACKENDSESSID' => '530152a30188a84fa204b04627bac514'
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/PAPS/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; advanced-frontend=c35b7770aaaad9fce8ea674ac8ab4197; _csrf-frontend=702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr%22%3B%7D; PHPBACKENDSESSID=530152a30188a84fa204b04627bac514; _backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '53947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544050549.91
+    'REQUEST_TIME' => 1544050549
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-05 18:55:51 [::1][78][530152a30188a84fa204b04627bac514][error][yii\base\ErrorException:2] yii\base\ErrorException: array_merge(): Argument #2 is not an array in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php:552
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'array_merge(): ...', '/Applications/M...', 552, Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(552): array_merge(Array, Object(Closure))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(288): yii\grid\GridView->initColumns()
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\grid\GridView->init()
+#4 [internal function]: yii\base\BaseObject->__construct(Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/orcamento/index.php(239): yii\base\Widget::widget(Array)
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\OrcamentoController))
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#14 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#15 [internal function]: backend\controllers\OrcamentoController->actionIndex('1')
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2018-12-05 18:55:51 [::1][78][530152a30188a84fa204b04627bac514][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    'advanced-frontend' => 'c35b7770aaaad9fce8ea674ac8ab4197'
+    '_csrf-frontend' => '702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr\";}'
+    'PHPBACKENDSESSID' => '530152a30188a84fa204b04627bac514'
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/PAPS/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; advanced-frontend=c35b7770aaaad9fce8ea674ac8ab4197; _csrf-frontend=702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr%22%3B%7D; PHPBACKENDSESSID=530152a30188a84fa204b04627bac514; _backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '53947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544050551.57
+    'REQUEST_TIME' => 1544050551
+    'argv' => [
+        0 => 'r=orcamento%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-05 18:57:05 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/orcamento/index.php:204
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/orcamento/index.php:238
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-05 18:57:05 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    'advanced-frontend' => 'c35b7770aaaad9fce8ea674ac8ab4197'
+    '_csrf-frontend' => '702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr\";}'
+    'PHPBACKENDSESSID' => '530152a30188a84fa204b04627bac514'
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/PAPS/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; advanced-frontend=c35b7770aaaad9fce8ea674ac8ab4197; _csrf-frontend=702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr%22%3B%7D; PHPBACKENDSESSID=530152a30188a84fa204b04627bac514; _backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '53952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544050625.77
+    'REQUEST_TIME' => 1544050625
+    'argv' => [
+        0 => 'r=orcamento%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-05 18:57:09 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/orcamento/index.php:204
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/orcamento/index.php:238
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-05 18:57:09 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-frontend' => '58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"4O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG\",2592000]\";}'
+    'advanced-frontend' => 'c35b7770aaaad9fce8ea674ac8ab4197'
+    '_csrf-frontend' => '702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr\";}'
+    'PHPBACKENDSESSID' => '530152a30188a84fa204b04627bac514'
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    '_csrf' => '905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/PAPS/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_identity-frontend=58d35594deb2575fe51f02c5a54e3dd05bd234de0b9e4896f3fbad3f77b184d7a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%224O4XpOkPngQt9zM4ibSlSdF0Hhp5b8mG%22%2C2592000%5D%22%3B%7D; advanced-frontend=c35b7770aaaad9fce8ea674ac8ab4197; _csrf-frontend=702161435c950bba02fba2775fafa658073955a927cb450326308561b089422da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22v3sYuoW_OsMqLLnMvePzshtuxlPmRVEr%22%3B%7D; PHPBACKENDSESSID=530152a30188a84fa204b04627bac514; _backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; _csrf=905967538cb7508d9688456d5b63a9e009cf1b79fa069823d36f67ebda9b7f91a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z4yZ64F_tox0ZgJRDpTMe4h3iBkWS0T3%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '53952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544050629.86
+    'REQUEST_TIME' => 1544050629
+    'argv' => [
+        0 => 'r=orcamento%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
