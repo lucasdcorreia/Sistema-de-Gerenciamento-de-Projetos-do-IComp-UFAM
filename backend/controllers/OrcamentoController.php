@@ -47,7 +47,7 @@ class OrcamentoController extends Controller
         ]);
 
         $dataProviderPrestacaoConta = new ActiveDataProvider([
-            'query' => RelatorioPrestacao::find()->where([ 'id_projeto' => $id_projeto ]),
+            'query' => RelatorioPrestacao::find()->where([ 'id_projeto' => $id_projeto, 'tipo_anexo' => 2 ]),
         ]);
 
         $dataProviderContaCorrenteDesembolso = new ActiveDataProvider([

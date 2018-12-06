@@ -68,8 +68,13 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
     public function upload()
     {
           if ($this->validate()) {
-              $this->relatorioFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/') . $this->id . '_' . $this->id_projeto . '.' . $this->relatorioFile->extension);
-              return true;
+              if($this->tipo_anexo==1){
+                $this->relatorioFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/') . $this->id . '_' . $this->id_projeto . '.' . $this->relatorioFile->extension);
+                return true;
+              }else if($this->tipo_anexo==2){
+                $this->relatorioFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/prestacao_conta/') . $this->id . '_' . $this->id_projeto . '.' . $this->relatorioFile->extension);
+                return true;
+              }
           } else {
               return false;
           }

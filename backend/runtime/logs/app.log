@@ -18043,3 +18043,2924 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-12-06 18:06:29 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`projetos`.`conta_corrente`, CONSTRAINT `conta_corrente_projeto_FK` FOREIGN KEY (`id_projeto`) REFERENCES `projeto` (`id`)) in /home/dofafis/projetos/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('DELETE FROM `pr...')
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(350): yii\db\Command->execute()
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(710): yii\db\ActiveRecord::deleteAll(Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(669): yii\db\ActiveRecord->deleteInternal()
+#5 /home/dofafis/projetos/backend/controllers/ProjetoController.php(329): yii\db\ActiveRecord->delete()
+#6 [internal function]: backend\controllers\ProjetoController->actionDelete('6')
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#10 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/delete', Array)
+#11 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`projetos`.`conta_corrente`, CONSTRAINT `conta_corrente_projeto_FK` FOREIGN KEY (`id_projeto`) REFERENCES `projeto` (`id`))
+The SQL being executed was: DELETE FROM `projeto` WHERE `id`=6 in /home/dofafis/projetos/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `pr...')
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('DELETE FROM `pr...')
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(350): yii\db\Command->execute()
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(710): yii\db\ActiveRecord::deleteAll(Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(669): yii\db\ActiveRecord->deleteInternal()
+#5 /home/dofafis/projetos/backend/controllers/ProjetoController.php(329): yii\db\ActiveRecord->delete()
+#6 [internal function]: backend\controllers\ProjetoController->actionDelete('6')
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#10 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/delete', Array)
+#11 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`projetos`.`conta_corrente`, CONSTRAINT `conta_corrente_projeto_FK` FOREIGN KEY (`id_projeto`) REFERENCES `projeto` (`id`))
+)
+
+2018-12-06 18:06:29 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'projeto/delete'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42161'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=projeto%2Fdelete&id=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fdelete&id=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544133989.184
+    'REQUEST_TIME' => 1544133989
+]
+2018-12-06 18:06:34 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:366
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:400
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:06:34 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42163'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544133994.433
+    'REQUEST_TIME' => 1544133994
+]
+2018-12-06 18:07:33 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/projeto/view.php:238
+    in /home/dofafis/projetos/backend/views/projeto/view.php:273
+    in /home/dofafis/projetos/backend/controllers/ProjetoController.php:72
+2018-12-06 18:07:33 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Relatório técnico criado com sucesso.'
+        'title' => 'Relatório técnico criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42179'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fview&id=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544134053.532
+    'REQUEST_TIME' => 1544134053
+]
+2018-12-06 18:07:41 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:07:41 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42187'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544134061.364
+    'REQUEST_TIME' => 1544134061
+]
+2018-12-06 18:14:24 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/projeto/view.php:238
+    in /home/dofafis/projetos/backend/views/projeto/view.php:273
+    in /home/dofafis/projetos/backend/controllers/ProjetoController.php:72
+2018-12-06 18:14:24 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42193'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fview&id=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544134464.401
+    'REQUEST_TIME' => 1544134464
+]
+2018-12-06 18:14:35 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/projeto/view.php:238
+    in /home/dofafis/projetos/backend/views/projeto/view.php:273
+    in /home/dofafis/projetos/backend/controllers/ProjetoController.php:72
+2018-12-06 18:14:35 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42203'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fview&id=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544134475.605
+    'REQUEST_TIME' => 1544134475
+]
+2018-12-06 18:14:40 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/projeto/view.php:238
+    in /home/dofafis/projetos/backend/views/projeto/view.php:273
+    in /home/dofafis/projetos/backend/controllers/ProjetoController.php:72
+2018-12-06 18:14:40 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42203'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fview&id=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544134480.946
+    'REQUEST_TIME' => 1544134480
+]
+2018-12-06 18:15:33 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:15:33 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=7'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=7'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544134533.869
+    'REQUEST_TIME' => 1544134533
+]
+2018-12-06 18:50:44 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Parâmetros obrigatórios ausentes: id_projeto in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2018-12-06 18:50:44 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42343'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544136644.465
+    'REQUEST_TIME' => 1544136644
+]
+2018-12-06 18:50:54 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Parâmetros obrigatórios ausentes: id_projeto in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2018-12-06 18:50:54 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42347'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544136654.196
+    'REQUEST_TIME' => 1544136654
+]
+2018-12-06 18:50:58 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Parâmetros obrigatórios ausentes: id_projeto in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2018-12-06 18:50:58 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42349'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544136658.429
+    'REQUEST_TIME' => 1544136658
+]
+2018-12-06 18:52:25 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Parâmetros obrigatórios ausentes: id_projeto in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2018-12-06 18:52:25 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42353'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544136745.675
+    'REQUEST_TIME' => 1544136745
+]
+2018-12-06 18:52:30 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:52:30 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42355'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544136750.453
+    'REQUEST_TIME' => 1544136750
+]
+2018-12-06 18:55:29 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:55:29 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42371'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544136929.78
+    'REQUEST_TIME' => 1544136929
+]
+2018-12-06 18:56:22 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:56:22 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42377'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544136982.093
+    'REQUEST_TIME' => 1544136982
+]
+2018-12-06 18:57:22 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:57:22 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42383'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137042.321
+    'REQUEST_TIME' => 1544137042
+]
+2018-12-06 18:57:36 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:57:36 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137056.274
+    'REQUEST_TIME' => 1544137056
+]
+2018-12-06 18:58:00 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:58:00 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42391'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137080.509
+    'REQUEST_TIME' => 1544137080
+]
+2018-12-06 18:59:36 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 18:59:36 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42397'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137176.386
+    'REQUEST_TIME' => 1544137176
+]
+2018-12-06 19:00:35 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:00:35 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42411'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137235.413
+    'REQUEST_TIME' => 1544137235
+]
+2018-12-06 19:00:48 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: tipo_anexo in /home/dofafis/projetos/backend/views/relatorio-prestacao/_form.php:54
+Stack trace:
+#0 /home/dofafis/projetos/backend/views/relatorio-prestacao/_form.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/dofafis/p...', 54, Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, NULL)
+#4 /home/dofafis/projetos/backend/views/relatorio-prestacao/update.php(19): yii\base\View->render('_form', Array)
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\RelatorioPrestacaoController))
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(backend\controllers\RelatorioPrestacaoController))
+#9 /home/dofafis/projetos/backend/controllers/RelatorioPrestacaoController.php(155): yii\base\Controller->render('update', Array)
+#10 [internal function]: backend\controllers\RelatorioPrestacaoController->actionUpdate('8')
+#11 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#14 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#15 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2018-12-06 19:00:48 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/update'
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42421'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=relatorio-prestacao/update&id=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=relatorio-prestacao/update&id=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137248.339
+    'REQUEST_TIME' => 1544137248
+]
+2018-12-06 19:04:07 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: tipo_anexo in /home/dofafis/projetos/backend/controllers/RelatorioPrestacaoController.php:156
+Stack trace:
+#0 /home/dofafis/projetos/backend/controllers/RelatorioPrestacaoController.php(156): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/dofafis/p...', 156, Array)
+#1 [internal function]: backend\controllers\RelatorioPrestacaoController->actionUpdate('8')
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2018-12-06 19:04:07 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/update'
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42451'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=relatorio-prestacao/update&id=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=relatorio-prestacao/update&id=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137447.884
+    'REQUEST_TIME' => 1544137447
+]
+2018-12-06 19:04:45 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: tipo_anexo in /home/dofafis/projetos/backend/controllers/RelatorioPrestacaoController.php:156
+Stack trace:
+#0 /home/dofafis/projetos/backend/controllers/RelatorioPrestacaoController.php(156): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/dofafis/p...', 156, Array)
+#1 [internal function]: backend\controllers\RelatorioPrestacaoController->actionUpdate('8')
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2018-12-06 19:04:45 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/update'
+    'id' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42455'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=relatorio-prestacao/update&id=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=relatorio-prestacao/update&id=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137485.894
+    'REQUEST_TIME' => 1544137485
+]
+2018-12-06 19:04:47 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:04:47 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42457'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137487.364
+    'REQUEST_TIME' => 1544137487
+]
+2018-12-06 19:05:04 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:05:04 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=8&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42461'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137504.45
+    'REQUEST_TIME' => 1544137504
+]
+2018-12-06 19:05:08 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: tipo_anexo in /home/dofafis/projetos/backend/controllers/RelatorioPrestacaoController.php:156
+Stack trace:
+#0 /home/dofafis/projetos/backend/controllers/RelatorioPrestacaoController.php(156): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/dofafis/p...', 156, Array)
+#1 [internal function]: backend\controllers\RelatorioPrestacaoController->actionUpdate('9')
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('relatorio-prest...', Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2018-12-06 19:05:08 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'relatorio-prestacao/update'
+    'id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42461'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=relatorio-prestacao/update&id=9'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=relatorio-prestacao/update&id=9'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137508.627
+    'REQUEST_TIME' => 1544137508
+]
+2018-12-06 19:05:49 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:05:49 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Alterações realizadas com sucesso.'
+        'title' => 'Prestação de contas financeiras'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao/update&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42469'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137549.161
+    'REQUEST_TIME' => 1544137549
+]
+2018-12-06 19:06:04 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:204
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:238
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:06:04 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42473'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137564.795
+    'REQUEST_TIME' => 1544137564
+]
+2018-12-06 19:09:59 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /home/dofafis/projetos/backend/views/orcamento/index.php:219
+Stack trace:
+#0 /home/dofafis/projetos/backend/views/orcamento/index.php(219): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/dofafis/p...', 219, Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/dofafis/p...')
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#3 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\OrcamentoController))
+#4 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#5 /home/dofafis/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\OrcamentoController->actionIndex('8')
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#11 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2018-12-06 19:09:59 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42477'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544137799.936
+    'REQUEST_TIME' => 1544137799
+]
+2018-12-06 19:15:15 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][ParseError] ParseError: syntax error, unexpected ')', expecting ';' in /home/dofafis/projetos/backend/views/orcamento/index.php:220
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\OrcamentoController))
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#3 /home/dofafis/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\OrcamentoController->actionIndex('8')
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-06 19:15:15 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42501'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138115.903
+    'REQUEST_TIME' => 1544138115
+]
+2018-12-06 19:15:23 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][ParseError] ParseError: syntax error, unexpected ')', expecting ';' in /home/dofafis/projetos/backend/views/orcamento/index.php:220
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\OrcamentoController))
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#3 /home/dofafis/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\OrcamentoController->actionIndex('8')
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-06 19:15:23 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138123.035
+    'REQUEST_TIME' => 1544138123
+]
+2018-12-06 19:15:24 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][ParseError] ParseError: syntax error, unexpected ')', expecting ';' in /home/dofafis/projetos/backend/views/orcamento/index.php:220
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\OrcamentoController))
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#3 /home/dofafis/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\OrcamentoController->actionIndex('8')
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-06 19:15:24 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42507'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138124.43
+    'REQUEST_TIME' => 1544138124
+]
+2018-12-06 19:15:24 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][ParseError] ParseError: syntax error, unexpected ')', expecting ';' in /home/dofafis/projetos/backend/views/orcamento/index.php:220
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\OrcamentoController))
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#3 /home/dofafis/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\OrcamentoController->actionIndex('8')
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-06 19:15:24 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42509'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138124.605
+    'REQUEST_TIME' => 1544138124
+]
+2018-12-06 19:15:29 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][ParseError] ParseError: syntax error, unexpected ')', expecting ';' in /home/dofafis/projetos/backend/views/orcamento/index.php:220
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/dofafis/p...', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/dofafis/p...', Array, Object(backend\controllers\OrcamentoController))
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\OrcamentoController))
+#3 /home/dofafis/projetos/backend/controllers/OrcamentoController.php(67): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\OrcamentoController->actionIndex('8')
+#5 /home/dofafis/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/index', Array)
+#9 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-06 19:15:29 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42513'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138129.699
+    'REQUEST_TIME' => 1544138129
+]
+2018-12-06 19:15:46 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:228
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:262
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:15:46 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138146.022
+    'REQUEST_TIME' => 1544138146
+]
+2018-12-06 19:15:51 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: orcamento/deleteanexo in /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('deleteanexo', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/delet...', Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2018-12-06 19:15:51 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/deleteanexo'
+    'id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Fdeleteanexo&id=9'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Fdeleteanexo&id=9'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138151.468
+    'REQUEST_TIME' => 1544138151
+]
+2018-12-06 19:15:53 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:228
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:262
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:15:53 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138153.376
+    'REQUEST_TIME' => 1544138153
+]
+2018-12-06 19:16:34 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: orcamento/deleteanexo in /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('deleteanexo', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/delet...', Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2018-12-06 19:16:34 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/deleteanexo'
+    'id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42523'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Fdeleteanexo&id=9'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Fdeleteanexo&id=9'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138194.417
+    'REQUEST_TIME' => 1544138194
+]
+2018-12-06 19:17:28 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: orcamento/deleteanexo in /home/dofafis/projetos/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('deleteanexo', Array)
+#1 /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('orcamento/delet...', Array)
+#2 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in /home/dofafis/projetos/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/dofafis/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dofafis/projetos/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2018-12-06 19:17:28 [::1][78][ogo4ps76m6qfkgeb02q9nebl7e][info][application] $_GET = [
+    'r' => 'orcamento/deleteanexo'
+    'id' => '9'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Fdeleteanexo&id=9'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Fdeleteanexo&id=9'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138248.457
+    'REQUEST_TIME' => 1544138248
+]
+2018-12-06 19:17:29 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:228
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:262
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:17:29 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138249.294
+    'REQUEST_TIME' => 1544138249
+]
+2018-12-06 19:18:25 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:228
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:262
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:18:25 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42535'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138305.13
+    'REQUEST_TIME' => 1544138305
+]
+2018-12-06 19:18:33 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:228
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:262
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:18:33 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Alterações realizadas com sucesso.'
+        'title' => 'Prestação de contas financeiras'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao/update&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42535'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138313.211
+    'REQUEST_TIME' => 1544138313
+]
+2018-12-06 19:18:36 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:228
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:262
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:18:35 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas financeira excluida com sucesso.'
+        'title' => 'Anexo'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42535'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138315.997
+    'REQUEST_TIME' => 1544138315
+]
+2018-12-06 19:18:45 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /home/dofafis/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /home/dofafis/projetos/backend/messages/pt/app.php
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:228
+    in /home/dofafis/projetos/backend/views/orcamento/index.php:262
+    in /home/dofafis/projetos/backend/controllers/OrcamentoController.php:67
+2018-12-06 19:18:45 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '8'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ogo4ps76m6qfkgeb02q9nebl7e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Alterações realizadas com sucesso.'
+        'title' => 'Prestação de contas financeiras'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao/update&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=e240c7d243ad77493b432996807abdda42fcb5cfa29433af9b1c0e282f554437a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ogo4ps76m6qfkgeb02q9nebl7e'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '42539'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=8'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=8'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544138325.451
+    'REQUEST_TIME' => 1544138325
+]

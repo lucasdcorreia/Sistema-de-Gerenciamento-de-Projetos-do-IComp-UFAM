@@ -51,7 +51,10 @@ $this->registerJs("
     <div>
       <input type="button" id='select-file' value="Selecione o Arquivo"></input>
       <span id='val'><?php
-        $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+        if($tipo_anexo==1)
+          $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
+        if($tipo_anexo==2)
+          $path = \Yii::getAlias('@backend/../uploads/projetos/prestacao_conta/');
 
         $files = \yii\helpers\FileHelper::findFiles($path, [
           'only' => [$model->id . '_' . $model->id_projeto . '.*'],

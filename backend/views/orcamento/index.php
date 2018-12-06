@@ -41,6 +41,22 @@ $this->params['breadcrumbs'][] = $this->title;
           }
         }
       }
+      function existeRelatorio($model){
+        $path = \Yii::getAlias('@backend/../uploads/projetos/prestacao_conta/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
 
     ?>
 
@@ -48,13 +64,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="forms" style="margin-left:25px;">
       <div class="pull-right">
-          <button class="btn btn-success" type="button" data-toggle="collapse" 
+          <button class="btn btn-success" type="button" data-toggle="collapse"
           data-target="#collapseOrcamento,
                        #collapseValorPago,
                        #collapseContaCorrenteDesembolso,
                        #collapseContaCorrenteRecolhimento,
-                       #collapsePrestacaoConta" 
-                       aria-expanded="false" 
+                       #collapsePrestacaoConta"
+                       aria-expanded="false"
                        aria-controls="multiCollapseExample2"
                        style="text-align:left">Expandir tudo
           </button>
@@ -174,7 +190,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <!-- Prestação de conta financeira -->
     <div class="row" >
             <p>
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapsePrestacaoConta" 
+                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapsePrestacaoConta"
                 role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
                 style="width:95%;text-align:left">
                 Prestação de conta financeira </i>
@@ -183,7 +199,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapsePrestacaoConta">
                 <div class="card card-body">
                     <p>
-                        <?= Html::a('Novo', ['relatorio-prestacao/create', 'id' => $id_projeto], ['class' => 'btn btn-success']) ?>
+                        <?= Html::a('Novo', ['relatorio-prestacao/create', 'id' => $id_projeto, 'tipo_anexo' => 2], ['class' => 'btn btn-success']) ?>
                     </p>
 
                     <?= GridView::widget([
@@ -196,6 +212,14 @@ $this->params['breadcrumbs'][] = $this->title;
                             'data_enviada',
                             'tipo',
                             'situacao',
+                            [
+                              'attribute' => 'relatorioFile',
+                              'label' => 'Anexo',
+                              'format' => 'raw',
+                              'value' => function($model){
+                                return existeRelatorio($model) ? '  ' . Html::a('Baixar Anexo' . ' <i class="fas fa-paperclip" ></i>', ['relatorio-prestacao/download', 'id' => $model->id] ) . Html::a(existeRelatorio($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/relatorio-prestacao/deleteanexo', 'id' => $model->id] ) : '';
+                              },
+                            ],
 
                             ['class' => 'yii\grid\ActionColumn',
                                 'buttons' => [
@@ -225,7 +249,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         $url ='index.php?r=relatorio-prestacao/view&id='.$model->id;
                                         return $url;
                                     }
-    
+
                                     if ($action === 'update') {
                                         $url ='index.php?r=relatorio-prestacao/update&id='.$model->id;
                                         return $url;
@@ -234,10 +258,10 @@ $this->params['breadcrumbs'][] = $this->title;
                                         $url ='index.php?r=relatorio-prestacao/delete&id='.$model->id;
                                         return $url;
                                     }
-    
+
                                 }
                             ],
-                            
+
                         ]
 
                     ]); ?>
@@ -326,7 +350,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <hr>
                 </div>
     </div>
-    
+
     <div class="row">
                     <p>
                         <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteRecolhimento" aria-expanded="false" aria-controls="multiCollapseExample2"
