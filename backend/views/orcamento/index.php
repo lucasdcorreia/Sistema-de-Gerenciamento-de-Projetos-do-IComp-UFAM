@@ -106,6 +106,47 @@ $this->params['breadcrumbs'][] = $this->title;
                             'valor_parcela',
                             //'data_recebida',
                             //'valor_receber',
+
+                            ['class' => 'yii\grid\ActionColumn',
+                            'buttons' => [
+                                'view' => function ($url, $model) {
+                                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                                'title' => Yii::t('app', 'Exibir'),
+                                    ]);
+                                },
+                                'update' => function ($url, $model) {
+                                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                                'title' => Yii::t('app', 'Alterar'),
+                                                'data-method' => 'post'
+                                    ]);
+                                },
+                                'delete' => function ($url, $model) {
+                                    return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                                'title' => Yii::t('app', 'Excluir'),
+                                                'data' => [
+                                                                'confirm' => 'Deseja realmente excluir este item?',
+                                                                'method' => 'post',
+                                                ],
+                                    ]);
+                                },
+                            ],
+                            'urlCreator' => function ($action, $model, $key, $index) {
+                                if ($action === 'view') {
+                                    $url ='index.php?r=orcamento/view&id='.$model->id;
+                                    return $url;
+                                }
+
+                                if ($action === 'update') {
+                                    $url ='index.php?r=orcamento/update&id='.$model->id;
+                                    return $url;
+                                }
+                                if ($action === 'delete') {
+                                    $url ='index.php?r=orcamento/delete&id='.$model->id;
+                                    return $url;
+                                }
+
+                            }
+                            ]
                         ],
                     ]); ?>
                 </div>
