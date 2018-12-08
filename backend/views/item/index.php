@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <hr>
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <!--<h1><?= Html::encode($this->title) ?></h1>-->
 
     <div class="forms" style="margin-left:25px;">
       <div class="pull-right">
