@@ -7,6 +7,9 @@ use common\models\Projeto;
 use common\models\TermoAditivo;
 use common\models\RelatorioPrestacao;
 use common\models\Item;
+use common\models\Orcamento;
+use common\models\ValorPago;
+use common\models\ContaCorrente;
 use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
@@ -291,16 +294,31 @@ class ProjetoController extends Controller
       $temTermoAditivo = TermoAditivo::find()->where(['id_projeto' => $projeto->id])->one();
       $temRelatorioTecnico = RelatorioPrestacao::find()->where(['id_projeto' => $projeto->id])->one();
       $temItem = Item::find()->where(['id_projeto' => $projeto->id])->one();
+      $temOrcamento = Orcamento::find()->where(['id_projeto' => $projeto->id])->one();
+      $temValorPago = ValorPago::find()->where(['id_projeto' => $projeto->id])->one();
+      $temConta = ContaCorrente::find()->where(['id_projeto' => $projeto->id])->one();
       if(isset($temTermoAditivo)){
-        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem termos aditivos atrelados ao mesmo');
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe termo aditivo atrelado a ele');
         return $this->redirect(['index']);
       }
       else if(isset($temRelatorioTecnico)){
-        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem relatórios técnicos atrelados ao mesmo');
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe relatório técnico atrelados a ele');
         return $this->redirect(['index']);
       }
       else if(isset($temItem)){
-        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existem itens atrelados ao mesmo');
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe item atrelado a ele');
+        return $this->redirect(['index']);
+      }
+      else if(isset($temOrcamento)){
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe orçamento atrelado a ele');
+        return $this->redirect(['index']);
+      }
+      else if(isset($temValorPago)){
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe valor pago atrelado a ele');
+        return $this->redirect(['index']);
+      }
+      else if(isset($temConta)){
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe conta corrente atrelado a ele');
         return $this->redirect(['index']);
       }
       else{
