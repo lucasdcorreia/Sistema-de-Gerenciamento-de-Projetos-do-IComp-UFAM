@@ -159,7 +159,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
             <p>
                 <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseValorPago" aria-expanded="false" aria-controls="multiCollapseExample2"
-                style="width:95%;text-align:left">Valor pago</button>
+                style="width:95%;text-align:left">Valores pagos</button>
             </p>
             <div class="collapse multi-collapse" id="collapseValorPago">
                 <div class="card card-body">
@@ -316,7 +316,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
                 <p>
                     <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteDesembolso" aria-expanded="false" aria-controls="multiCollapseExample2"
-                    style="width:95%;text-align:left">Conta Corrente para Desembolso de Recursos</button>
+                    style="width:95%;text-align:left">Conta corrente para desembolso de recursos</button>
                 </p>
                 <div class="collapse multi-collapse" id="collapseContaCorrenteDesembolso">
                     <div class="card card-body">
@@ -395,7 +395,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
                     <p>
                         <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteRecolhimento" aria-expanded="false" aria-controls="multiCollapseExample2"
-                        style="width:95%;text-align:left">Conta Corrente para Recolhimento de Saldo</button>
+                        style="width:95%;text-align:left">Conta corrente para recolhimento de saldo</button>
                     </p>
                     <div class="collapse multi-collapse" id="collapseContaCorrenteRecolhimento">
                         <div class="card card-body">

@@ -7,12 +7,12 @@ use yii\helpers\Html;
 /* @var $model common\models\ContaCorrente */
 
 $this->title = 'Nova Conta Corrente';
-$this->params['breadcrumbs'][] = ['label' => 'Conta Correntes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Contas Correntes', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="conta-corrente-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <!--<h1><?= Html::encode($this->title) ?></h1>-->
 
     <?= $this->render('_form', [
         'model' => $model,
