@@ -79,7 +79,7 @@ class ContaCorrenteController extends Controller
               }
             }
 
-            $this->mensagens('success', 'Conta corrente', 'Corrente corrente criada com sucesso.');
+            $this->mensagens('success', 'Conta corrente', 'Conta corrente criada com sucesso.');
             return $this->redirect(['orcamento/index', 'id_projeto' => $model->id_projeto]);
         }
 
@@ -216,6 +216,7 @@ class ContaCorrenteController extends Controller
           }
         }
         $model->delete();
+        $this->mensagens('success', 'Conta corrente excluída', 'Conta corrente excluída com sucesso.');
         return $this->redirect(['orcamento/index', 'id_projeto' => $id_projeto]);
     }
 
