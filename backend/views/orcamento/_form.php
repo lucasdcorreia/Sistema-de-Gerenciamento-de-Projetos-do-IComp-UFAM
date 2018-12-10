@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id_projeto')->textInput() ?>
+    <?= $form->field($model, 'id_projeto')->hiddenInput()->label(false)?>
 
     <?= $form->field($model, 'recurso_aprovado')->textInput() ?>
 

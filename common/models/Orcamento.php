@@ -49,11 +49,11 @@ class Orcamento extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'id_projeto' => 'Id Projeto',
-            'recurso_aprovado' => 'Recurso Aprovado',
-            'tipo_de_parcela' => 'Tipo De Parcela',
-            'valor_parcela' => 'Valor Parcela',
-            'data_recebida' => 'Data Recebida',
-            'valor_receber' => 'Valor Receber',
+            'recurso_aprovado' => 'Recurso aprovado',
+            'tipo_de_parcela' => 'Tipo de parcela',
+            'valor_parcela' => 'Valor da parcela',
+            'data_recebida' => 'Data recebida',
+            'valor_receber' => 'Valor a receber',
         ];
     }
 

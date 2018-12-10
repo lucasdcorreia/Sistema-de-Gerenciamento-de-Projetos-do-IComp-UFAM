@@ -71,7 +71,7 @@ class ContaCorrente extends \yii\db\ActiveRecord
             'id' => 'ID',
             'id_projeto' => 'Id Projeto',
             'banco' => 'Banco',
-            'agencia' => 'Agencia',
+            'agencia' => 'Agência',
             'conta' => 'Conta',
             'tipo_conta_corrente' => 'Tipo Conta Corrente',
         ];

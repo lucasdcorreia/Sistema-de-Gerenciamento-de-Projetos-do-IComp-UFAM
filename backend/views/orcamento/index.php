@@ -97,15 +97,15 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
                         'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
-                            'id',
-                            'id_projeto',
+                            //'id',
+                            //'id_projeto',
                             'recurso_aprovado',
                             'tipo_de_parcela',
                             'valor_parcela',
-                            //'data_recebida',
-                            //'valor_receber',
+                            'data_recebida',
+                            'valor_receber',
 
                             ['class' => 'yii\grid\ActionColumn',
                             'buttons' => [
@@ -170,15 +170,15 @@ $this->params['breadcrumbs'][] = $this->title;
                         <?= GridView::widget([
                             'dataProvider' => $dataProviderValorPago,
                             'columns' => [
-                                ['class' => 'yii\grid\SerialColumn'],
+                                ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
-                                'id',
-                                'id_projeto',
+                            //  'id',
+                            //  'id_projeto',
                                 'numero_ob',
                                 'data',
                                 'natureza',
-                                //'valor',
-                                //'tipo',
+                                'valor',
+                                'tipo',
 
                                 ['class' => 'yii\grid\ActionColumn',
                                 'buttons' => [
@@ -246,9 +246,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderPrestacaoConta,
                         'columns' => [
-                            ['class' => 'yii\grid\SerialColumn'],
+                            ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
-                            'id',
+                         //   'id',
                             'data_prevista',
                             'data_enviada',
                             'tipo',
@@ -327,10 +327,10 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?= GridView::widget([
                                 'dataProvider' => $dataProviderContaCorrenteDesembolso,
                                 'columns' => [
-                                    ['class' => 'yii\grid\SerialColumn'],
+                                    ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
-                                    'id',
-                                    'id_projeto',
+                                  //  'id',
+                                  //  'id_projeto',
                                     'banco',
                                     'agencia',
                                     'conta',
@@ -406,10 +406,10 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <?= GridView::widget([
                                     'dataProvider' => $dataProviderContaCorrenteRecolhimento,
                                     'columns' => [
-                                        ['class' => 'yii\grid\SerialColumn'],
+                                        ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
-                                        'id',
-                                        'id_projeto',
+                                       // 'id',
+                                       // 'id_projeto',
                                         'banco',
                                         'agencia',
                                         'conta',

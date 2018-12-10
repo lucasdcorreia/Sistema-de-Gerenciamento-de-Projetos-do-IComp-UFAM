@@ -50,9 +50,9 @@ class ValorPago extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'id_projeto' => 'Id Projeto',
-            'numero_ob' => 'Numero Ob',
+            'numero_ob' => 'Nº O.B.',
             'data' => 'Data',
-            'natureza' => 'Natureza',
+            'natureza' => 'Natureza da despesa',
             'valor' => 'Valor',
             'tipo' => 'Tipo',
         ];
