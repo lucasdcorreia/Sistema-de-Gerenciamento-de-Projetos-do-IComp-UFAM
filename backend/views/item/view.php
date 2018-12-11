@@ -34,9 +34,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => ($model->tipo_item==8 || $model->tipo_item==6)?[
-            'id',
+            //'id',
             'natureza',
-            'valor',
+            //'valor',
             'numero_item',
             'justificativa:ntext',
             'quantidade',
@@ -53,9 +53,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ]*/
         ]:[
-          'id',
+          //'id',
           'natureza',
-          'valor',
+          //'valor',
           'numero_item',
           'justificativa:ntext',
           'quantidade',

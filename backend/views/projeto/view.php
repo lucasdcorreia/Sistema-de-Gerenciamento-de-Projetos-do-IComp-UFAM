@@ -143,6 +143,9 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
 
     <?= GridView::widget([
         'dataProvider' => $dataProviderTermoAditivo,
+        'options' => [
+          'style' => 'overflow: auto; word-wrap: break-word;'
+        ],
         'columns' => [
             'numero_do_termo',
             'motivo:ntext',
@@ -215,6 +218,9 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
 
     <?= GridView::widget([
         'dataProvider' => $dataProviderRelatorioPrestacao,
+        'options' => [
+          'style' => 'overflow: auto; word-wrap: break-word;'
+        ],
         'columns' => [
             ['class' => 'yii\grid\SerialColumn', 'header' => 'Número'],
 

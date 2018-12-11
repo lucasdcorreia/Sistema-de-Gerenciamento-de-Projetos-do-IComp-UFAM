@@ -41967,3 +41967,1822 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1544402693.971
     'REQUEST_TIME' => 1544402693
 ]
+2018-12-11 11:01:27 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'EllE2327'@'localhost' (using password: NO) in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'EllE2327', '', NULL)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('user')
+#12 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#13 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /home/lucasoliveira/projetos/common/models/User.php(102): yii\db\BaseActiveRecord::findOne(Array)
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(595): common\models\User::findIdentity(78)
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(707): yii\web\User->loginByCookie()
+#19 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#20 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#21 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#22 /home/lucasoliveira/projetos/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#23 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#24 [internal function]: yii\base\BaseObject->__construct(Array)
+#25 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#26 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#27 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#28 /home/lucasoliveira/projetos/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#29 /home/lucasoliveira/projetos/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#30 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#31 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#32 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#33 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#34 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#35 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#36 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#37 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#38 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#39 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#40 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#41 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#42 /home/lucasoliveira/projetos/backend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#43 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'EllE2327'@'localhost' (using password: NO) in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Command.php(1153): yii\db\Command->prepare(true)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('user')
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /home/lucasoliveira/projetos/common/models/User.php(102): yii\db\BaseActiveRecord::findOne(Array)
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(595): common\models\User::findIdentity(78)
+#15 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(707): yii\web\User->loginByCookie()
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /home/lucasoliveira/projetos/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#21 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#24 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /home/lucasoliveira/projetos/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#27 /home/lucasoliveira/projetos/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#28 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#31 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(376): ReflectionClass->newInstanceArgs(Array)
+#32 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#36 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#37 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#38 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#39 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#40 /home/lucasoliveira/projetos/backend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#41 {main}
+Additional Information:
+
+2018-12-11 11:01:26 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/projetos/backend/web/'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544540486.836
+    'REQUEST_TIME' => 1544540486
+]
+2018-12-11 11:07:39 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Parâmetros obrigatórios ausentes: id in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/view', Array)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2018-12-11 11:07:39 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/view'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34136'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fview'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544540859.73
+    'REQUEST_TIME' => 1544540859
+]
+2018-12-11 11:09:07 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Parâmetros obrigatórios ausentes: aba in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2018-12-11 11:09:07 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544540947.425
+    'REQUEST_TIME' => 1544540947
+]
+2018-12-11 11:17:53 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /home/lucasoliveira/projetos/backend/views/projeto/_form.php:59
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, NULL)
+#2 /home/lucasoliveira/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ProjetoController))
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#7 /home/lucasoliveira/projetos/backend/controllers/ProjetoController.php(120): yii\base\Controller->render('create', Array)
+#8 [internal function]: backend\controllers\ProjetoController->actionCreate('0')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#12 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#13 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2018-12-11 11:17:53 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+    'aba' => '0'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=0'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate&aba=0'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=0'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544541473.516
+    'REQUEST_TIME' => 1544541473
+]
+2018-12-11 11:17:55 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /home/lucasoliveira/projetos/backend/views/projeto/_form.php:59
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, NULL)
+#2 /home/lucasoliveira/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ProjetoController))
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#7 /home/lucasoliveira/projetos/backend/controllers/ProjetoController.php(120): yii\base\Controller->render('create', Array)
+#8 [internal function]: backend\controllers\ProjetoController->actionCreate('-1')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#12 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#13 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2018-12-11 11:17:55 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+    'aba' => '-1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34280'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate&aba=-1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544541475.22
+    'REQUEST_TIME' => 1544541475
+]
+2018-12-11 11:18:18 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /home/lucasoliveira/projetos/backend/views/projeto/_form.php:59
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, NULL)
+#2 /home/lucasoliveira/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ProjetoController))
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#7 /home/lucasoliveira/projetos/backend/controllers/ProjetoController.php(120): yii\base\Controller->render('create', Array)
+#8 [internal function]: backend\controllers\ProjetoController->actionCreate('-1')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#12 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#13 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2018-12-11 11:18:18 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+    'aba' => '-1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34292'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate&aba=-1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544541498.017
+    'REQUEST_TIME' => 1544541498
+]
+2018-12-11 11:19:14 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php:99
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/lucasoliv...', 99, Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 /home/lucasoliveira/projetos/backend/views/projeto/_form.php(59): yii\helpers\BaseHtml::a('Informa\xC3\xA7\xC3\xB5es d...', Array, Array)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, NULL)
+#7 /home/lucasoliveira/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ProjetoController))
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#12 /home/lucasoliveira/projetos/backend/controllers/ProjetoController.php(120): yii\base\Controller->render('create', Array)
+#13 [internal function]: backend\controllers\ProjetoController->actionCreate('-1')
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2018-12-11 11:19:13 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+    'aba' => '-1'
+]
+
+$_POST = [
+    'Projeto' => [
+        'titulo_projeto' => ''
+        'tituloProjetoFile' => ''
+        'nome_coordenador' => ''
+        'num_processo' => ''
+        'num_protocolo' => ''
+        'edital' => ''
+        'editalFile' => ''
+        'inicio_previsto' => ''
+        'termino' => ''
+        'cotacao_moeda_estrangeira' => ''
+        'numero_fapeam_outorga' => ''
+    ]
+    'projeto-cotacao_moeda_estrangeira-disp' => 'R$0,00'
+]
+
+$_FILES = [
+    'Projeto' => [
+        'name' => [
+            'tituloProjetoFile' => ''
+            'editalFile' => ''
+        ]
+        'type' => [
+            'tituloProjetoFile' => ''
+            'editalFile' => ''
+        ]
+        'tmp_name' => [
+            'tituloProjetoFile' => ''
+            'editalFile' => ''
+        ]
+        'error' => [
+            'tituloProjetoFile' => 4
+            'editalFile' => 4
+        ]
+        'size' => [
+            'tituloProjetoFile' => 0
+            'editalFile' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Projeto criado com sucesso.'
+        'title' => 'Projeto criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1712'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarydC2KfGByyvUhUQL6'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=projeto%2Fcreate&aba=-1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544541553.997
+    'REQUEST_TIME' => 1544541553
+]
+2018-12-11 11:19:15 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php:99
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/lucasoliv...', 99, Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 /home/lucasoliveira/projetos/backend/views/projeto/_form.php(59): yii\helpers\BaseHtml::a('Informa\xC3\xA7\xC3\xB5es d...', Array, Array)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, NULL)
+#7 /home/lucasoliveira/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ProjetoController))
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#12 /home/lucasoliveira/projetos/backend/controllers/ProjetoController.php(120): yii\base\Controller->render('create', Array)
+#13 [internal function]: backend\controllers\ProjetoController->actionCreate('-1')
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2018-12-11 11:19:15 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+    'aba' => '-1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Projeto criado com sucesso.'
+        'title' => 'Projeto criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34302'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate&aba=-1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544541555.334
+    'REQUEST_TIME' => 1544541555
+]
+2018-12-11 11:19:25 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php:99
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/lucasoliv...', 99, Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 /home/lucasoliveira/projetos/backend/views/projeto/_form.php(59): yii\helpers\BaseHtml::a('Informa\xC3\xA7\xC3\xB5es d...', Array, Array)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, NULL)
+#7 /home/lucasoliveira/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ProjetoController))
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#12 /home/lucasoliveira/projetos/backend/controllers/ProjetoController.php(120): yii\base\Controller->render('create', Array)
+#13 [internal function]: backend\controllers\ProjetoController->actionCreate('-1')
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2018-12-11 11:19:24 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+    'aba' => '-1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34304'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate&aba=-1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544541564.992
+    'REQUEST_TIME' => 1544541564
+]
+2018-12-11 11:21:02 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php:99
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/home/lucasoliv...', 99, Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 /home/lucasoliveira/projetos/backend/views/projeto/_form.php(59): yii\helpers\BaseHtml::a('Informa\xC3\xA7\xC3\xB5es d...', Array, Array)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, NULL)
+#7 /home/lucasoliveira/projetos/backend/views/projeto/create.php(19): yii\base\View->render('_form', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ProjetoController))
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ProjetoController))
+#12 /home/lucasoliveira/projetos/backend/controllers/ProjetoController.php(120): yii\base\Controller->render('create', Array)
+#13 [internal function]: backend\controllers\ProjetoController->actionCreate('-1')
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('projeto/create', Array)
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2018-12-11 11:21:02 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'projeto/create'
+    'aba' => '-1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '34342'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fcreate&aba=-1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=projeto%2Fcreate&aba=-1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544541662.192
+    'REQUEST_TIME' => 1544541662
+]
+2018-12-11 13:49:07 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:95
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 13:49:07 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '37924'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544550547.769
+    'REQUEST_TIME' => 1544550547
+]
+2018-12-11 13:49:33 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:95
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 13:49:33 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '37932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544550573.015
+    'REQUEST_TIME' => 1544550573
+]
+2018-12-11 13:49:35 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:95
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 13:49:35 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '37934'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544550575.086
+    'REQUEST_TIME' => 1544550575
+]
+2018-12-11 13:49:35 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:95
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 13:49:35 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '37936'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544550575.27
+    'REQUEST_TIME' => 1544550575
+]
+2018-12-11 13:49:35 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:95
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 13:49:35 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '37938'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544550575.416
+    'REQUEST_TIME' => 1544550575
+]
+2018-12-11 13:51:48 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Unknown format type: n:text in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/i18n/Formatter.php:446
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\i18n\Formatter->format('asdasdassdasaas...', 'n:text')
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 3, 0)
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 3, 0)
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 3, 0)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#8 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#12 /home/lucasoliveira/projetos/backend/views/item/index.php(51): yii\base\Widget::widget(Array)
+#13 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#15 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#17 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#18 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#19 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#22 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#23 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#25 {main}
+2018-12-11 13:51:48 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '37996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544550708.171
+    'REQUEST_TIME' => 1544550708
+]
+2018-12-11 14:00:46 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ''professor_responsavel'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:82
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 14:00:46 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '38080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544551246.881
+    'REQUEST_TIME' => 1544551246
+]
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ''format'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:77
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '38092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544551451.427
+    'REQUEST_TIME' => 1544551451
+]
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ''format'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:77
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '38094'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544551451.613
+    'REQUEST_TIME' => 1544551451
+]
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ''format'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:77
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '38096'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544551451.76
+    'REQUEST_TIME' => 1544551451
+]
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ParseError] ParseError: syntax error, unexpected ''format'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/lucasoliveira/projetos/backend/views/item/index.php:77
+Stack trace:
+#0 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#3 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#4 [internal function]: backend\controllers\ItemController->actionIndex('61')
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2018-12-11 14:04:11 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '61'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=projeto%2Fview&id=61'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '38098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=61'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=61'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544551451.893
+    'REQUEST_TIME' => 1544551451
+]
+2018-12-11 14:06:38 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][Error] Error: Class 'StringHelper' not found in /home/lucasoliveira/projetos/backend/views/item/index.php:74
+Stack trace:
+#0 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 4, 0, Object(yii\grid\DataColumn))
+#1 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 4, 0, Object(yii\grid\DataColumn))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 4, 0)
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 4, 0)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 4, 0)
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 4, 0)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#10 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#11 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#12 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#13 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#14 /home/lucasoliveira/projetos/backend/views/item/index.php(51): yii\base\Widget::widget(Array)
+#15 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#19 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\ItemController->actionIndex('62')
+#21 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#25 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#27 {main}
+2018-12-11 14:06:38 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '62'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=62'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '38114'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=62'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=62'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544551598.234
+    'REQUEST_TIME' => 1544551598
+]
+2018-12-11 14:08:13 [::1][78][e56h2o0d4efpoie1oia0faq3dh][error][ArgumentCountError] ArgumentCountError: Too few arguments to function yii\helpers\BaseStringHelper::truncateWords(), 1 passed in /home/lucasoliveira/projetos/backend/views/item/index.php on line 75 and at least 2 expected in /home/lucasoliveira/projetos/vendor/yiisoft/yii2/helpers/BaseStringHelper.php:131
+Stack trace:
+#0 /home/lucasoliveira/projetos/backend/views/item/index.php(75): yii\helpers\BaseStringHelper::truncateWords('ccccccccccccccc...')
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 4, 0, Object(yii\grid\DataColumn))
+#2 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 4, 0, Object(yii\grid\DataColumn))
+#3 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 4, 0)
+#4 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 4, 0)
+#5 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 4, 0)
+#6 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 4, 0)
+#7 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /home/lucasoliveira/projetos/backend/views/item/index.php(52): yii\base\Widget::widget(Array)
+#16 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/home/lucasoliv...')
+#17 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/lucasoliv...', Array)
+#18 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/lucasoliv...', Array, Object(backend\controllers\ItemController))
+#19 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /home/lucasoliveira/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('62')
+#22 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /home/lucasoliveira/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /home/lucasoliveira/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 14:08:13 [::1][78][e56h2o0d4efpoie1oia0faq3dh][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '62'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'paradise_expandeditems' => 'menuform:j_idt31,menuform:pm_ls_ins2'
+    'PHPBACKENDSESSID' => 'e56h2o0d4efpoie1oia0faq3dh'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=item%2Fcreate&tipo_item=1&id_projeto=62'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_backendUser=6bb4f362eed7c20ad9370db4ea348f6c548982f04d1995070565a9e4efac50e4a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; paradise_expandeditems=menuform%3Aj_idt31%2Cmenuform%3Apm_ls_ins2; PHPBACKENDSESSID=e56h2o0d4efpoie1oia0faq3dh'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '38240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=62'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=item%2Findex&id_projeto=62'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544551693.071
+    'REQUEST_TIME' => 1544551693
+]

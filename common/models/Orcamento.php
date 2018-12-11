@@ -36,7 +36,7 @@ class Orcamento extends \yii\db\ActiveRecord
             [['id_projeto'], 'integer'],
             [['recurso_aprovado', 'valor_parcela', 'valor_receber'], 'number'],
             [['data_recebida'], 'safe'],
-            [['tipo_de_parcela'], 'string', 'max' => 40],
+            [['tipo_de_parcela'], 'string', 'max' => 40, 'message' => 'Limite de caracteres alcançado'],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
         ];
     }

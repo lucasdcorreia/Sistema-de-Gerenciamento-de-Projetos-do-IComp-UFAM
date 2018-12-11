@@ -16,9 +16,9 @@ use yii\bootstrap\Collapse;
 
     <?= $form->field($model, 'natureza')->dropDownList(['Capital'=>'Capital', 'Custeio'=>'Custeio'], ['prompt' => '--- Selecione a natureza ---']) ?>
 
-    <?= $form->field($model, 'professor_responsavel')->textInput(['maxlength' => true]) ?>
+  <?= $form->field($model, 'professor_responsavel')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'numero_item')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'numero_item')->textInput(['maxlength' => 13]) ?>
 
     <?= $form->field($model, 'justificativa')->textarea(['rows' => 6]) ?>
 

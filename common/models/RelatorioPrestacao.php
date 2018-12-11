@@ -41,8 +41,8 @@ class RelatorioPrestacao extends \yii\db\ActiveRecord
         return [
             [['data_prevista', 'data_enviada'], 'safe'],
             [['tipo_anexo', 'id_projeto'], 'integer'],
-            [['tipo'], 'string', 'max' => 30],
-            [['situacao'], 'string', 'max' => 40],
+            [['tipo'], 'string', 'max' => 30, 'message' => 'Limite de caracteres alcançado'],
+            [['situacao'], 'string', 'max' => 40, 'message' => 'Limite de caracteres alcançado'],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
             [['relatorioFile'], 'file', 'skipOnEmpty' => true],
         ];

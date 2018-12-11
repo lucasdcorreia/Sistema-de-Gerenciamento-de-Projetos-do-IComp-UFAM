@@ -39,9 +39,9 @@ class ContaCorrente extends \yii\db\ActiveRecord
     {
         return [
             [['id_projeto', 'tipo_conta_corrente'], 'integer'],
-            [['banco'], 'string', 'max' => 50],
-            [['agencia'], 'string', 'max' => 10],
-            [['conta'], 'string', 'max' => 15],
+            [['banco'], 'string', 'max' => 50, 'message' => 'Limite de caracteres alcançado'],
+            [['agencia'], 'string', 'max' => 10, 'message' => 'Limite de caracteres alcançado'],
+            [['conta'], 'string', 'max' => 15, 'message' => 'Limite de caracteres alcançado'],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
             [['contaFile'], 'file', 'skipOnEmpty' => true],
         ];

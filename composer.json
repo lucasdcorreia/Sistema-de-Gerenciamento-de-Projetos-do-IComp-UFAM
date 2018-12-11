@@ -37,7 +37,8 @@
         "insolita/yii2-iconpicker": "3.0",
         "dbfernandes/yii2-icomp-toggle": "dev-master",
         "mpdf/mpdf": "7.0",
-        "phpoffice/phpspreadsheet":"*"
+        "phpoffice/phpspreadsheet":"*",
+	"2amigos/yii2-file-upload-widget": "~1.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

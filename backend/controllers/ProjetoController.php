@@ -107,9 +107,14 @@ class ProjetoController extends Controller
               }
             }
 
-
+            $aba = Yii::$app->request->post('aba');
             $this->mensagens('success', 'Projeto criado', 'Projeto criado com sucesso.');
-            return $this->redirect(['item/index', 'id_projeto' => $model->id]);
+            if($aba == 0)
+              return $this->redirect(['projeto/view', 'id' => $model->id]);
+            else if($aba == 1)
+              return $this->redirect(['item/index', 'id_projeto' => $model->id]);
+            else if($aba == 2)
+              return $this->redirect(['orcamento/index', 'id_projeto' => $model->id]);
           }
         }
 
@@ -222,9 +227,14 @@ class ProjetoController extends Controller
               }
             }
 
-
+            $aba = Yii::$app->request->post('aba');
             $this->mensagens('success', 'Projeto alterado', 'Projeto alterado com sucesso.');
-            return $this->redirect(['view', 'id' => $model->id]);
+            if($aba == 0)
+              return $this->redirect(['projeto/view', 'id' => $model->id]);
+            else if($aba == 1)
+              return $this->redirect(['item/index', 'id_projeto' => $model->id]);
+            else if($aba == 2)
+              return $this->redirect(['orcamento/index', 'id_projeto' => $model->id]);
           }
         }
 

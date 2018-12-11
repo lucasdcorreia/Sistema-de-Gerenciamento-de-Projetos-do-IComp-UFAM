@@ -55,8 +55,8 @@ class Projeto extends \yii\db\ActiveRecord
         return [
             [['inicio_previsto', 'termino'], 'date', 'format' => 'dd/mm/yyyy'],
             [['cotacao_moeda_estrangeira'], 'double'],
-            [['num_processo', 'num_protocolo'], 'string', 'max' => 100],
-            [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200],
+            [['num_processo', 'num_protocolo'], 'string', 'max' => 100, 'message' => 'Limite de caracteres alcançado'],
+            [['nome_coordenador', 'edital', 'titulo_projeto', 'numero_fapeam_outorga'], 'string', 'max' => 200, 'message' => 'Limite de caracteres alcançado'],
             [['duracao'], 'safe'],
             [['editalFile'], 'file', 'skipOnEmpty' => true, 'maxSize' => 1024*1024*1024*1024*1024, 'tooBig' => 'Arquivo é muito grande para o upload'],
             [['tituloProjetoFile'], 'file', 'skipOnEmpty' => true, 'maxSize' => 1024*1024*1024*1024, 'tooBig' => 'Arquivo é muito grande para o upload'],
@@ -69,7 +69,7 @@ class Projeto extends \yii\db\ActiveRecord
       if($this->inicio_previsto != NULL && $this->termino != NULL){
         $inicio = DateTime::createFromFormat('d/m/Y', $this->inicio_previsto);
         $fim = DateTime::createFromFormat('d/m/Y', $this->termino);
-        if($inicio > $fim){
+        if($inicio >= $fim){
           $this->addError('termino', 'A data de término deve ser maior que a de início.');
           $this->addError('termino', 'A data de início deve ser menor que a de término.');
         }

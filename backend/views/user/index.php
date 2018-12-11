@@ -27,6 +27,9 @@ $this->title = 'Lista de Usuários (Professores e Técnicos Administrativos)';
                 <?= GridView::widget([
                     'dataProvider' => $dataProvider,
                     'filterModel' => $searchModel,
+                    'options' => [
+                      'style' => 'overflow: auto; word-wrap: break-word;'
+                    ],
                     'columns' => [
                         'nome',
                         'username',

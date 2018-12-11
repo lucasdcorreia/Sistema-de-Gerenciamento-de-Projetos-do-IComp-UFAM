@@ -96,6 +96,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     <?= GridView::widget([
                         'dataProvider' => $dataProvider,
+                        'options' => [
+                          'style' => 'overflow: auto; word-wrap: break-word;'
+                        ],
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
@@ -169,6 +172,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     </p>
                         <?= GridView::widget([
                             'dataProvider' => $dataProviderValorPago,
+                            'options' => [
+                              'style' => 'overflow: auto; word-wrap: break-word;'
+                            ],
                             'columns' => [
                                 ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
@@ -245,6 +251,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderPrestacaoConta,
+                        'options' => [
+                          'style' => 'overflow: auto; word-wrap: break-word;'
+                        ],
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
@@ -326,6 +335,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         </p>
                             <?= GridView::widget([
                                 'dataProvider' => $dataProviderContaCorrenteDesembolso,
+                                'options' => [
+                                  'style' => 'overflow: auto; word-wrap: break-word;'
+                                ],
                                 'columns' => [
                                     ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 
@@ -405,6 +417,9 @@ $this->params['breadcrumbs'][] = $this->title;
                             </p>
                                 <?= GridView::widget([
                                     'dataProvider' => $dataProviderContaCorrenteRecolhimento,
+                                    'options' => [
+                                      'style' => 'overflow: auto; word-wrap: break-word;'
+                                    ],
                                     'columns' => [
                                         ['class' => 'yii\grid\SerialColumn', 'header' => 'Nº'],
 

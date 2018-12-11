@@ -56,9 +56,9 @@ $this->registerJs("
     <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
     <div class="center-block" style="width:600px;max-width:100%;">
       <div class="btn-group">
-        <?= Html::a('Informações de projeto', ['projeto/view', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg']) ?>
-        <a class="btn btn-default btn-lg">Itens de projeto</a>
-        <a class="btn btn-default btn-lg">Informações financeiras</a>
+        <?= Html::submitButton('Informações de projeto', ['class' => 'btn btn-primary btn-lg', 'name'=>'aba', 'value' => 0]) ?>
+        <?= Html::submitButton('Itens de projeto', ['class' => 'btn btn-default btn-lg', 'name'=>'aba', 'value' => 1]) ?>
+        <?= Html::submitButton('Informações financeiras', ['class' => 'btn btn-default btn-lg', 'name'=>'aba', 'value' => 2]) ?>
       </div>
     </div>
     <hr>
@@ -145,7 +145,7 @@ $this->registerJs("
     </div>
 
     <div class="form-group" style="text-align: right">
-        <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Salvar', ['class' => 'btn btn-success', 'name'=>'aba', 'value'=>0]) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

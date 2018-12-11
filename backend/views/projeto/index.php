@@ -19,6 +19,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
+        'options' => [
+          'style' => 'overflow: auto; word-wrap: break-word;'
+        ],
         /*'formatter' => [
         'class' => 'yii\i18n\Formatter',
         'dateFormat' => 'php:d-M-Y',

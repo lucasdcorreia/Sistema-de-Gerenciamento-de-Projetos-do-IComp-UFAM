@@ -45,9 +45,9 @@ class Item extends \yii\db\ActiveRecord
             [[/*'valor', */'custo_unitario'], 'double'],
             [['justificativa', 'descricao', 'professor_responsavel'], 'string'],
             [['quantidade', 'tipo_item', 'id_projeto'], 'integer'],
-            [['natureza'], 'string', 'max' => 40],
+            [['natureza'], 'string', 'max' => 40, 'message' => 'Limite de caracteres alcançado'],
             [['custoUnitarioReal'], 'safe'],
-            [['numero_item'], 'string', 'max' => 100],
+            [['numero_item'], 'string', 'max' => 100, 'message' => 'Limite de caracteres alcançado'],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
         ];
     }

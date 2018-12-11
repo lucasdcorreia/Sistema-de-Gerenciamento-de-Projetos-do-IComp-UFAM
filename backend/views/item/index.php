@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\StringHelper;
 use yii\grid\GridView;
 use yii\bootstrap\Collapse;
 use common\models\Item;
@@ -49,9 +50,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                     <?= GridView::widget([
                     'dataProvider' => $dataProviderMatConsumo,
+                    'options' => [
+                      'style' => 'overflow: auto; word-wrap: break-word;'
+                    ],
                     'columns' => [
                             'numero_item',
-                            'natureza',
+                            //'natureza',
                             //'valor',
                             //'justificativa:ntext',
                             'quantidade',
@@ -62,7 +66,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }
                             ],
                             //'tipo_item',
-                            //'descricao:ntext',
+
+                            'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
 
@@ -95,9 +100,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderMatPermanente,
+                        'options' => [
+                          'style' => 'overflow: auto; word-wrap: break-word;'
+                        ],
                         'columns' => [
                             'numero_item',
-                            'natureza',
+                            //'natureza',
                             //'valor',
                             //'justificativa:ntext',
                             'quantidade',
@@ -108,7 +116,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }
                             ],
                             //'tipo_item',
-                            //'descricao:ntext',
+                            'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
@@ -142,9 +150,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                 <?= GridView::widget([
                     'dataProvider' => $dataProviderServTerceiroPF,
+                    'options' => [
+                      'style' => 'overflow: auto; word-wrap: break-word;'
+                    ],
                     'columns' => [
                         'numero_item',
-                        'natureza',
+                        //'natureza',
                         //'valor',
                         //'justificativa:ntext',
                         'quantidade',
@@ -155,7 +166,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             }
                         ],
                         //'tipo_item',
-                        //'descricao:ntext',
+                        'descricao:ntext',
                         'professor_responsavel',
                         //'id_projeto',
                         [
@@ -190,9 +201,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                 <?= GridView::widget([
                     'dataProvider' => $dataProviderServTerceiroPJ,
+                    'options' => [
+                      'style' => 'overflow: auto; word-wrap: break-word;'
+                    ],
                     'columns' => [
                         'numero_item',
-                        'natureza',
+                        //'natureza',
                         //'valor',
                         //'justificativa:ntext',
                         'quantidade',
@@ -203,7 +217,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             }
                         ],
                         //'tipo_item',
-                        //'descricao:ntext',
+                        'descricao:ntext',
                         'professor_responsavel',
                         //'id_projeto',
                         [
@@ -237,9 +251,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderPassagemNacional,
+                        'options' => [
+                          'style' => 'overflow: auto; word-wrap: break-word;'
+                        ],
                         'columns' => [
                             'numero_item',
-                            'natureza',
+                            //'natureza',
                             //'valor',
                             //'justificativa:ntext',
                             'quantidade',
@@ -250,7 +267,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }
                             ],
                             //'tipo_item',
-                            //'descricao:ntext',
+                            'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
@@ -283,9 +300,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderPassagemInternacional,
+                        'options' => [
+                          'style' => 'overflow: auto; word-wrap: break-word;'
+                        ],
                         'columns' => [
                             'numero_item',
-                            'natureza',
+                            //'natureza',
                             //'valor',
                             //'justificativa:ntext',
                             'quantidade',
@@ -302,7 +322,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }
                             ],
                             //'tipo_item',
-                            //'descricao:ntext',
+                            'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
@@ -343,9 +363,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderDiariaNacional,
+                        'options' => [
+                          'style' => 'overflow: auto; word-wrap: break-word;'
+                        ],
                         'columns' => [
                             'numero_item',
-                            'natureza',
+                            //'natureza',
                             //'valor',
                             //'justificativa:ntext',
                             'quantidade',
@@ -356,7 +379,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }
                             ],
                             //'tipo_item',
-                            //'descricao:ntext',
+                            'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
@@ -389,9 +412,12 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                     <?= GridView::widget([
                         'dataProvider' => $dataProviderDiariaInternacional,
+                        'options' => [
+                          'style' => 'overflow: auto; word-wrap: break-word;'
+                        ],
                         'columns' => [
                             'numero_item',
-                            'natureza',
+                            //'natureza',
                             //'valor',
                             //'justificativa:ntext',
                             'quantidade',
@@ -408,7 +434,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }
                             ],
                             //'tipo_item',
-                            //'descricao:ntext',
+                            'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',
                             [
