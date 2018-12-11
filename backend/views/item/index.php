@@ -5,6 +5,7 @@ use yii\helpers\StringHelper;
 use yii\grid\GridView;
 use yii\bootstrap\Collapse;
 use common\models\Item;
+use common\models\User;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */

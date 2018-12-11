@@ -44486,3 +44486,1360 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-12-11 19:02:19 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 19:02:19 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569339.15
+    'REQUEST_TIME' => 1544569339
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:02:22 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 19:02:22 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569342.4
+    'REQUEST_TIME' => 1544569342
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:08:44 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 19:08:44 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58964'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569724.49
+    'REQUEST_TIME' => 1544569724
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:10:53 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 19:10:53 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58973'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569853.71
+    'REQUEST_TIME' => 1544569853
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:17:42 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\ErrorException:2] yii\base\ErrorException: htmlspecialchars() expects parameter 1 to be string, object given in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php:111
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'htmlspecialchar...', '/Applications/M...', 111, Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php(111): htmlspecialchars(Object(common\models\User), 11, 'UTF-8', true)
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/i18n/Formatter.php(480): yii\helpers\BaseHtml::encode(Object(common\models\User))
+#3 [internal function]: yii\i18n\Formatter->asText(Object(common\models\User))
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/i18n/Formatter.php(443): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\i18n\Formatter->format(Object(common\models\User), 'text')
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#15 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#17 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#22 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#23 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#27 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#28 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#30 {main}
+2018-12-11 19:17:42 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59022'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570262.55
+    'REQUEST_TIME' => 1544570262
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:19:37 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::nome in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\base\Component->__get('nome')
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:19:37 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59037'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570377.65
+    'REQUEST_TIME' => 1544570377
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:20:04 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::username in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\base\Component->__get('username')
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:20:04 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59041'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570404.73
+    'REQUEST_TIME' => 1544570404
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:20:40 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::nome in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\base\Component->__get('nome')
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:20:40 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59046'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570440.75
+    'REQUEST_TIME' => 1544570440
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:23:44 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php:78
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(78): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Applications/M...', 78, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 6, 2, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 6, 2, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 6, 2)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 6, 2)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 6, 2)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 6, 2)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:23:44 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59070'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570624.43
+    'REQUEST_TIME' => 1544570624
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:24:51 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: professor in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php:77
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/M...', 77, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:24:51 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570691.34
+    'REQUEST_TIME' => 1544570691
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:26:04 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php:78
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(78): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Applications/M...', 78, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 6, 2, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 6, 2, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 6, 2)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 6, 2)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 6, 2)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 6, 2)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:26:03 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59087'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570763.93
+    'REQUEST_TIME' => 1544570763
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:26:18 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\ErrorException:2] yii\base\ErrorException: htmlspecialchars() expects parameter 1 to be string, object given in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php:111
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'htmlspecialchar...', '/Applications/M...', 111, Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php(111): htmlspecialchars(Object(common\models\User), 11, 'UTF-8', true)
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/i18n/Formatter.php(480): yii\helpers\BaseHtml::encode(Object(common\models\User))
+#3 [internal function]: yii\i18n\Formatter->asText(Object(common\models\User))
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/i18n/Formatter.php(443): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\i18n\Formatter->format(Object(common\models\User), 'text')
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#15 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#17 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#22 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#23 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#27 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#28 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#30 {main}
+2018-12-11 19:26:18 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59090'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570778.7
+    'REQUEST_TIME' => 1544570778
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:27:16 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\ErrorException:2] yii\base\ErrorException: htmlspecialchars() expects parameter 1 to be string, object given in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php:111
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'htmlspecialchar...', '/Applications/M...', 111, Array)
+#1 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/helpers/BaseHtml.php(111): htmlspecialchars(Object(common\models\User), 11, 'UTF-8', true)
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/i18n/Formatter.php(480): yii\helpers\BaseHtml::encode(Object(common\models\User))
+#3 [internal function]: yii\i18n\Formatter->asText(Object(common\models\User))
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/i18n/Formatter.php(443): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\i18n\Formatter->format(Object(common\models\User), 'text')
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#11 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#15 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#17 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#20 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#21 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#22 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#23 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#27 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#28 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#30 {main}
+2018-12-11 19:27:16 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59095'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570836.01
+    'REQUEST_TIME' => 1544570836
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:27:33 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::nome in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\base\Component->__get('nome')
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:27:33 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570853.86
+    'REQUEST_TIME' => 1544570853
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:27:51 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::name in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\base\Component->__get('name')
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:27:51 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59107'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570871.79
+    'REQUEST_TIME' => 1544570871
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:28:08 [::1][78][0088bb661685c67cd1095b31d841119d][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::nome in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\base\Component->__get('nome')
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:28:08 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59111'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570888.2
+    'REQUEST_TIME' => 1544570888
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:28:27 [::1][78][0088bb661685c67cd1095b31d841119d][error][ArgumentCountError] ArgumentCountError: Too few arguments to function yii\db\BaseActiveRecord::findOne(), 0 passed in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php on line 77 and exactly 1 expected in /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/db/BaseActiveRecord.php:110
+Stack trace:
+#0 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(77): yii\db\BaseActiveRecord::findOne()
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#2 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(230): call_user_func(Object(Closure), Object(common\models\Item), 1, 0, Object(yii\grid\DataColumn))
+#3 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\Item), 1, 0)
+#4 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Item), 1, 0)
+#5 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Item), 1, 0)
+#6 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(common\models\Item), 1, 0)
+#7 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#8 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /Applications/MAMP/htdocs/PAPS/projetos/backend/views/item/index.php(53): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(348): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/Applications/M...', Array, Object(backend\controllers\ItemController))
+#19 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ItemController))
+#20 /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ItemController.php(131): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\ItemController->actionIndex('1')
+#22 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('item/index', Array)
+#26 /Applications/MAMP/htdocs/PAPS/projetos/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2018-12-11 19:28:27 [::1][78][0088bb661685c67cd1095b31d841119d][info][application] $_GET = [
+    'r' => 'item/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '59115'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=item%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544570907.39
+    'REQUEST_TIME' => 1544570907
+    'argv' => [
+        0 => 'r=item%2Findex&id_projeto=1'
+    ]
+    'argc' => 1
+]
