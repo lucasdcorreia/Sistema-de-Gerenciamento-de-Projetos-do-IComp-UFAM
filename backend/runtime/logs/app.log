@@ -43786,3 +43786,703 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1544551693.071
     'REQUEST_TIME' => 1544551693
 ]
+2018-12-11 16:03:22 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 16:03:22 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '57498'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544558602.35
+    'REQUEST_TIME' => 1544558602
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 16:08:44 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 16:08:44 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '57842'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544558924.84
+    'REQUEST_TIME' => 1544558924
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 16:09:05 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 16:09:05 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '57867'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544558945.17
+    'REQUEST_TIME' => 1544558945
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 16:43:40 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 16:43:40 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58272'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544561020.05
+    'REQUEST_TIME' => 1544561020
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 18:54:09 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 18:54:09 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58883'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544568849.02
+    'REQUEST_TIME' => 1544568849
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 18:54:21 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 18:54:21 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544568861.31
+    'REQUEST_TIME' => 1544568861
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 18:55:34 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 18:55:34 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => 'ff02653f35e2e91dfd4c64b8ec280db1'
+    '_csrf' => '052c5c0a0547208d4fa6b285034129edae463a361edcbee6440e2e35c9765a63a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lR91uD48sFIT4Li_b8Q3yIUiaM-GA9Au\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/PAPS/projetos/backend/web/'
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=ff02653f35e2e91dfd4c64b8ec280db1; _csrf=052c5c0a0547208d4fa6b285034129edae463a361edcbee6440e2e35c9765a63a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lR91uD48sFIT4Li_b8Q3yIUiaM-GA9Au%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=projeto%2Findex'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-br'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58909'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544568934.46
+    'REQUEST_TIME' => 1544568934
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 18:57:12 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 18:57:11 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58912'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569031.94
+    'REQUEST_TIME' => 1544569031
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 18:58:59 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 18:58:59 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58916'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569139.25
+    'REQUEST_TIME' => 1544569139
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:00:33 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 19:00:33 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=item%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569233.54
+    'REQUEST_TIME' => 1544569233
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:00:37 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 19:00:37 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569237.81
+    'REQUEST_TIME' => 1544569237
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]
+2018-12-11 19:00:40 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt-BR/app.php Fallback file does not exist as well: /Applications/MAMP/htdocs/PAPS/projetos/backend/messages/pt/app.php
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:244
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/views/projeto/view.php:279
+    in /Applications/MAMP/htdocs/PAPS/projetos/backend/controllers/ProjetoController.php:75
+2018-12-11 19:00:40 [::1][78][-][info][application] $_GET = [
+    'r' => 'projeto/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => 'a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '0088bb661685c67cd1095b31d841119d'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8888/PAPS/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=a01532c103cfbb3c12b6e423a6fcdd42eae5c810024b1d62d327403650d3767ea%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=0088bb661685c67cd1095b31d841119d'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.32 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.1.8 mod_ssl/2.2.32 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/PAPS/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '58918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=projeto%2Fview&id=1'
+    'REQUEST_URI' => '/PAPS/projetos/backend/web/index.php?r=projeto%2Fview&id=1'
+    'SCRIPT_NAME' => '/PAPS/projetos/backend/web/index.php'
+    'PHP_SELF' => '/PAPS/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544569240.29
+    'REQUEST_TIME' => 1544569240
+    'argv' => [
+        0 => 'r=projeto%2Fview&id=1'
+    ]
+    'argc' => 1
+]

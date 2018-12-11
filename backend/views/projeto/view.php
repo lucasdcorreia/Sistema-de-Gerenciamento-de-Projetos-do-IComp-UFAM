@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
 <div class="projeto-view">
 
     <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
-    <div class="center-block" style="width:600px;max-width:100%;">
+    <div class="center-block" style="width:800px;max-width:100%;">
       <div class="btn-group">
         <?= Html::a('Informações de projeto', ['projeto/view', 'id' => $model->id], ['class' => 'btn btn-primary btn-lg']) ?>
         <?= Html::a('Itens de projeto', ['item/index', 'id_projeto' => $model->id], ['class' => 'btn btn-default btn-lg']) ?>

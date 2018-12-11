@@ -54,7 +54,7 @@ $this->registerJs("
     ]); ?>
 
     <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
-    <div class="center-block" style="width:600px;max-width:100%;">
+    <div class="center-block" style="width:800px;max-width:100%;">
       <div class="btn-group">
         <?= Html::submitButton('Informações de projeto', ['class' => 'btn btn-primary btn-lg', 'name'=>'aba', 'value' => 0]) ?>
         <?= Html::submitButton('Itens de projeto', ['class' => 'btn btn-default btn-lg', 'name'=>'aba', 'value' => 1]) ?>
