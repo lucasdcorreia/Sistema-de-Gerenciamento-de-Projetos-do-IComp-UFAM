@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'data')->textInput() ?>
 
-    <?= $form->field($model, 'natureza')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'natureza')->dropDownList(['Capital'=>'Capital', 'Custeio'=>'Custeio'], ['prompt' => '--- Selecione a natureza ---']) ?>
 
     <?= $form->field($model, 'valor')->textInput() ?>
 
