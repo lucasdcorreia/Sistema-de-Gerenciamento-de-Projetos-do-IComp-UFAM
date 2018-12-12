@@ -14,7 +14,6 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_ACTIVE = 10;
     public $password;
     public $password_repeat;  
-    public $nome;  
 
     /**
      * @inheritdoc

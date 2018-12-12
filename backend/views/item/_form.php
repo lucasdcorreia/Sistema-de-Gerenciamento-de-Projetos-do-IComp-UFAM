@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\widgets\MaskMoney;
 use yii\bootstrap\Collapse;
 
+
 /* @var $this yii\web\View */
 /* @var $model common\models\Item */
 /* @var $form yii\widgets\ActiveForm */
@@ -16,7 +17,7 @@ use yii\bootstrap\Collapse;
 
     <?= $form->field($model, 'natureza')->dropDownList(['Capital'=>'Capital', 'Custeio'=>'Custeio'], ['prompt' => '--- Selecione a natureza ---']) ?>
 
-  <?= $form->field($model, 'professor_responsavel')->textInput(['maxlength' => true]) ?>
+  <?= $form->field($model, 'professor_responsavel')->dropDownList($professores_nomes) ?>
 
     <?= $form->field($model, 'numero_item')->textInput(['maxlength' => 13]) ?>
 

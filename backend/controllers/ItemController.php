@@ -9,6 +9,7 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\ArrayHelper;
 
 /**
  * ItemController implements the CRUD actions for Item model.
@@ -155,6 +156,8 @@ class ItemController extends Controller
         $model = new Item();
         $model->tipo_item = $tipo_item;
         $model->id_projeto = $id_projeto;
+        $professores = User::find()->where(['professor' => 1])->orderBy('nome ASC')->all();
+        $professores_nomes = ArrayHelper::map($professores, 'id', 'nome');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->mensagens('success', 'Item criado', 'Item criado com sucesso.');
@@ -165,6 +168,7 @@ class ItemController extends Controller
             'tipo_item' => $tipo_item,
             'id_projeto' => $id_projeto,
             'model' => $model,
+            'professores_nomes' => $professores_nomes,
         ]);
     }
 
