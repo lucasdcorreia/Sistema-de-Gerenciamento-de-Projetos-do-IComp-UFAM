@@ -49,12 +49,12 @@ class TermoAditivo extends \yii\db\ActiveRecord
 
     public function upload()
     {
-          if ($this->validate()) {
+          //if ($this->validate()) {
               $this->termoFile->saveAs(\Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/') . $this->id . '_' . $this->id_projeto . '.' . $this->termoFile->extension);
               return true;
-          } else {
-              return false;
-          }
+          //} else {
+            //  return false;
+          //}
     }
 
     /**
@@ -78,7 +78,7 @@ class TermoAditivo extends \yii\db\ActiveRecord
             if($this->vigencia != NULL){
               $myDateTime = DateTime::createFromFormat('d/m/Y', $this->vigencia);
               $this->vigencia = $myDateTime->format('Y-m-d 00:00:00');
-              if($this->tipo==1){
+              if($this->tipo==1 || $this->tipo==3){
                 echo 'entrei aqui';
                 \Yii::$app->db->createCommand('UPDATE projeto SET termino=:termino WHERE id=:id')
                 ->bindValue(':id', $this->id_projeto)

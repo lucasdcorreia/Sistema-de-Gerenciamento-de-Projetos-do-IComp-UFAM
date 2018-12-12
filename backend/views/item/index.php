@@ -12,7 +12,11 @@ use common\models\User;
 
 $this->title = 'Itens';
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
+
+
+
 <div class="item-index">
 
     <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
@@ -51,9 +55,6 @@ $this->params['breadcrumbs'][] = $this->title;
                   </p>
                     <?= GridView::widget([
                     'dataProvider' => $dataProviderMatConsumo,
-                    'options' => [
-                      'style' => 'overflow: auto; word-wrap: break-word;'
-                    ],
                     'columns' => [
                             'numero_item',
                             //'natureza',
@@ -67,7 +68,6 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }
                             ],
                             //'tipo_item',
-
                             'descricao:ntext',
                             'professor_responsavel',
                             //'id_projeto',

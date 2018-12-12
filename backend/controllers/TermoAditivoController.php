@@ -73,18 +73,20 @@ class TermoAditivoController extends Controller
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
         $model->id_projeto = $id;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
             $model->termoFile = UploadedFile::getInstance($model, 'termoFile');
-            if($model->termoFile){
-              if ($model->upload()) {
-                // file is uploaded successfully
-              }else{
-                //error message
+            if($model->validate() && $model->save()){
+              if($model->termoFile){
+                if ($model->upload()) {
+                  // file is uploaded successfully
+                }else{
+                  //error message
+                }
               }
-            }
 
-            $this->mensagens('success', 'Termo aditivo criado', 'Termo aditivo criado com sucesso.');
-            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+              $this->mensagens('success', 'Termo aditivo criado', 'Termo aditivo criado com sucesso.');
+              return $this->redirect(['/projeto/view', 'id' => $model->id_projeto]);
+            }
         }
 
         return $this->render('create', [
@@ -154,29 +156,31 @@ class TermoAditivoController extends Controller
         $array_projetos = ArrayHelper::map($projetos, 'id', 'titulo_projeto');
 
 
-      if ($model->load(Yii::$app->request->post()) && $model->save()) {
+      if ($model->load(Yii::$app->request->post())) {
             $model->termoFile = UploadedFile::getInstance($model, 'termoFile');
-            if($model->termoFile){
-              $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
+            if($model->validate() && $model->save()){
+              if($model->termoFile){
+                $path = \Yii::getAlias('@backend/../uploads/projetos/termo_aditivo/');
 
-              $files = \yii\helpers\FileHelper::findFiles($path, [
-                'only' => [$model->id . '_' . $model->id_projeto . '.*'],
-              ]);
-              if (isset($files[0])) {
-                $file = $files[0];
+                $files = \yii\helpers\FileHelper::findFiles($path, [
+                  'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+                ]);
+                if (isset($files[0])) {
+                  $file = $files[0];
 
-                if (file_exists($file)) {
-                  unlink($file);
+                  if (file_exists($file)) {
+                    unlink($file);
+                  }
+                }
+                if ($model->upload()) {
+                  // file is uploaded successfully
+                }else{
+                  //error message
                 }
               }
-              if ($model->upload()) {
-                // file is uploaded successfully
-              }else{
-                //error message
-              }
+              $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
+              return $this->redirect(['/projeto/view', 'id' => $model->id_projeto ]);
             }
-            $this->mensagens('success', 'Termo aditivo', 'Alterações realizadas com sucesso.');
-            return $this->redirect(['/projeto/view', 'id' => $model->id_projeto ]);
         }
         return $this->render('update', [
             'model' => $model,

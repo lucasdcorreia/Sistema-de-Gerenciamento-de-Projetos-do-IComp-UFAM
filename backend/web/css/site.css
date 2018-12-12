@@ -90,8 +90,10 @@ a.desc:after {
     content: "\e156";
 }
 
-.grid-view th {
+.grid-view th,tr,td {
     white-space: nowrap;
+    max-width: 300px;
+    overflow: auto;
 }
 
 .hint-block {

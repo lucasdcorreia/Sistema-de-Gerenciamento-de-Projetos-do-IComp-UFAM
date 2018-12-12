@@ -8,7 +8,23 @@ use common\models\User;
 /* @var $this yii\web\View */
 /* @var $model common\models\Item */
 
-$this->title = $model->natureza;
+if($model->tipo_item == 1)
+  $this->title = 'Material de Consumo';
+else if($model->tipo_item == 2)
+  $this->title = 'Material Permanente';
+else if($model->tipo_item == 3)
+  $this->title = 'Serviço de Terceiros Pessoa Física';
+else if($model->tipo_item == 4)
+  $this->title = 'Serviço de Terceiro Pessoa Jurídica';
+else if($model->tipo_item == 5)
+  $this->title = 'Passagem Nacional';
+else if($model->tipo_item == 6)
+  $this->title = 'Passagem Internacional';
+else if($model->tipo_item == 7)
+  $this->title = 'Diária Nacional';
+else if($model->tipo_item == 8)
+  $this->title = 'Diária Internacional';
+
 $this->params['breadcrumbs'][] = ['label' => 'Itens', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -61,7 +77,7 @@ $this->params['breadcrumbs'][] = $this->title;
           'quantidade',
           'custo_unitario',
           //'custoUnitarioReal',
-          'tipo_item',
+          //'tipo_item',
           'descricao:ntext',
           'professor_responsavel',
           //'id_projeto',

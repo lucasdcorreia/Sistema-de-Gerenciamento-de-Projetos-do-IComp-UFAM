@@ -157,7 +157,7 @@ class ItemController extends Controller
         $model->tipo_item = $tipo_item;
         $model->id_projeto = $id_projeto;
         $professores = User::find()->where(['professor' => 1, 'administrador' => 0])->orderBy('nome ASC')->all();
-        $professores_nomes = ArrayHelper::map($professores, 'id', 'nome');
+        $professores_nomes = ArrayHelper::map($professores, 'nome', 'nome');
 
         if ($model->tipo_item == 2){
             $model->natureza = 'Capital';
@@ -190,6 +190,9 @@ class ItemController extends Controller
     {
         $model = $this->findModel($id);
 
+        $professores = User::find()->where(['professor' => 1, 'administrador' => 0])->orderBy('nome ASC')->all();
+        $professores_nomes = ArrayHelper::map($professores, 'nome', 'nome');
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->mensagens('success', 'Item', 'Alterações realizadas com sucesso.');
             return $this->redirect(['index', 'id_projeto' => $model->id_projeto]);
@@ -197,6 +200,7 @@ class ItemController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'professores_nomes' => $professores_nomes,
         ]);
     }
 

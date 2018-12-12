@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = 'Update';
         'tipo_item' => $model->tipo_item,
         'id_projeto' => $model->id_projeto,
         'model' => $model,
+        'professores_nomes' => $professores_nomes,
     ]) ?>
 
 </div>
