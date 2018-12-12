@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\widgets\MaskedInput;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Orcamento */
@@ -20,7 +21,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'valor_parcela')->textInput() ?>
 
-    <?= $form->field($model, 'data_recebida')->textInput() ?>
+    <?= $form->field($model, 'data_recebida')->widget(MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <?= $form->field($model, 'valor_receber')->textInput() ?>
 

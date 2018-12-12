@@ -51191,3 +51191,1940 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1544652249.502
     'REQUEST_TIME' => 1544652249
 ]
+2018-12-12 18:08:03 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:08:03 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Valor pago criado com sucesso.'
+        'title' => 'Valor pago criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=valor-pago%2Fcreate&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51871'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652483.197
+    'REQUEST_TIME' => 1544652483
+]
+2018-12-12 18:08:12 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:08:12 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Valor pago excluído com sucesso.'
+        'title' => 'Valor pago excluído'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51875'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652491.97
+    'REQUEST_TIME' => 1544652491
+]
+2018-12-12 18:09:27 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:09:26 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652566.848
+    'REQUEST_TIME' => 1544652566
+]
+2018-12-12 18:09:30 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:09:30 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652570.38
+    'REQUEST_TIME' => 1544652570
+]
+2018-12-12 18:09:34 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:09:34 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652574.49
+    'REQUEST_TIME' => 1544652574
+]
+2018-12-12 18:09:38 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:09:38 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652578.131
+    'REQUEST_TIME' => 1544652578
+]
+2018-12-12 18:09:41 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:09:41 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652581.778
+    'REQUEST_TIME' => 1544652581
+]
+2018-12-12 18:09:47 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:09:47 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652587.557
+    'REQUEST_TIME' => 1544652587
+]
+2018-12-12 18:10:10 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:10:10 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=valor-pago/view&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '51955'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=1'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=1'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652610.403
+    'REQUEST_TIME' => 1544652610
+]
+2018-12-12 18:12:04 [::1][78][9d1492e24b1613f953daee41df6000e2][error][Error] Error: Class 'MaskedInput' not found in C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\widgets\ActiveField.php:782
+Stack trace:
+#0 C:\xampp\htdocs\projetos\backend\views\valor-pago\_form.php(19): yii\widgets\ActiveField->widget('MaskedInput', Array)
+#1 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\projetos\backend\views\valor-pago\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\ValorPagoController))
+#8 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\ValorPagoController))
+#9 C:\xampp\htdocs\projetos\backend\controllers\ValorPagoController.php(77): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\ValorPagoController->actionCreate('6')
+#11 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('valor-pago/crea...', Array)
+#15 C:\xampp\htdocs\projetos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\projetos\backend\web\index.php(18): yii\base\Application->run()
+#17 {main}
+2018-12-12 18:12:03 [::1][78][9d1492e24b1613f953daee41df6000e2][info][application] $_GET = [
+    'r' => 'valor-pago/create'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52000'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=valor-pago%2Fcreate&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=valor-pago%2Fcreate&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652723.926
+    'REQUEST_TIME' => 1544652723
+]
+2018-12-12 18:12:22 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:193
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:227
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:12:22 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Valor pago criado com sucesso.'
+        'title' => 'Valor pago criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=valor-pago%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52012'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652742.419
+    'REQUEST_TIME' => 1544652742
+]
+2018-12-12 18:13:46 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:13:46 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Orçamento criado com sucesso.'
+        'title' => 'Orçamento criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52027'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652826.208
+    'REQUEST_TIME' => 1544652826
+]
+2018-12-12 18:14:05 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:14:05 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Prestação de contas criado com sucesso.'
+        'title' => 'Prestação de contas criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=relatorio-prestacao%2Fcreate&id=6&tipo_anexo=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52035'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544652845.685
+    'REQUEST_TIME' => 1544652845
+]
+2018-12-12 18:25:04 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:193
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:227
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:25:04 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Orçamento excluído com sucesso.'
+        'title' => 'Orçamento excluído'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653504.75
+    'REQUEST_TIME' => 1544653504
+]
+2018-12-12 18:25:09 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:278
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:312
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:25:09 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Valor pago excluído com sucesso.'
+        'title' => 'Valor pago excluído'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653509.358
+    'REQUEST_TIME' => 1544653509
+]
+2018-12-12 18:25:15 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:25:15 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Orçamento criado com sucesso.'
+        'title' => 'Orçamento criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653515.53
+    'REQUEST_TIME' => 1544653515
+]
+2018-12-12 18:25:27 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:25:27 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Orçamento criado com sucesso.'
+        'title' => 'Orçamento criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52153'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653527.375
+    'REQUEST_TIME' => 1544653527
+]
+2018-12-12 18:25:39 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:25:39 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Orçamento excluído com sucesso.'
+        'title' => 'Orçamento excluído'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52157'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653539.205
+    'REQUEST_TIME' => 1544653539
+]
+2018-12-12 18:25:44 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:278
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:312
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:25:44 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Orçamento excluído com sucesso.'
+        'title' => 'Orçamento excluído'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52157'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653544.195
+    'REQUEST_TIME' => 1544653544
+]
+2018-12-12 18:27:28 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:278
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:312
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:27:28 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52168'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653648.296
+    'REQUEST_TIME' => 1544653648
+]
+2018-12-12 18:27:45 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:193
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:227
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:27:45 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Valor pago criado com sucesso.'
+        'title' => 'Valor pago criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=valor-pago%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52174'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653665.629
+    'REQUEST_TIME' => 1544653665
+]
+2018-12-12 18:27:51 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:278
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:312
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:27:50 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Valor pago excluído com sucesso.'
+        'title' => 'Valor pago excluído'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52174'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653670.952
+    'REQUEST_TIME' => 1544653670
+]
+2018-12-12 18:29:03 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:29:03 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Orçamento criado com sucesso.'
+        'title' => 'Orçamento criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=orcamento%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52205'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653743.479
+    'REQUEST_TIME' => 1544653743
+]
+2018-12-12 18:29:11 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:29:11 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => 1
+    ]
+    '__id' => 78
+    'success' => [
+        'type' => 'success'
+        'icon' => 'home'
+        'duration' => 5000
+        'message' => 'Valor pago criado com sucesso.'
+        'title' => 'Valor pago criado'
+        'positonY' => 'top'
+        'positonX' => 'center'
+        'showProgressbar' => true
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_DNT' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=valor-pago%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52218'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653751.37
+    'REQUEST_TIME' => 1544653751
+]
+2018-12-12 18:29:18 [::1][78][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\projetos\backend/messages/pt-BR/app.php Fallback file does not exist as well: C:\xampp\htdocs\projetos\backend/messages/pt/app.php
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:117
+    in C:\xampp\htdocs\projetos\backend\views\orcamento\index.php:151
+    in C:\xampp\htdocs\projetos\backend\controllers\OrcamentoController.php:67
+2018-12-12 18:29:18 [::1][78][-][info][application] $_GET = [
+    'r' => 'orcamento/index'
+    'id_projeto' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_backendUser' => '053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a:2:{i:0;s:12:\"_backendUser\";i:1;s:47:\"[78,\"dr-kWlFrkClQ-u-D8bscat9gfqapwxKI\",2592000]\";}'
+    'PHPBACKENDSESSID' => '9d1492e24b1613f953daee41df6000e2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 78
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/projetos/backend/web/index.php?r=valor-pago%2Fcreate&id_projeto=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_backendUser=053d3934d68512c13a01d4c0400c370adf9cbcae4609c153e65b6183815cf380a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A47%3A%22%5B78%2C%22dr-kWlFrkClQ-u-D8bscat9gfqapwxKI%22%2C2592000%5D%22%3B%7D; PHPBACKENDSESSID=9d1492e24b1613f953daee41df6000e2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_151\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\gusta\\AppData\\Roaming\\npm;C:\\Users\\gusta\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Heroku\\bin;C:\\wamp64\\bin\\php\\php7.2.10;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0i PHP/7.2.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/projetos/backend/web/index.php'
+    'REMOTE_PORT' => '52218'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=orcamento%2Findex&id_projeto=6'
+    'REQUEST_URI' => '/projetos/backend/web/index.php?r=orcamento%2Findex&id_projeto=6'
+    'SCRIPT_NAME' => '/projetos/backend/web/index.php'
+    'PHP_SELF' => '/projetos/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1544653758.563
+    'REQUEST_TIME' => 1544653758
+]

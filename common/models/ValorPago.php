@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use DateTime;
 
 /**
  * This is the model class for table "valor_pago".
@@ -56,6 +57,27 @@ class ValorPago extends \yii\db\ActiveRecord
             'valor' => 'Valor',
             'tipo' => 'Tipo',
         ];
+    }
+
+    public function beforeSave($insert){
+        if(parent::beforeSave($insert)){
+          //if($this->isNewRecord){
+            if($this->data != NULL){
+              $myDateTime = DateTime::createFromFormat('d/m/Y', $this->data);
+              $this->data = $myDateTime->format('Y-m-d 00:00:00');
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public function afterFind(){
+        if($this->data != NULL){
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->data);
+          $this->data = $myDateTime->format('d/m/Y');
+        }
+        parent::afterFind();
+        return true;
     }
 
     /**

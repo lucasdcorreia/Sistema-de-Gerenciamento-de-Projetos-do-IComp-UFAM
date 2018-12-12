@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use DateTime;
 
 /**
  * This is the model class for table "orcamento".
@@ -55,6 +56,27 @@ class Orcamento extends \yii\db\ActiveRecord
             'data_recebida' => 'Data Recebida',
             'valor_receber' => 'Valor a Receber',
         ];
+    }
+
+    public function beforeSave($insert){
+        if(parent::beforeSave($insert)){
+          //if($this->isNewRecord){
+            if($this->data_recebida != NULL){
+              $myDateTime = DateTime::createFromFormat('d/m/Y', $this->data_recebida);
+              $this->data_recebida = $myDateTime->format('Y-m-d 00:00:00');
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public function afterFind(){
+        if($this->data_recebida != NULL){
+          $myDateTime = DateTime::createFromFormat('Y-m-d H:i:00', $this->data_recebida);
+          $this->data_recebida = $myDateTime->format('d/m/Y');
+        }
+        parent::afterFind();
+        return true;
     }
 
     /**

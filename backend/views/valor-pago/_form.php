@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\widgets\MaskedInput;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\ValorPago */
@@ -16,7 +17,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'numero_ob')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'data')->textInput() ?>
+    <?= $form->field($model, 'data')->widget(MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <?= $form->field($model, 'natureza')->dropDownList(['Capital'=>'Capital', 'Custeio'=>'Custeio'], ['prompt' => '--- Selecione a natureza ---']) ?>
 
