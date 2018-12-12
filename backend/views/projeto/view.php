@@ -209,10 +209,10 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Novo termo aditivo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Novo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <h4><strong> Relatórios técnicos </strong></h4>
+    <h4><strong> Relatórios Técnicos </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
@@ -282,7 +282,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Novo relatório técnico', ['relatorio-prestacao/create', 'id' => $model->id, 'tipo_anexo' => 1], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Novo', ['relatorio-prestacao/create', 'id' => $model->id, 'tipo_anexo' => 1], ['class' => 'btn btn-success']) ?>
     </p>
 
 </div>

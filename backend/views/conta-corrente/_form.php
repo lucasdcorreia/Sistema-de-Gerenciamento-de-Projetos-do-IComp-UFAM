@@ -32,9 +32,9 @@ $this->registerJs("
 
     <?= $form->field($model, 'banco')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'agencia')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'agencia', ['options' => ['class' => 'col-md-6 col-left']])->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'conta')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'conta', ['options' => ['class' => 'col-md-6 col-right']])->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'contaFile', ['options' => ['class' => 'col-md-6 col-left']])->textArea()->label(false)->fileInput() ?>
     <div>

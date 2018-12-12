@@ -52,7 +52,7 @@ class ValorPago extends \yii\db\ActiveRecord
             'id_projeto' => 'Id Projeto',
             'numero_ob' => 'Nº O.B.',
             'data' => 'Data',
-            'natureza' => 'Natureza da despesa',
+            'natureza' => 'Natureza da Despesa',
             'valor' => 'Valor',
             'tipo' => 'Tipo',
         ];

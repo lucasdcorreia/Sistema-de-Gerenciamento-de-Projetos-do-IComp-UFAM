@@ -68,7 +68,7 @@ class TermoAditivo extends \yii\db\ActiveRecord
             'motivo' => 'Motivo',
             'vigencia' => 'Vigência',
             'id_projeto' => 'Projeto',
-            'tipo' => 'Tipo do termo',
+            'tipo' => 'Tipo do Termo',
         ];
     }
 

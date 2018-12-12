@@ -162,7 +162,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
             <p>
                 <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseValorPago" aria-expanded="false" aria-controls="multiCollapseExample2"
-                style="width:95%;text-align:left">Valores pagos</button>
+                style="width:95%;text-align:left">Valores Pagos</button>
             </p>
             <div class="collapse multi-collapse" id="collapseValorPago">
                 <div class="card card-body">
@@ -240,7 +240,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#collapsePrestacaoConta"
                 role="button" aria-expanded="false" aria-controls="multiCollapseExample1"
                 style="width:95%;text-align:left">
-                Prestação de conta financeira </i>
+                Prestação de Conta Financeira </i>
                 </a>
             </p>
             <div class="collapse multi-collapse" id="collapsePrestacaoConta">
@@ -325,7 +325,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
                 <p>
                     <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteDesembolso" aria-expanded="false" aria-controls="multiCollapseExample2"
-                    style="width:95%;text-align:left">Conta corrente para desembolso de recursos</button>
+                    style="width:95%;text-align:left">Conta Corrente para Desembolso de Recursos</button>
                 </p>
                 <div class="collapse multi-collapse" id="collapseContaCorrenteDesembolso">
                     <div class="card card-body">
@@ -407,7 +407,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
                     <p>
                         <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseContaCorrenteRecolhimento" aria-expanded="false" aria-controls="multiCollapseExample2"
-                        style="width:95%;text-align:left">Conta corrente para recolhimento de saldo</button>
+                        style="width:95%;text-align:left">Conta Corrente para Recolhimento de Saldo</button>
                     </p>
                     <div class="collapse multi-collapse" id="collapseContaCorrenteRecolhimento">
                         <div class="card card-body">
