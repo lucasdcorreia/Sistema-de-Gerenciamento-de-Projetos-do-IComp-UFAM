@@ -159,6 +159,13 @@ class ItemController extends Controller
         $professores = User::find()->where(['professor' => 1, 'administrador' => 0])->orderBy('nome ASC')->all();
         $professores_nomes = ArrayHelper::map($professores, 'id', 'nome');
 
+        if ($model->tipo_item == 2){
+            $model->natureza = 'Capital';
+        }
+        else{
+            $model->natureza = 'Custeio';
+        }
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->mensagens('success', 'Item criado', 'Item criado com sucesso.');
             return $this->redirect(['index', 'id_projeto' => $model->id_projeto]);

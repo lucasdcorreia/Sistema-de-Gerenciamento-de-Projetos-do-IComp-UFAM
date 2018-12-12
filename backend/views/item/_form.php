@@ -15,9 +15,9 @@ use yii\bootstrap\Collapse;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'natureza')->dropDownList(['Capital'=>'Capital', 'Custeio'=>'Custeio'], ['prompt' => '--- Selecione a natureza ---']) ?>
+    <!--<?= $form->field($model, 'natureza')->dropDownList(['Capital'=>'Capital', 'Custeio'=>'Custeio'], ['prompt' => '--- Selecione a natureza ---']) ?>-->
 
-  <?= $form->field($model, 'professor_responsavel')->dropDownList($professores_nomes) ?>
+    <?= $form->field($model, 'professor_responsavel')->dropDownList($professores_nomes) ?>
 
     <?= $form->field($model, 'numero_item')->textInput(['maxlength' => 13]) ?>
 
