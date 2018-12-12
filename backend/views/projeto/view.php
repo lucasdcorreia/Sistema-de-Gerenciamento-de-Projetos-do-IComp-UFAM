@@ -209,7 +209,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Novo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     </p>
 
     <h4><strong> Relatórios Técnicos </strong></h4>
@@ -282,7 +282,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
     ]); ?>
 
     <p>
-        <?= Html::a('Novo', ['relatorio-prestacao/create', 'id' => $model->id, 'tipo_anexo' => 1], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['relatorio-prestacao/create', 'id' => $model->id, 'tipo_anexo' => 1], ['class' => 'btn btn-success']) ?>
     </p>
 
 </div>

@@ -91,7 +91,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapseOrcamento">
                 <div class="card card-body">
                     <p>
-                        <?= Html::a('Novo', ['create', 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
+                        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                     </p>
 
                     <?= GridView::widget([
@@ -168,7 +168,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="card card-body">
 
                     <p>
-                        <?= Html::a('Novo', ['valor-pago/create', 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
+                        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['valor-pago/create', 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?>
                     </p>
                         <?= GridView::widget([
                             'dataProvider' => $dataProviderValorPago,
@@ -246,7 +246,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapsePrestacaoConta">
                 <div class="card card-body">
                     <p>
-                        <?= Html::a('Novo', ['relatorio-prestacao/create', 'id' => $id_projeto, 'tipo_anexo' => 2], ['class' => 'btn btn-success']) ?>
+                        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['relatorio-prestacao/create', 'id' => $id_projeto, 'tipo_anexo' => 2], ['class' => 'btn btn-success']) ?>
                     </p>
 
                     <?= GridView::widget([
@@ -331,7 +331,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="card card-body">
 
                         <p>
-                            <?= Html::a('Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 1], ['class' => 'btn btn-success']) ?>
+                            <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 1], ['class' => 'btn btn-success']) ?>
                         </p>
                             <?= GridView::widget([
                                 'dataProvider' => $dataProviderContaCorrenteDesembolso,
@@ -413,7 +413,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="card card-body">
 
                             <p>
-                                <?= Html::a('Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 2], ['class' => 'btn btn-success']) ?>
+                                <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 2], ['class' => 'btn btn-success']) ?>
                             </p>
                                 <?= GridView::widget([
                                     'dataProvider' => $dataProviderContaCorrenteRecolhimento,
