@@ -22,10 +22,8 @@ $this->registerJs("
   $('#termoaditivo-termofile').change(function(){
      $('#val').text(this.value.replace(/C:\\\\fakepath\\\\/i, ''));
   })
+
 ");
-
-
-
 
 ?>
 
@@ -44,6 +42,8 @@ $this->registerJs("
     <?= $form->field($model, 'vigencia')->widget(\yii\widgets\MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
     <?= $form->field($model, 'tipo')->dropDownList(['---Selecione uma opção---', 'Prazo', 'Valor', 'Prazo e Valor']); ?>
+
+    <?= $form->field($model, 'valor')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <?= $form->field($model, 'id_projeto')->hiddenInput(['id_projeto' => 0])->label(false); ?>
 

@@ -43,6 +43,7 @@ class TermoAditivo extends \yii\db\ActiveRecord
             [['id_projeto', 'tipo'], 'integer'],
             [['numero_do_termo'], 'string', 'max' => 50, 'message' => 'Limite de caracteres alcançado'],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
+            [['valor'], 'double'],
             [['termoFile'], 'file', 'skipOnEmpty' => true],
         ];
     }
@@ -69,6 +70,7 @@ class TermoAditivo extends \yii\db\ActiveRecord
             'vigencia' => 'Vigência',
             'id_projeto' => 'Projeto',
             'tipo' => 'Tipo do Termo',
+            'valor'=> 'Valor',
         ];
     }
 

@@ -85,6 +85,24 @@ $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['index']];
           }
         }
       }
+
+      function existeArquivo($model){
+        $path = \Yii::getAlias('@backend/../uploads/projetos/arquivo/');
+
+        $files = \yii\helpers\FileHelper::findFiles($path, [
+          'only' => [$model->id . '_' . $model->id_projeto . '.*'],
+        ]);
+        if (isset($files[0])) {
+          $file = $files[0];
+
+          if(file_exists($file)) {
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
+
       function existeRelatorio($model){
         $path = \Yii::getAlias('@backend/../uploads/projetos/relatorio_tecnico/');
 
@@ -137,6 +155,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['index']];
         ],
     ]) ?>
 
+    <br/>
     <h4><strong> Termos Aditivos </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
@@ -150,6 +169,14 @@ $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['index']];
             'numero_do_termo',
             'motivo:ntext',
             'vigencia',
+            [
+              'attribute' => 'valor',
+              'label' => 'Valor',
+              'format' => 'raw',
+              'value' => function($model){
+                return 'R$' . $model->valor;
+              },
+            ],
             [
               'attribute' => 'Anexo',
               'label' => 'Anexo',
@@ -212,6 +239,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['index']];
         <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['termo-aditivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     </p>
 
+    <br/>
     <h4><strong> Relatórios Técnicos </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
@@ -284,5 +312,81 @@ $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['index']];
     <p>
         <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['relatorio-prestacao/create', 'id' => $model->id, 'tipo_anexo' => 1], ['class' => 'btn btn-success']) ?>
     </p>
+
+    <br/>
+    <h4><strong> Arquivos </strong></h4>
+
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProviderArquivo,
+        'options' => [
+          'style' => 'overflow: auto; word-wrap: break-word;'
+        ],
+        'columns' => [
+            'nome',
+            'tipo',
+            [
+              'attribute' => 'Anexo',
+              'label' => 'Anexo',
+              'format' => 'raw',
+              'value' => function($model){
+                return ( existeArquivo($model) ? '  ' . Html::a( 'Baixar Anexo' . ' <i class="fas fa-paperclip" ></i>', ['/arquivo/download', 'id' => $model->id] ) . Html::a(existeArquivo($model) ? '| <i class="fa fa-close" ></i> Excluir anexo' : '', ['/arquivo/deleteanexo', 'id' => $model->id] ) : '');
+              },
+            ],
+/*          [
+                'attribute' => 'id_projeto',
+                'value' => function ($data) {
+                    return Projeto::findOne($data->id_projeto)->titulo_projeto;
+                },
+            ],
+*/
+            ['class' => 'yii\grid\ActionColumn',
+            'buttons' => [
+                'view' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-eye-open"></span>', $url, [
+                                'title' => Yii::t('app', 'Exibir'),
+                    ]);
+                },
+                'update' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-pencil"></span>', $url, [
+                                'title' => Yii::t('app', 'Alterar'),
+                                'data-method' => 'post'
+                    ]);
+                },
+                'delete' => function ($url, $model) {
+                    return Html::a('<span class="glyphicon glyphicon-trash"></span>', $url, [
+                                'title' => Yii::t('app', 'Excluir'),
+                                'data' => [
+                                                'confirm' => 'Deseja realmente excluir este item?',
+                                                'method' => 'post',
+                                ],
+                    ]);
+                },
+            ],
+            'urlCreator' => function ($action, $model, $key, $index) {
+                if ($action === 'view') {
+                    $url ='index.php?r=arquivo/view&id='.$model->id;
+                    return $url;
+                }
+
+                if ($action === 'update') {
+                    $url ='index.php?r=arquivo/update&id='.$model->id;
+                    return $url;
+                }
+                if ($action === 'delete') {
+                    $url ='index.php?r=arquivo/delete&id='.$model->id;
+                    return $url;
+                }
+
+            }
+            ]
+        ],
+    ]); ?>
+
+    <p>
+        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['arquivo/create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+    </p>
+
 
 </div>

@@ -51,6 +51,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'numero_do_termo',
             'motivo:ntext',
             'vigencia',
+            [
+              'attribute' => 'valor',
+              'label' => 'Valor',
+              'format' => 'raw',
+              'value' => function($model){
+                return 'R$' . ($model->valor);
+              },
+            ],
             //'id_projeto',
             [
               'attribute' => 'Anexo',

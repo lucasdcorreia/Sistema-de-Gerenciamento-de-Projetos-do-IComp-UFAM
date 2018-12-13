@@ -8,6 +8,7 @@ use common\models\TermoAditivo;
 use common\models\RelatorioPrestacao;
 use common\models\Item;
 use common\models\Orcamento;
+use common\models\Arquivo;
 use common\models\ValorPago;
 use common\models\ContaCorrente;
 use yii\helpers\ArrayHelper;
@@ -69,10 +70,15 @@ class ProjetoController extends Controller
             'query' => TermoAditivo::find()->where([ 'id_projeto' => $id ]),
         ]);
 
+        $dataProviderArquivo = new ActiveDataProvider([
+            'query' => Arquivo::find()->where([ 'id_projeto' => $id ]),
+        ]);
+
         return $this->render('view', [
             'model' => $this->findModel($id),
             'dataProviderRelatorioPrestacao' => $dataProviderRelatorioPrestacao,
             'dataProviderTermoAditivo' => $dataProviderTermoAditivo,
+            'dataProviderArquivo' => $dataProviderArquivo,
         ]);
     }
 

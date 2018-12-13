@@ -15,15 +15,15 @@ use yii\widgets\MaskedInput;
 
     <?= $form->field($model, 'id_projeto')->hiddenInput()->label(false)?>
 
-    <?= $form->field($model, 'recurso_aprovado')->textInput() ?>
+    <?= $form->field($model, 'recurso_aprovado')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <?= $form->field($model, 'tipo_de_parcela')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'valor_parcela')->textInput() ?>
+    <?= $form->field($model, 'valor_parcela')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <?= $form->field($model, 'data_recebida')->widget(MaskedInput::class, ['clientOptions' => ['alias' =>  'dd/mm/yyyy']]) ?>
 
-    <?= $form->field($model, 'valor_receber')->textInput() ?>
+    <?= $form->field($model, 'valor_receber')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <div class="form-group" style="float: left">
         <?= Html::a('Voltar','#',['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>

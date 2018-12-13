@@ -36,7 +36,7 @@ class ValorPago extends \yii\db\ActiveRecord
         return [
             [['id_projeto'], 'integer'],
             [['data'], 'safe'],
-            [['valor'], 'number'],
+            [['valor'], 'double'],
             [['numero_ob'], 'string', 'max' => 30, 'message' => 'Limite de caracteres alcançado'],
             [['natureza', 'tipo'], 'string', 'max' => 40, 'message' => 'Limite de caracteres alcançado'],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],

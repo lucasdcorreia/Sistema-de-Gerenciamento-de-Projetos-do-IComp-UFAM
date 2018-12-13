@@ -21,7 +21,7 @@ use yii\widgets\MaskedInput;
 
     <?= $form->field($model, 'natureza')->dropDownList(['Capital'=>'Capital', 'Custeio'=>'Custeio'], ['prompt' => '--- Selecione a natureza ---']) ?>
 
-    <?= $form->field($model, 'valor')->textInput() ?>
+    <?= $form->field($model, 'valor')->widget(\kartik\money\MaskMoney::class,['pluginOptions' => ['prefix' => 'R$', 'thousands' => '.', 'decimal' => ','] ]) ?>
 
     <?= $form->field($model, 'tipo')->textInput(['maxlength' => true]) ?>
 
