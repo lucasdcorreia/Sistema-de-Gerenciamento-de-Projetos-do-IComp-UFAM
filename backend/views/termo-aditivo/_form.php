@@ -33,9 +33,9 @@ $this->registerJs("
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <h4 style="font-family: helvetica neue"><strong> Termo Aditivo </strong></h4>
+    <!--<h4 style="font-family: helvetica neue"><strong> Termo Aditivo </strong></h4>-->
 
-    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
+    <!--<hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">-->
 
     <?= $form->field($model, 'numero_do_termo')->textInput(['maxlength' => true]) ?>
 
