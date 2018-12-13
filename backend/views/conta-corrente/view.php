@@ -37,12 +37,12 @@ else{
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'id_projeto',
+            //'id',
+            //'id_projeto',
             'banco',
             'agencia',
             'conta',
-            'tipo_conta_corrente',
+            //'tipo_conta_corrente',
         ],
     ]) ?>
 

@@ -7,23 +7,25 @@ use yii\widgets\DetailView;
 /* @var $model common\models\Arquivo */
 
 $this->title = "Arquivo";
-$this->params['breadcrumbs'][] = ['label' => 'Arquivos', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $model->id_projeto]];
+//$this->params['breadcrumbs'][] = ['label' => 'Arquivos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="arquivo-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <!--<h1><?= Html::encode($this->title) ?></h1>-->
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('Alterar', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Excluir', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Deseja realmente excluir este item?',
                 'method' => 'post',
             ],
         ]) ?>
+        <?= Html::a('Voltar', ['/projeto/view', 'id' => $model->id_projeto], ['class' => 'btn btn-default','onclick'=>"history.go(-1);"]); ?>
     </p>
 
     <?php function existeArquivo($model){

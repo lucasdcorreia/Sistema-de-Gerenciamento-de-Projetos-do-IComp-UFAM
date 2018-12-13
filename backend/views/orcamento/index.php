@@ -15,9 +15,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <!--Style foi usado pois na versão 3.3 a classe center block só funciona com o style width-->
     <div class="center-block" style="width:800px;max-width:100%;">
       <div class="btn-group">
-        <?= Html::a('Informações de projeto', ['projeto/view', 'id' => $id_projeto], ['class' => 'btn btn-default btn-lg']) ?>
-        <?= Html::a('Itens de projeto', ['item/index', 'id_projeto' => $id_projeto], ['class' => 'btn btn-default btn-lg']) ?>
-        <?= Html::a('Informações financeiras', ['orcamento/index', 'id_projeto' => $id_projeto], ['class' => 'btn btn-primary btn-lg']) ?>
+        <?= Html::a('Informações de Projeto', ['projeto/view', 'id' => $id_projeto], ['class' => 'btn btn-default btn-lg']) ?>
+        <?= Html::a('Itens de Projeto', ['item/index', 'id_projeto' => $id_projeto], ['class' => 'btn btn-default btn-lg']) ?>
+        <?= Html::a('Informações Financeiras', ['orcamento/index', 'id_projeto' => $id_projeto], ['class' => 'btn btn-primary btn-lg']) ?>
       </div>
     </div>
     <hr>
@@ -255,7 +255,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapsePrestacaoConta">
                 <div class="card card-body">
                     <p>
-                        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['relatorio-prestacao/create', 'id' => $id_projeto, 'tipo_anexo' => 2], ['class' => 'btn btn-success']) ?>
+                        <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['relatorio-prestacao/create', 'id' => $id_projeto, 'tipo_anexo' => 2], ['class' => 'btn btn-success']) ?>
                     </p>
 
                     <?= GridView::widget([
@@ -340,7 +340,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="card card-body">
 
                         <p>
-                            <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 1], ['class' => 'btn btn-success']) ?>
+                            <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 1], ['class' => 'btn btn-success']) ?>
                         </p>
                             <?= GridView::widget([
                                 'dataProvider' => $dataProviderContaCorrenteDesembolso,
@@ -422,7 +422,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="card card-body">
 
                             <p>
-                                <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 2], ['class' => 'btn btn-success']) ?>
+                                <?= Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['conta-corrente/create', 'id_projeto' => $id_projeto, 'tipo_conta_corrente' => 2], ['class' => 'btn btn-success']) ?>
                             </p>
                                 <?= GridView::widget([
                                     'dataProvider' => $dataProviderContaCorrenteRecolhimento,
