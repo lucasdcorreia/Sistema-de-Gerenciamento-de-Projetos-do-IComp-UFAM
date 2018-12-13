@@ -25,7 +25,8 @@ else if($model->tipo_item == 7)
 else if($model->tipo_item == 8)
   $this->title = 'Diária Internacional';
 
-$this->params['breadcrumbs'][] = ['label' => 'Itens', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $model->id_projeto]];
+$this->params['breadcrumbs'][] = ['label' => 'Itens', 'url' => ['item/index', 'id_projeto' => $model->id_projeto]];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -33,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <hr>
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <!--<h1><?= Html::encode($this->title) ?></h1>-->
 
     <p>
         <?= Html::a('Alterar', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>

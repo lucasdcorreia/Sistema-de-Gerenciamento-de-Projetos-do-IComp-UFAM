@@ -11,6 +11,7 @@ use common\models\User;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Itens';
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $id_projeto]];
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>

@@ -6,8 +6,10 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\ValorPago */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Valores Pagos', 'url' => ['index']];
+$this->title = 'Valor Pago';
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $model->id_projeto]];
+$this->params['breadcrumbs'][] = ['label' => 'Informações Financeiras', 'url' => ['orcamento/index', 'id_projeto' => $model->id_projeto]];
+//$this->params['breadcrumbs'][] = ['label' => 'Valores Pagos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>

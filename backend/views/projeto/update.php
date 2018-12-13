@@ -7,8 +7,8 @@ use yii\helpers\Html;
 
 $this->title = 'Alterar Projeto: ' . $model->titulo_projeto;
 $this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+//$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = 'Alterar Projeto';
 ?>
 <div class="projeto-update">
 

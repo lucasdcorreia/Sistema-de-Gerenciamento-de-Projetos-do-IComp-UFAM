@@ -63,7 +63,7 @@ class Item extends \yii\db\ActiveRecord
             //'valor' => 'Valor',
             'numero_item' => 'Nº Item',
             'justificativa' => 'Justificativa',
-            'quantidade' => 'Qtde',
+            'quantidade' => 'Quantidade',
             'custo_unitario' => 'Custo Unitário',
             'custoUnitarioReal' => 'Custo Unitário(R$)',
             'tipo_item' => 'Tipo de Item',

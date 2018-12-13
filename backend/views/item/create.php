@@ -24,7 +24,8 @@ else if($tipo_item == 7)
 else if($tipo_item == 8)
   $this->title = 'Nova Diária Internacional';
 
-$this->params['breadcrumbs'][] = ['label' => 'Items', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $id_projeto]];
+$this->params['breadcrumbs'][] = ['label' => 'Itens', 'url' => ['item/index', 'id_projeto' => $model->id_projeto]];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="item-create">

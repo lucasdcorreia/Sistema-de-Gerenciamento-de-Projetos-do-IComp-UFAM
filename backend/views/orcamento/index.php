@@ -6,7 +6,8 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Informações financeiras';
+$this->title = 'Informações Financeiras';
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $id_projeto]];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="orcamento-index">
@@ -162,7 +163,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
             <p>
                 <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseValorPago" aria-expanded="false" aria-controls="multiCollapseExample2"
-                style="width:95%;text-align:left">Valores Pagos</button>
+                style="width:95%;text-align:left">Valor Pago</button>
             </p>
             <div class="collapse multi-collapse" id="collapseValorPago">
                 <div class="card card-body">

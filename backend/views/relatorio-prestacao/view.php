@@ -5,10 +5,18 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\RelatorioPrestacao */
+if ($model->tipo_anexo == 1){
+  $this->title = "Relatório Técnico: " . $model->id;
+  $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $model->id_projeto]];
+  $this->params['breadcrumbs'][] = $this->title;
+}
+else{
+  $this->title = 'Prestação de Conta Financeira';
+  $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $model->id_projeto]];
+  $this->params['breadcrumbs'][] = ['label' => 'Informações Financeiras', 'url' => ['orcamento/index', 'id_projeto' => $model->id_projeto]];
+  $this->params['breadcrumbs'][] = $this->title;
+}
 
-$this->title = "Relatório Técnico: " . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Relatorio Prestacaos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="relatorio-prestacao-view">

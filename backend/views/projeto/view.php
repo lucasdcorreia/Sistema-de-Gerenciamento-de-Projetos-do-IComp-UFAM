@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $model common\models\Projeto */
 
 $this->title = "Projeto";
-$this->params['breadcrumbs'][] = ['label' => 'Projetos', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['index']];
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="projeto-view">

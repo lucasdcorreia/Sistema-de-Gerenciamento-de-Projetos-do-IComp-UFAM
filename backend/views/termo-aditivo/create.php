@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model common\models\TermoAditivo */
 
 $this->title = 'Novo termo aditivo';
-$this->params['breadcrumbs'][] = ['label' => 'Termo Aditivos', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $model->id_projeto]];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="termo-aditivo-create">

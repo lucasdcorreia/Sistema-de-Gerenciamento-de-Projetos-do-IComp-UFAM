@@ -5,10 +5,17 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\ContaCorrente */
+if ($model->tipo_conta_corrente == 1){
+    $this->title = 'Conta Corrente para Desembolso de Recursos';
+}
+else{
+    $this->title = 'Conta Corrente para Recolhimento de Saldo';
+    $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['projeto/view', 'id' => $model->id_projeto]];
+    $this->params['breadcrumbs'][] = ['label' => 'Informações Financeiras', 'url' => ['orcamento/index', 'id_projeto' => $model->id_projeto]];
+    //$this->params['breadcrumbs'][] = ['label' => 'Conta Corrente', 'url' => ['index']];
+    $this->params['breadcrumbs'][] = $this->title;   
+}
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Conta Corrente', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="conta-corrente-view">
