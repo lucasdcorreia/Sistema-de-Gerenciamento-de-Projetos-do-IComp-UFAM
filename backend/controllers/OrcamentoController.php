@@ -7,6 +7,8 @@ use common\models\Orcamento;
 use common\models\ValorPago;
 use common\models\ContaCorrente;
 use common\models\RelatorioPrestacao;
+use common\models\Item;
+use backend\controllers\ItemController;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -38,6 +40,38 @@ class OrcamentoController extends Controller
      */
     public function actionIndex($id_projeto)
     {
+        $subtotalMatConsumo = Item::find()->
+        where(['tipo_item' => 1, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
+        $subtotalMatPermanente = Item::find()->
+        where(['tipo_item' => 2, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
+        $subtotalServTerceiroPF = Item::find()->
+        where(['tipo_item' => 3, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
+        $subtotalServTerceiroPJ = Item::find()->
+        where(['tipo_item' => 4, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
+        $subtotalPassagemNacional = Item::find()->
+        where(['tipo_item' => 5, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
+        $subtotalPassagemInternacional = Item::find()->
+        where(['tipo_item' => 6, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
+        $subtotalDiariaNacional = Item::find()->
+        where(['tipo_item' => 7, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
+        $subtotalDiariaInternacional = Item::find()->
+        where(['tipo_item' => 8, 'id_projeto' => $id_projeto])->
+        sum('custo_unitario * quantidade');
+
         $dataProvider = new ActiveDataProvider([
             'query' => Orcamento::find()->where([ 'id_projeto' => $id_projeto ]),
         ]);
@@ -65,6 +99,14 @@ class OrcamentoController extends Controller
             'dataProviderContaCorrenteRecolhimento' => $dataProviderContaCorrenteRecolhimento,
             'dataProviderPrestacaoConta' => $dataProviderPrestacaoConta,
             'id_projeto' => $id_projeto,
+            'subtotalMatConsumo' => $subtotalMatConsumo,
+            'subtotalMatPermanente' => $subtotalMatPermanente,
+            'subtotalServTerceiroPF' => $subtotalServTerceiroPF,
+            'subtotalServTerceiroPJ' => $subtotalServTerceiroPJ,
+            'subtotalPassagemNacional' => $subtotalPassagemNacional,
+            'subtotalPassagemInternacional' => $subtotalPassagemInternacional,
+            'subtotalDiariaNacional' => $subtotalDiariaNacional,
+            'subtotalDiariaInternacional' => $subtotalDiariaInternacional,
         ]);
     }
 

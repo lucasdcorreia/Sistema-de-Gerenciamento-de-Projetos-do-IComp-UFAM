@@ -61,6 +61,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ?>
 
+    <h4><strong> Cronograma de Desembolso </strong></h4>
+
+    <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
+
+    <p>
+    <h4>Custo total de Capital: <?php echo 'R$ ' . number_format($subtotalMatPermanente, 2, ",", '.') ?> </h4>
+    <h4>Custo total de Custeio: <?php echo 'R$ ' . number_format($subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional, 2, ",", '.') ?> </h4>
+    </p>
+
     <!--<h1><?= Html::encode($this->title) ?></h1>-->
 
     <div class="forms" style="margin-left:25px;">
@@ -79,7 +88,6 @@ $this->params['breadcrumbs'][] = $this->title;
       <br/>
       <br/>
       <br/>
-
 
 <!-- Orçamento -->
     <div class="row" >
