@@ -63,7 +63,7 @@ class Item extends \yii\db\ActiveRecord
             //'valor' => 'Valor',
             'numero_item' => 'Nº Item',
             'justificativa' => 'Justificativa',
-            'quantidade' => 'Quantidade',
+            'quantidade' => 'Qtde.',
             'custo_unitario' => 'Custo Unitário',
             'custoUnitarioReal' => 'Custo Unitário(R$)',
             'tipo_item' => 'Tipo de Item',
@@ -73,6 +73,15 @@ class Item extends \yii\db\ActiveRecord
         ];
     }
 
+    public function beforeSave($insert){
+      if(parent::beforeSave($insert)){
+          if($this->quantidade == NULL && $this->custo_unitario != NULL){
+            $this->quantidade = 1;
+          }
+          return true;
+      }
+      return false;
+    }
     public function getCustoUnitarioReal(){
         $projeto = \Yii::$app->db->createCommand('SELECT * FROM projetos.projeto WHERE id=:id_projeto')
            ->bindValue(':id_projeto', $this->id_projeto)

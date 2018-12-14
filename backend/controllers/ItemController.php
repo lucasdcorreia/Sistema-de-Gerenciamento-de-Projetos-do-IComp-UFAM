@@ -156,6 +156,7 @@ class ItemController extends Controller
         $model = new Item();
         $model->tipo_item = $tipo_item;
         $model->id_projeto = $id_projeto;
+
         $professores = User::find()->where(['professor' => 1, 'administrador' => 0])->orderBy('nome ASC')->all();
         $professores_nomes = ArrayHelper::map($professores, 'nome', 'nome');
 
@@ -192,6 +193,7 @@ class ItemController extends Controller
 
         $professores = User::find()->where(['professor' => 1, 'administrador' => 0])->orderBy('nome ASC')->all();
         $professores_nomes = ArrayHelper::map($professores, 'nome', 'nome');
+
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $this->mensagens('success', 'Item', 'Alterações realizadas com sucesso.');
