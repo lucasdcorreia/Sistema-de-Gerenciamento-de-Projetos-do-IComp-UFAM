@@ -51,7 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapseMatConsumo">
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em material de consumo:  <?php echo 'R$ ' .  number_format($subtotalMatConsumo, 2, ",", '.') . ' ' .
+                    <h4>Custo Total em Material de Consumo:  <?php echo 'R$' .  number_format($subtotalMatConsumo, 2, ",", '.') . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 1, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']); ?></h4>
                   </p>
                     <?= GridView::widget([
@@ -97,7 +97,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapseMatPermanente">
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em material permanente:  <?php echo 'R$ ' .  number_format($subtotalMatPermanente, 2, ",", '.') . ' ' .
+                    <h4>Custo Total em Material Permanente:  <?php echo 'R$' .  number_format($subtotalMatPermanente, 2, ",", '.') . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 2, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
                   </p>
                     <?= GridView::widget([
@@ -141,13 +141,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <p>
                 <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPF" aria-expanded="false" aria-controls="multiCollapseExample2"
-                style="width:95%;text-align:left">Serviço de Terceiro Pessoa Física</button>
+                style="width:95%;text-align:left">Serviço de Terceiros - Pessoa Física</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseServTerceiroPF">
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em serviços Pessoa Física:  <?php echo 'R$ ' .  number_format($subtotalServTerceiroPF, 2) . ' ' .
+                    <h4>Custo Total em Serviços - Pessoa Física:  <?php echo 'R$' .  number_format($subtotalServTerceiroPF, 2) . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 3, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
                   </p>
                 <?= GridView::widget([
@@ -192,13 +192,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <p>
                 <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#collapseServTerceiroPJ" aria-expanded="false" aria-controls="multiCollapseExample2"
-                style="width:95%;text-align:left">Serviço de Terceiro Pessoa Jurídica</button>
+                style="width:95%;text-align:left">Serviço de Terceiros - Pessoa Jurídica</button>
             </p>
 
             <div class="collapse multi-collapse" id="collapseServTerceiroPJ">
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em serviços Pessoa Jurídica:  <?php echo 'R$ ' .  number_format($subtotalServTerceiroPJ, 2, ",", '.') . ' ' .
+                    <h4>Custo Total em Serviços - Pessoa Jurídica:  <?php echo 'R$' .  number_format($subtotalServTerceiroPJ, 2, ",", '.') . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Novo', ['create', 'tipo_item' => 4, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
                   </p>
                 <?= GridView::widget([
@@ -248,7 +248,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapsePassagemNacional">
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em Passagem Nacional:  <?php echo 'R$ ' .  number_format($subtotalPassagemNacional, 2, ",", '.') . ' ' .
+                    <h4>Custo Total em Passagem Nacional:  <?php echo 'R$' .  number_format($subtotalPassagemNacional, 2, ",", '.') . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 5, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
                   </p>
                     <?= GridView::widget([
@@ -297,7 +297,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em Passagem Internacional:  <?php echo 'US$ ' .  number_format($subtotalPassagemInternacional,2, ",", '.') . ' ' .
+                    <h4>Custo Total em Passagem Internacional:  <?php echo 'US$' .  number_format($subtotalPassagemInternacional,2, ",", '.') . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 6, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
                   </p>
                     <?= GridView::widget([
@@ -360,7 +360,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapseDiariaNacional">
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em Diárias Nacionais:  <?php echo 'R$ ' .  number_format($subtotalDiariaNacional,2, ",", '.') . ' ' .
+                    <h4>Custo Total em Diária Nacional:  <?php echo 'R$' .  number_format($subtotalDiariaNacional,2, ",", '.') . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 7, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
                   </p>
                     <?= GridView::widget([
@@ -409,7 +409,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="collapse multi-collapse" id="collapseDiariaInternacional">
                 <div class="card card-body">
                   <p>
-                    <h4>Custo total em Diárias Internacionais:  <?php echo 'US$ ' .  number_format($subtotalDiariaInternacional,2, ",", '.') . ' ' .
+                    <h4>Custo Total em Diária Internacional:  <?php echo 'US$' .  number_format($subtotalDiariaInternacional,2, ",", '.') . ' ' .
                     Html::a(Html::tag('i', '', ['class' => 'glyphicon glyphicon-plus']) . ' Nova', ['create', 'tipo_item' => 8, 'id_projeto' => $id_projeto], ['class' => 'btn btn-success']) ?></h4>
                   </p>
                     <?= GridView::widget([
@@ -432,7 +432,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             [
                                 'attribute' => 'Custo Unitário',
                                 'value' => function($data){
-                                    return 'R$' . $data->custo_unitario;
+                                    return 'R$' . $data->custoUnitarioReal;
                                 }
                             ],
                             //'tipo_item',

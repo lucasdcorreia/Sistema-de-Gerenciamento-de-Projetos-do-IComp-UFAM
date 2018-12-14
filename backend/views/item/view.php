@@ -57,8 +57,22 @@ $this->params['breadcrumbs'][] = $this->title;
             'numero_item',
             'justificativa:ntext',
             'quantidade',
-            'custo_unitario',
-            'custoUnitarioReal',
+            [
+              'attribute' => 'custo_unitario',
+              'label' => 'Custo Unitário',
+              'format' => 'raw',
+              'value' => function($model){
+                  return 'US$' . ($model->custo_unitario);
+              },
+            ],
+            [
+              'attribute' => 'custoUnitarioReal',
+              'label' => 'Custo Unitário (R$)',
+              'format' => 'raw',
+              'value' => function($model){
+                  return 'R$' . ($model->custoUnitarioReal);
+              },
+            ],
             //'tipo_item',
             'descricao:ntext',
             'professor_responsavel',
@@ -76,7 +90,14 @@ $this->params['breadcrumbs'][] = $this->title;
           'numero_item',
           'justificativa:ntext',
           'quantidade',
-          'custo_unitario',
+          [
+            'attribute' => 'custo_unitario',
+            'label' => 'Custo Unitário',
+            'format' => 'raw',
+            'value' => function($model){
+                return 'R$' . ($model->custo_unitario);
+            },
+          ],
           //'custoUnitarioReal',
           //'tipo_item',
           'descricao:ntext',

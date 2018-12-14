@@ -37,7 +37,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'numero_ob',
             'data',
             'natureza',
-            'valor',
+            [
+              'attribute' => 'valor',
+              'label' => 'Valor',
+              'format' => 'raw',
+              'value' => function($model){
+                  return 'R$' . ($model->valor);
+              },
+            ],
             'tipo',
         ],
     ]) ?>

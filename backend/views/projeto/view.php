@@ -148,7 +148,14 @@ $this->params['breadcrumbs'][] = ['label' => 'Projeto', 'url' => ['index']];
             ],
             'inicio_previsto',//:datetime',
             'termino',
-            'cotacao_moeda_estrangeira',
+            [
+              'attribute' => 'cotacao_moeda_estrangeira',
+              'label' => 'Cotação da Moeda Estrangeira',
+              'format' => 'raw',
+              'value' => function($model){
+                return 'R$' . ($model->cotacao_moeda_estrangeira);
+              },
+            ],
             'numero_fapeam_outorga',
             //'publicacao_diario_oficial',//:datetime',
             'duracao',

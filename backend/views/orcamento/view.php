@@ -33,11 +33,33 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             //'id',
             //'id_projeto',
-            'recurso_aprovado',
+            [
+              'attribute' => 'recurso_aprovado',
+              'label' => 'Recurso Aprovado',
+              'format' => 'raw',
+              'value' => function($model){
+                  return 'R$' . ($model->recurso_aprovado);
+              },
+            ],
+
             'tipo_de_parcela',
-            'valor_parcela',
+            [
+              'attribute' => 'valor_parcela',
+              'label' => 'Valor da Parcela',
+              'format' => 'raw',
+              'value' => function($model){
+                  return 'R$' . ($model->valor_parcela);
+              },
+            ],
             'data_recebida',
-            'valor_receber',
+            [
+            'attribute' => 'valor_receber',
+            'label' => 'Valor a Receber',
+            'format' => 'raw',
+            'value' => function($model){
+                return 'R$' . ($model->valor_receber);
+              },
+            ],
         ],
     ]) ?>
 

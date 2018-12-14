@@ -66,8 +66,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
     <p>
-    <h4>Custo total de Capital: <?php echo 'R$ ' . number_format($subtotalMatPermanente, 2, ",", '.') ?> </h4>
-    <h4>Custo total de Custeio: <?php echo 'R$ ' . number_format($subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional, 2, ",", '.') ?> </h4>
+    <h4>Custo Total de Capital: <?php echo 'R$' . number_format($subtotalMatPermanente, 2, ",", '.') ?> </h4>
+    <h4>Custo Total de Custeio: <?php echo 'R$' . number_format($subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional+$subtotalPassagemInternacional+$subtotalDiariaInternacional, 2, ",", '.') ?> </h4>
+    <h4>Recurso Total Aprovado: <?php echo 'R$' . number_format($subtotalMatPermanente+$subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional+$subtotalPassagemInternacional+$subtotalDiariaInternacional, 2, ",", '.') ?> </h4>
     </p>
 
     <!--<h1><?= Html::encode($this->title) ?></h1>-->
@@ -113,12 +114,26 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             //'id',
                             //'id_projeto',
-                            'recurso_aprovado',
+                            [
+                                'attribute' => 'recurso_aprovado',
+                                'value' => function($data){
+                                    return 'R$' . $data->recurso_aprovado;
+                                }
+                            ],
                             'tipo_de_parcela',
-                            'valor_parcela',
+                            [
+                                'attribute' => 'valor_parcela',
+                                'value' => function($data){
+                                    return 'R$' . $data->valor_parcela;
+                                }
+                            ],
                             'data_recebida',
-                            'valor_receber',
-
+                            [
+                                'attribute' => 'valor_receber',
+                                'value' => function($data){
+                                    return 'R$' . $data->valor_receber;
+                                }
+                            ],
                             ['class' => 'yii\grid\ActionColumn',
                             'buttons' => [
                                 'view' => function ($url, $model) {
@@ -192,7 +207,12 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'numero_ob',
                                 'data',
                                 'natureza',
-                                'valor',
+                                [
+                                    'attribute' => 'valor',
+                                    'value' => function($data){
+                                        return 'R$' . $data->valor;
+                                    }
+                                ],
                                 'tipo',
 
                                 ['class' => 'yii\grid\ActionColumn',
