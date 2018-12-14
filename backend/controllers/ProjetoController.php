@@ -309,6 +309,7 @@ class ProjetoController extends Controller
       $projeto = $this->findModel($id);
       $temTermoAditivo = TermoAditivo::find()->where(['id_projeto' => $projeto->id])->one();
       $temRelatorioTecnico = RelatorioPrestacao::find()->where(['id_projeto' => $projeto->id])->one();
+      $temArquivo = Arquivo::find()->where(['id_projeto' => $projeto->id])->one();
       $temItem = Item::find()->where(['id_projeto' => $projeto->id])->one();
       $temOrcamento = Orcamento::find()->where(['id_projeto' => $projeto->id])->one();
       $temValorPago = ValorPago::find()->where(['id_projeto' => $projeto->id])->one();
@@ -319,6 +320,10 @@ class ProjetoController extends Controller
       }
       else if(isset($temRelatorioTecnico)){
         $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe relatório técnico atrelados a ele');
+        return $this->redirect(['index']);
+      }
+      else if(isset($temArquivo)){
+        $this->mensagens('danger', 'Erro', 'O projeto não pode ser excluído pois já existe arquivo atrelado a ele');
         return $this->redirect(['index']);
       }
       else if(isset($temItem)){
