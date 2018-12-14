@@ -8,6 +8,7 @@ use common\models\ValorPago;
 use common\models\ContaCorrente;
 use common\models\RelatorioPrestacao;
 use common\models\Item;
+use common\models\Projeto;
 use backend\controllers\ItemController;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
@@ -72,6 +73,10 @@ class OrcamentoController extends Controller
         where(['tipo_item' => 8, 'id_projeto' => $id_projeto])->
         sum('custo_unitario * quantidade');
 
+        $cotacao_moeda_estrangeira = Projeto::find()->
+        where(['id' => $id_projeto])->
+        sum('cotacao_moeda_estrangeira * 1');
+
         $dataProvider = new ActiveDataProvider([
             'query' => Orcamento::find()->where([ 'id_projeto' => $id_projeto ]),
         ]);
@@ -107,6 +112,7 @@ class OrcamentoController extends Controller
             'subtotalPassagemInternacional' => $subtotalPassagemInternacional,
             'subtotalDiariaNacional' => $subtotalDiariaNacional,
             'subtotalDiariaInternacional' => $subtotalDiariaInternacional,
+            'cotacao_moeda_estrangeira' => $cotacao_moeda_estrangeira,
         ]);
     }
 

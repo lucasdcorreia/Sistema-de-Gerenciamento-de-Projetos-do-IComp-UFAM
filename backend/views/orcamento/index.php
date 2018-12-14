@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use common\models\Item;
+use common\models\Projeto;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -61,19 +63,20 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ?>
 
+    <!--<h1><?= Html::encode($this->title) ?></h1>-->
+
+    <div class="forms" style="margin-left:25px;">
+
     <h4><strong> Cronograma de Desembolso </strong></h4>
 
     <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 10px; margin-bottom: 20px;">
 
     <p>
     <h4>Custo Total de Capital: <?php echo 'R$' . number_format($subtotalMatPermanente, 2, ",", '.') ?> </h4>
-    <h4>Custo Total de Custeio: <?php echo 'R$' . number_format($subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional+$subtotalPassagemInternacional+$subtotalDiariaInternacional, 2, ",", '.') ?> </h4>
-    <h4>Recurso Total Aprovado: <?php echo 'R$' . number_format($subtotalMatPermanente+$subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional+$subtotalPassagemInternacional+$subtotalDiariaInternacional, 2, ",", '.') ?> </h4>
+    <h4>Custo Total de Custeio: <?php echo 'R$' . number_format($subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional+$subtotalPassagemInternacional*$cotacao_moeda_estrangeira+$subtotalDiariaInternacional*$cotacao_moeda_estrangeira, 2, ",", '.') ?> </h4>
+    <h4>Recurso Total Aprovado: <?php echo 'R$' . number_format($subtotalMatPermanente+$subtotalMatConsumo+$subtotalServTerceiroPF+$subtotalServTerceiroPJ+$subtotalPassagemNacional+$subtotalDiariaNacional+$subtotalPassagemInternacional*$cotacao_moeda_estrangeira+$subtotalDiariaInternacional*$cotacao_moeda_estrangeira, 2, ",", '.') ?> </h4>
     </p>
 
-    <!--<h1><?= Html::encode($this->title) ?></h1>-->
-
-    <div class="forms" style="margin-left:25px;">
       <div class="pull-right">
           <button class="btn btn-success" type="button" data-toggle="collapse"
           data-target="#collapseOrcamento,

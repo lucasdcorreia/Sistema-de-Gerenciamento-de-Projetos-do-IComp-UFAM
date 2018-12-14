@@ -58,6 +58,13 @@ class Orcamento extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getCustoUnitarioReal(){
+        $projeto = \Yii::$app->db->createCommand('SELECT * FROM projetos.projeto WHERE id=:id_projeto')
+           ->bindValue(':id_projeto', $this->id_projeto)
+           ->queryOne();
+        return $this->custo_unitario * ($projeto['cotacao_moeda_estrangeira']);
+    }
+
     public function beforeSave($insert){
         if(parent::beforeSave($insert)){
           //if($this->isNewRecord){
