@@ -45,10 +45,12 @@ class ProjetoController extends Controller
      */
     public function actionIndex()
     {
+        // Procura todos os projetos cadastrados e atribui ao dataProvider
         $dataProvider = new ActiveDataProvider([
             'query' => Projeto::find(),
         ]);
 
+        // Renderiza o dataProvider com os projetos na view index de projetos
         return $this->render('index', [
             'dataProvider' => $dataProvider,
         ]);
@@ -62,18 +64,23 @@ class ProjetoController extends Controller
      */
     public function actionView($id)
     {
+        // Procura os relatórios pertencentes com o $id recebido
         $dataProviderRelatorioPrestacao = new ActiveDataProvider([
+            // O 'tipo_anexo' => 1 é porque Relatório técnico e prestação de contas usam a mesma tabela, e os relatórios técnicos são do tipo_anexo 1
             'query' => RelatorioPrestacao::find()->where([ 'id_projeto' => $id, 'tipo_anexo' => 1 ]),
         ]);
 
+        // Procura os termos aditivos pertencentes a esse projeto
         $dataProviderTermoAditivo = new ActiveDataProvider([
             'query' => TermoAditivo::find()->where([ 'id_projeto' => $id ]),
         ]);
 
+        // Procura os arquivos pertencentes a esse projeto
         $dataProviderArquivo = new ActiveDataProvider([
             'query' => Arquivo::find()->where([ 'id_projeto' => $id ]),
         ]);
 
+        // Renderizar na view de projeto o projeto, os termos aditicos, relatórios e arquivos
         return $this->render('view', [
             'model' => $this->findModel($id),
             'dataProviderRelatorioPrestacao' => $dataProviderRelatorioPrestacao,
@@ -86,6 +93,7 @@ class ProjetoController extends Controller
      * Creates a new Projeto model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
+     * Action create recebe parâmetro $aba que indica se o usuário clicou nas abas (e em que aba) ou no botão salvar
      */
     public function actionCreate($aba)
     {

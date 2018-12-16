@@ -6,7 +6,8 @@ use Yii;
 
 /**
  * This is the model class for table "conta_corrente".
- *
+ * Esses property são apenas comentários padrão, acredito que deve ser usado por geradores
+ * de documentação automática quando vasculham o código
  * @property int $id
  * @property int $id_projeto
  * @property string $banco
@@ -21,11 +22,14 @@ class ContaCorrente extends \yii\db\ActiveRecord
 
     /**
      * @var contaFile
+     * Um atributo virtual que não está no banco e serve para guardar o arquivo
+     * de anexo antes de salvar no servidor
      */
     public $contaFile;
 
     /**
      * {@inheritdoc}
+     * Nome da tabela no banco a qual esse model representa
      */
     public static function tableName()
     {
@@ -34,6 +38,8 @@ class ContaCorrente extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
+     * Validações do model, antes de um save ou update, essas regras são conferidas
+     * caso não sejam seguidas o model não é salvo ou atualizado
      */
     public function rules()
     {
@@ -43,10 +49,12 @@ class ContaCorrente extends \yii\db\ActiveRecord
             [['agencia'], 'string', 'max' => 10, 'message' => 'Limite de caracteres alcançado'],
             [['conta'], 'string', 'max' => 15, 'message' => 'Limite de caracteres alcançado'],
             [['id_projeto'], 'exist', 'skipOnError' => true, 'targetClass' => Projeto::className(), 'targetAttribute' => ['id_projeto' => 'id']],
+            // skipOnEmpty está com true pois ele deve aceitar quando o model está sem anexo
             [['contaFile'], 'file', 'skipOnEmpty' => true],
         ];
     }
 
+    // Função responsável por salvar o arquivo de anexo no servidor
     public function upload()
     {
           if ($this->validate()) {
@@ -64,6 +72,9 @@ class ContaCorrente extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
+     * Aqui ficam as definições de títulos dos atributos,
+     * basicamente significa que na visualização os atributos
+     * terão esse nomes: ID, Id Projeto, Nome, Tipo e não id_projeto e etc
      */
     public function attributeLabels()
     {
@@ -79,6 +90,8 @@ class ContaCorrente extends \yii\db\ActiveRecord
 
     /**
      * @return \yii\db\ActiveQuery
+     * Gerada automaticamente para relacionar a chave estrangeira $id_projeto
+     * com o model de Projetos
      */
     public function getProjeto()
     {

@@ -6,7 +6,8 @@ use Yii;
 
 /**
  * This is the model class for table "item".
- *
+ * Esses property são apenas comentários padrão, acredito que deve ser usado por geradores
+ * de documentação automática quando vasculham o código
  * @property int $id
  * @property string $natureza
  * @property double $valor
@@ -27,9 +28,13 @@ use Yii;
  */
 class Item extends \yii\db\ActiveRecord
 {
+
+    // atributo virtual/atributo calculado, para pegar o custo unitário
+    // convertido para real
     private $custoUnitarioReal;
     /**
      * {@inheritdoc}
+     * Nome da tabela no banco a qual esse model representa
      */
     public static function tableName()
     {
@@ -38,11 +43,13 @@ class Item extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
+     * Validações do model, antes de um save ou update, essas regras são conferidas
+     * caso não sejam seguidas o model não é salvo ou atualizado
      */
     public function rules()
     {
         return [
-            [[/*'valor', */'custo_unitario'], 'double'],
+            [['custo_unitario'], 'double'],
             [['justificativa', 'descricao', 'professor_responsavel'], 'string'],
             [['quantidade', 'tipo_item', 'id_projeto'], 'integer'],
             [['natureza'], 'string', 'max' => 40, 'message' => 'Limite de caracteres alcançado'],
@@ -54,6 +61,9 @@ class Item extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
+     * Aqui ficam as definições de títulos dos atributos,
+     * basicamente significa que na visualização os atributos
+     * terão esse nomes: Natureza, Nº Item e etc
      */
     public function attributeLabels()
     {
@@ -73,8 +83,15 @@ class Item extends \yii\db\ActiveRecord
         ];
     }
 
+    // Como o nome sugere beforeSave é uma função chamada
+    // antes de salvar um model no banco
     public function beforeSave($insert){
+      // Nesse caso, não há restrição caso seja um update ou save,
+      // qualquer que seja a inserção o que há dentro do if será executado
       if(parent::beforeSave($insert)){
+        // Caso a quantidade não seja especificada, e o custo unitário sim
+        // a quantidade é setada para 1, assim o calculo do total não dá zero
+        // na multiplicação
           if($this->quantidade == NULL && $this->custo_unitario != NULL){
             $this->quantidade = 1;
           }
@@ -82,15 +99,23 @@ class Item extends \yii\db\ActiveRecord
       }
       return false;
     }
+
+    // Como custo unitário é um atributo virtual/calculado
+    // quando chamarmos ele no controle ou view, o yii2 vai procurar por
+    // um método com o nome getCustoUnitarioReal, repara que ele entende que custo
+    // vai estar com a primeira letra maiúscula
     public function getCustoUnitarioReal(){
+      // Isso é uma consulta direta no banco que pega a cotacao do dólar no projeto relacionado a esse item
         $projeto = \Yii::$app->db->createCommand('SELECT * FROM projetos.projeto WHERE id=:id_projeto')
            ->bindValue(':id_projeto', $this->id_projeto)
            ->queryOne();
+       // Converte custo_unitario para real, ou seja para o custoUnitarioReal
         return $this->custo_unitario * ($projeto['cotacao_moeda_estrangeira']);
     }
 
     /**
      * @return \yii\db\ActiveQuery
+     * Relacionando com a chave estrangeira id_item, com a tabela Despesa
      */
     public function getDespesas()
     {
@@ -99,6 +124,7 @@ class Item extends \yii\db\ActiveRecord
 
     /**
      * @return \yii\db\ActiveQuery
+     * Relacionando a chave estrangeira id_projeto com a tabela Projeto
      */
     public function getProjeto()
     {
